@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Dashboard Details">
+    <test name="Test">
+        <classes>
+            <class name="TestCaseClasses.DashboardDetailsTest">
+                <methods>
+                    <include name="artistDetails" />
+                    <include name="artTypeDetails" />
+                    <include name="artMediumDetails" />
+                    <include name="artProductDetails" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
