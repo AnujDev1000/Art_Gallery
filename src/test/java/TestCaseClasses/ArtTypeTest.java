@@ -35,7 +35,7 @@ public class ArtTypeTest {
         Alert alert = driver.switchTo().alert();
         // System.out.println(alert.getText());    
         
-        assertEquals("Art type has been added.", alert.getText()); 
+        assertEquals("Artist type has been added.", alert.getText()); 
     }
 
     @Test

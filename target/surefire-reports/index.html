@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">2 suites</span>
+      <span class="top-banner-font-1">2 suites, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Dashboard_Details" class="navigator-link">
-              <span class="suite-name border-passed">Dashboard Details</span>
+            <a href="#" panel-name="suite-Login_Details" class="navigator-link">
+              <span class="suite-name border-failed">Login Details</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Dashboard_Details" class="navigator-link ">
-                    <span>C:\Users\Mypc\Desktop\Maven\springapp\test-suites\testngDashboardDetails.xml</span>
+                  <a href="#" panel-name="test-xml-Login_Details" class="navigator-link ">
+                    <span>C:\Users\Mypc\Desktop\Maven\springapp\test-suites\testngLogin.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Dashboard_Details" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Login_Details" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Dashboard_Details" class="navigator-link ">
+                  <a href="#" panel-name="group-Login_Details" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Dashboard_Details" class="navigator-link ">
+                  <a href="#" panel-name="times-Login_Details" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Dashboard_Details" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Login_Details" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Dashboard_Details" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Login_Details" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Dashboard_Details" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Login_Details" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,36 +92,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Login_Details" class="hide-methods failed suite-Login_Details"> (hide)</a> <!-- hide-methods failed suite-Login_Details -->
+                      <a href="#" panel-name="suite-Login_Details" class="show-methods failed suite-Login_Details"> (show)</a> <!-- show-methods failed suite-Login_Details -->
+                    </span>
+                    <div class="method-list-content failed suite-Login_Details">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login_Details" title="TestCaseClasses.LoginTest" class="method navigator-link" hash-for-method="AdminLoginWithInValidDetails">AdminLoginWithInValidDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Login_Details -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Dashboard_Details" class="hide-methods passed suite-Dashboard_Details"> (hide)</a> <!-- hide-methods passed suite-Dashboard_Details -->
-                      <a href="#" panel-name="suite-Dashboard_Details" class="show-methods passed suite-Dashboard_Details"> (show)</a> <!-- show-methods passed suite-Dashboard_Details -->
+                      <a href="#" panel-name="suite-Login_Details" class="hide-methods passed suite-Login_Details"> (hide)</a> <!-- hide-methods passed suite-Login_Details -->
+                      <a href="#" panel-name="suite-Login_Details" class="show-methods passed suite-Login_Details"> (show)</a> <!-- show-methods passed suite-Login_Details -->
                     </span>
-                    <div class="method-list-content passed suite-Dashboard_Details">
+                    <div class="method-list-content passed suite-Login_Details">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Dashboard_Details" title="TestCaseClasses.DashboardDetailsTest" class="method navigator-link" hash-for-method="artMediumDetails">artMediumDetails</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Login_Details" title="TestCaseClasses.LoginTest" class="method navigator-link" hash-for-method="AdminLoginWithValidDetails">AdminLoginWithValidDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Dashboard_Details" title="TestCaseClasses.DashboardDetailsTest" class="method navigator-link" hash-for-method="artProductDetails">artProductDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Dashboard_Details" title="TestCaseClasses.DashboardDetailsTest" class="method navigator-link" hash-for-method="artTypeDetails">artTypeDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Dashboard_Details" title="TestCaseClasses.DashboardDetailsTest" class="method navigator-link" hash-for-method="artistDetails">artistDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Dashboard_Details -->
+                    </div> <!-- method-list-content passed suite-Login_Details -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -134,44 +133,63 @@
       <div class="main-panel-root">
         <div panel-name="suite-Art_Gallery_Testing" class="panel Art_Gallery_Testing">
         </div> <!-- panel Art_Gallery_Testing -->
-        <div panel-name="suite-Dashboard_Details" class="panel Dashboard_Details">
-          <div class="suite-Dashboard_Details-class-passed">
+        <div panel-name="suite-Login_Details" class="panel Login_Details">
+          <div class="suite-Login_Details-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCaseClasses.DashboardDetailsTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">TestCaseClasses.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="artMediumDetails">
-                  </a> <!-- artMediumDetails -->
-                  <span class="method-name">artMediumDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="artProductDetails">
-                  </a> <!-- artProductDetails -->
-                  <span class="method-name">artProductDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="artTypeDetails">
-                  </a> <!-- artTypeDetails -->
-                  <span class="method-name">artTypeDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="artistDetails">
-                  </a> <!-- artistDetails -->
-                  <span class="method-name">artistDetails</span>
+                  <a name="AdminLoginWithInValidDetails">
+                  </a> <!-- AdminLoginWithInValidDetails -->
+                  <span class="method-name">AdminLoginWithInValidDetails</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;navbarSupportedContent&apos;]/ul/li[5]/a&quot;}
+  (Session info: chrome=114.0.5735.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Anuj&apos;, ip: &apos;192.168.43.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7471f29fb1f4aec2fb3bc870d6a98d34
+*** Element info: {Using=xpath, value=//*[@id=&apos;navbarSupportedContent&apos;]/ul/li[5]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at ObjectClasses.Login.navigateToAdminLoginPage(Login.java:17)
+	at ObjectClasses.Login.adminLogin(Login.java:53)
+	at TestCaseClasses.LoginTest.AdminLoginWithInValidDetails(LoginTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Dashboard_Details-class-passed -->
-        </div> <!-- panel Dashboard_Details -->
+          </div> <!-- suite-Login_Details-class-failed -->
+          <div class="suite-Login_Details-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCaseClasses.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AdminLoginWithValidDetails">
+                  </a> <!-- AdminLoginWithValidDetails -->
+                  <span class="method-name">AdminLoginWithValidDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Login_Details-class-passed -->
+        </div> <!-- panel Login_Details -->
         <div panel-name="test-xml-Art_Gallery_Testing" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">C:\Users\Mypc\Desktop\Maven\springapp\test-suites\testng.xml</span>
@@ -182,34 +200,32 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Art Gallery Testing&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;suite-files&gt;
-    &lt;suite-file path=&quot;testngDashboardDetails.xml&quot;/&gt;
+    &lt;suite-file path=&quot;testngLogin.xml&quot;/&gt;
   &lt;/suite-files&gt;
 &lt;/suite&gt; &lt;!-- Art Gallery Testing --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="test-xml-Dashboard_Details" class="panel">
+        <div panel-name="test-xml-Login_Details" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Mypc\Desktop\Maven\springapp\test-suites\testngDashboardDetails.xml</span>
+            <span class="header-content">C:\Users\Mypc\Desktop\Maven\springapp\test-suites\testngLogin.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Dashboard Details&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Login Details&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCaseClasses.DashboardDetailsTest&quot;&gt;
+      &lt;class name=&quot;TestCaseClasses.LoginTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;artistDetails&quot;/&gt;
-          &lt;include name=&quot;artTypeDetails&quot;/&gt;
-          &lt;include name=&quot;artMediumDetails&quot;/&gt;
-          &lt;include name=&quot;artProductDetails&quot;/&gt;
+          &lt;include name=&quot;AdminLoginWithValidDetails&quot;/&gt;
+          &lt;include name=&quot;AdminLoginWithInValidDetails&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- TestCaseClasses.DashboardDetailsTest --&gt;
+      &lt;/class&gt; &lt;!-- TestCaseClasses.LoginTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
-&lt;/suite&gt; &lt;!-- Dashboard Details --&gt;
+&lt;/suite&gt; &lt;!-- Login Details --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -222,9 +238,9 @@
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Dashboard_Details" class="panel">
+        <div panel-name="testlist-Login_Details" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Dashboard Details</span>
+            <span class="header-content">Tests for Login Details</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
@@ -241,9 +257,9 @@
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Dashboard_Details" class="panel">
+        <div panel-name="group-Login_Details" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Dashboard Details</span>
+            <span class="header-content">Groups for Login Details</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -273,44 +289,36 @@ return data;
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Dashboard_Details" class="panel">
+        <div panel-name="times-Login_Details" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Dashboard Details</span>
+            <span class="header-content">Times for Login Details</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Dashboard_Details');
-function tableData_Dashboard_Details() {
+suiteTableInitFunctions.push('tableData_Login_Details');
+function tableData_Login_Details() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'artistDetails')
-data.setCell(0, 2, 'TestCaseClasses.DashboardDetailsTest')
-data.setCell(0, 3, 5012);
+data.setCell(0, 1, 'AdminLoginWithValidDetails')
+data.setCell(0, 2, 'TestCaseClasses.LoginTest')
+data.setCell(0, 3, 4622);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'artMediumDetails')
-data.setCell(1, 2, 'TestCaseClasses.DashboardDetailsTest')
-data.setCell(1, 3, 2607);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'artTypeDetails')
-data.setCell(2, 2, 'TestCaseClasses.DashboardDetailsTest')
-data.setCell(2, 3, 2055);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'artProductDetails')
-data.setCell(3, 2, 'TestCaseClasses.DashboardDetailsTest')
-data.setCell(3, 3, 1839);
-window.suiteTableData['Dashboard_Details']= { tableData: data, tableDiv: 'times-div-Dashboard_Details'}
+data.setCell(1, 1, 'AdminLoginWithInValidDetails')
+data.setCell(1, 2, 'TestCaseClasses.LoginTest')
+data.setCell(1, 3, 243);
+window.suiteTableData['Login_Details']= { tableData: data, tableDiv: 'times-div-Login_Details'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
-              <div id="times-div-Dashboard_Details">
-              </div> <!-- times-div-Dashboard_Details -->
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-Login_Details">
+              </div> <!-- times-div-Login_Details -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -321,9 +329,9 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Dashboard_Details" class="panel">
+        <div panel-name="reporter-Login_Details" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Dashboard Details</span>
+            <span class="header-content">Reporter output for Login Details</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -335,7 +343,7 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Dashboard_Details" class="panel">
+        <div panel-name="ignored-methods-Login_Details" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -349,52 +357,30 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Dashboard_Details" class="panel">
+        <div panel-name="chronological-Login_Details" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCaseClasses.DashboardDetailsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestCaseClasses.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setupDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">artistDetails</span>
-                <span class="method-start">51129 ms</span>
+                <span class="method-name">AdminLoginWithValidDetails</span>
+                <span class="method-start">25174 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">driverNavigateBackward</span>
-                <span class="method-start">56147 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">artTypeDetails</span>
-                <span class="method-start">56938 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AdminLoginWithInValidDetails</span>
+                <span class="method-start">29812 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">driverNavigateBackward</span>
-                <span class="method-start">58993 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">artMediumDetails</span>
-                <span class="method-start">59565 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">driverNavigateBackward</span>
-                <span class="method-start">62174 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">artProductDetails</span>
-                <span class="method-start">63038 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">driverNavigateBackward</span>
-                <span class="method-start">64877 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">65507 ms</span>
+                <span class="method-start">30071 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

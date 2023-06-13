@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -12,6 +13,11 @@ public class ArtType {
 
     public ArtType(WebDriver driver){
         this.driver = driver;
+    }
+
+    public void scrollBy() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
     }
 
     public void navigateToArtTypeDetails() {
@@ -36,6 +42,7 @@ public class ArtType {
             data.add(rowData);
         }
 
+        System.out.println("\nArt Type Details :");
         for (List<WebElement> list : data) {
             List<String> cols = new ArrayList<>(); 
             for (WebElement col : list) {
@@ -96,8 +103,11 @@ public class ArtType {
 
 
     // Update ArtType
-    public void navigateToUpdateArtTypePage(List<List<WebElement>> data) {
-        data.get(0).get(3).findElement(By.linkText("Edit")).click();
+    public void clickEditButton() {
+        int dataSize = getTableData().size();
+        scrollBy();
+        String path = "//*[@id='main-content']/section/div[2]/div/section/table/tbody/tr[" + dataSize + "]/td[6]/a[1]";
+        driver.findElement(By.xpath(path)).click();
     }
 
     public void editArtType(String artType) {
@@ -116,7 +126,7 @@ public class ArtType {
         List<List<WebElement>> data = getTableData();
         
         if(data.size() > 0){
-            navigateToUpdateArtTypePage(data);
+            clickEditButton();
             editArtType(artType);
             clickUpdateButton();
         }
@@ -126,12 +136,17 @@ public class ArtType {
 
 
     // Delete ArtType
+    public void clickDeleteButton() {
+        int dataSize = getTableData().size();
+        scrollBy();
+        if(dataSize > 0){
+            String path = "//*[@id='main-content']/section/div[2]/div/section/table/tbody/tr[" + dataSize + "]/td[4]/a[2]";
+            driver.findElement(By.xpath(path)).click();
+        }
+    }
+
     public void deleteArtType() {
         navigateToManagetoArtTypePage();
-        List<List<WebElement>> data = getTableData();
-        
-        if(data.size() > 0){
-            data.get(0).get(3).findElement(By.linkText("Delete")).click();
-        }
+        clickDeleteButton();
     }
 }

@@ -3,6 +3,6 @@
 
 <suite name="Art Gallery Testing">
     <suite-files>
-        <suite-file path="testngDashboardDetails.xml" />
+        <suite-file path="testngLogin.xml" />
     </suite-files>
 </suite>

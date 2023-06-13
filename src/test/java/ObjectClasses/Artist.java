@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -36,6 +37,7 @@ public class Artist {
             data.add(rowData);
         }
 
+        System.out.println("\nArtist Details :");
         for (List<WebElement> list : data) {
             List<String> cols = new ArrayList<>(); 
             for (WebElement col : list) {
@@ -90,9 +92,12 @@ public class Artist {
     }
 
     public void clickSubmitButton() {
-        System.out.println(driver.findElement(By.cssSelector("#main-content > section > div:nth-child(2) > div > section > div > form > p > button")).isEnabled());
-
         driver.findElement(By.cssSelector("#main-content > section > div:nth-child(2) > div > section > div > form > p > button")).click();
+    }
+
+    public void scrollBy() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
     }
 
     public void addArtist(String name, String number, String email, String education, String award, String imagePath) {
@@ -102,6 +107,7 @@ public class Artist {
         fillEmail(email);
         fillEducation(education);
         fillAward(award);
+        scrollBy();
         fillImage(imagePath);
         clickSubmitButton();
     }
@@ -123,8 +129,11 @@ public class Artist {
 
 
     // Update Artist
-    public void navigateToUpdateArtistPage(List<List<WebElement>> data) {
-        data.get(0).get(5).findElement(By.linkText("Edit")).click();
+    public void clickEditButton() {
+        int dataSize = getTableData().size();
+        scrollBy();
+        String path = "//*[@id='main-content']/section/div[2]/div/section/table/tbody/tr[" + dataSize + "]/td[6]/a[1]";
+        driver.findElement(By.xpath(path)).click();
     }
 
     public void editName(String name) {
@@ -162,10 +171,8 @@ public class Artist {
     }
 
     public void clickUpdateButton() {
-        System.out.println(driver.findElement(By.cssSelector("#main-content > section > div:nth-child(2) > div > section > div > form > p:nth-child(8) > button")).isEnabled());
-
+        scrollBy();
         driver.findElement(By.cssSelector("#main-content > section > div:nth-child(2) > div > section > div > form > p:nth-child(8) > button")).click();
-        
     }
 
     public void updateArtist(String name, String number, String email, String education, String award, String imagePath) {
@@ -173,7 +180,7 @@ public class Artist {
         List<List<WebElement>> data = getTableData();
         
         if(data.size() > 0){
-            navigateToUpdateArtistPage(data);
+            clickEditButton();
             editName(name);
             editNumber(number);
             editEmail(email);
@@ -188,14 +195,22 @@ public class Artist {
 
 
 
+
+
+    
     // Delete Artist
+    public void clickDeleteButton() {
+        int dataSize = getTableData().size();
+        scrollBy();
+        if(dataSize > 0){
+            String path = "//*[@id='main-content']/section/div[2]/div/section/table/tbody/tr[" + dataSize + "]/td[6]/a[2]";
+            driver.findElement(By.xpath(path)).click();
+        }
+    }
+
     public void deleteArtist() {
         navigateToManagetoArtistPage();
-        List<List<WebElement>> data = getTableData();
-        
-        if(data.size() > 0){
-            data.get(0).get(5).findElement(By.linkText("Delete")).click();
-        }
+        clickDeleteButton();
     }
 
 }

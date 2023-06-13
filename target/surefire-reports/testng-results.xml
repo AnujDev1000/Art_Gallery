@@ -1,57 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-25T11:44:21 IST" name="Art Gallery Testing" finished-at="2023-05-25T11:44:21 IST" duration-ms="0">
+  <suite started-at="2023-06-13T23:52:10 IST" name="Art Gallery Testing" finished-at="2023-06-13T23:52:10 IST" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- Art Gallery Testing -->
-  <suite started-at="2023-05-25T11:43:05 IST" name="Dashboard Details" finished-at="2023-05-25T11:44:18 IST" duration-ms="73519">
+  <suite started-at="2023-06-13T23:51:38 IST" name="Login Details" finished-at="2023-06-13T23:52:09 IST" duration-ms="31659">
     <groups>
     </groups>
-    <test started-at="2023-05-25T11:43:05 IST" name="Test" finished-at="2023-05-25T11:44:18 IST" duration-ms="73519">
-      <class name="TestCaseClasses.DashboardDetailsTest">
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@ef9296d]" started-at="2023-05-25T11:43:05 IST" name="setupDriver" finished-at="2023-05-25T11:43:56 IST" duration-ms="51011" status="PASS">
+    <test started-at="2023-06-13T23:51:38 IST" name="Test" finished-at="2023-06-13T23:52:09 IST" duration-ms="31659">
+      <class name="TestCaseClasses.LoginTest">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:TestCaseClasses.LoginTest@1184ab05]" started-at="2023-06-13T23:51:38 IST" name="setupDriver" finished-at="2023-06-13T23:52:03 IST" duration-ms="25098" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="artistDetails()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@ef9296d]" started-at="2023-05-25T11:43:56 IST" name="artistDetails" finished-at="2023-05-25T11:44:01 IST" duration-ms="5012" status="PASS">
+        <test-method signature="AdminLoginWithValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@1184ab05]" started-at="2023-06-13T23:52:03 IST" name="AdminLoginWithValidDetails" finished-at="2023-06-13T23:52:08 IST" duration-ms="4622" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- artistDetails -->
-        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@ef9296d]" started-at="2023-05-25T11:44:01 IST" name="driverNavigateBackward" finished-at="2023-05-25T11:44:02 IST" duration-ms="785" status="PASS">
+        </test-method> <!-- AdminLoginWithValidDetails -->
+        <test-method signature="AdminLoginWithInValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@1184ab05]" started-at="2023-06-13T23:52:08 IST" name="AdminLoginWithInValidDetails" finished-at="2023-06-13T23:52:08 IST" duration-ms="243" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='navbarSupportedContent']/ul/li[5]/a"}
+  (Session info: chrome=114.0.5735.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anuj', ip: '192.168.43.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7471f29fb1f4aec2fb3bc870d6a98d34
+*** Element info: {Using=xpath, value=//*[@id='navbarSupportedContent']/ul/li[5]/a}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='navbarSupportedContent']/ul/li[5]/a"}
+  (Session info: chrome=114.0.5735.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anuj', ip: '192.168.43.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7471f29fb1f4aec2fb3bc870d6a98d34
+*** Element info: {Using=xpath, value=//*[@id='navbarSupportedContent']/ul/li[5]/a}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at ObjectClasses.Login.navigateToAdminLoginPage(Login.java:17)
+at ObjectClasses.Login.adminLogin(Login.java:53)
+at TestCaseClasses.LoginTest.AdminLoginWithInValidDetails(LoginTest.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- driverNavigateBackward -->
-        <test-method signature="artTypeDetails()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@ef9296d]" started-at="2023-05-25T11:44:02 IST" name="artTypeDetails" finished-at="2023-05-25T11:44:04 IST" duration-ms="2055" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- artTypeDetails -->
-        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@ef9296d]" started-at="2023-05-25T11:44:04 IST" name="driverNavigateBackward" finished-at="2023-05-25T11:44:04 IST" duration-ms="567" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverNavigateBackward -->
-        <test-method signature="artMediumDetails()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@ef9296d]" started-at="2023-05-25T11:44:04 IST" name="artMediumDetails" finished-at="2023-05-25T11:44:07 IST" duration-ms="2607" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- artMediumDetails -->
-        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@ef9296d]" started-at="2023-05-25T11:44:07 IST" name="driverNavigateBackward" finished-at="2023-05-25T11:44:08 IST" duration-ms="864" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverNavigateBackward -->
-        <test-method signature="artProductDetails()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@ef9296d]" started-at="2023-05-25T11:44:08 IST" name="artProductDetails" finished-at="2023-05-25T11:44:10 IST" duration-ms="1839" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- artProductDetails -->
-        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@ef9296d]" started-at="2023-05-25T11:44:10 IST" name="driverNavigateBackward" finished-at="2023-05-25T11:44:10 IST" duration-ms="628" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverNavigateBackward -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@ef9296d]" started-at="2023-05-25T11:44:10 IST" name="tearDown" finished-at="2023-05-25T11:44:18 IST" duration-ms="7931" status="PASS">
+        </test-method> <!-- AdminLoginWithInValidDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCaseClasses.LoginTest@1184ab05]" started-at="2023-06-13T23:52:08 IST" name="tearDown" finished-at="2023-06-13T23:52:09 IST" duration-ms="1504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TestCaseClasses.DashboardDetailsTest -->
+      </class> <!-- TestCaseClasses.LoginTest -->
     </test> <!-- Test -->
-  </suite> <!-- Dashboard Details -->
+  </suite> <!-- Login Details -->
 </testng-results>

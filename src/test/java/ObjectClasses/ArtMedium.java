@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -12,6 +13,11 @@ public class ArtMedium {
 
     public ArtMedium(WebDriver driver){
         this.driver = driver;
+    }
+
+    public void scrollBy() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
     }
 
     public void navigateToArtMediumDetails() {
@@ -34,7 +40,8 @@ public class ArtMedium {
 
             data.add(rowData);
         }
-
+        
+        System.out.println("\nArt Medium Details :");
         for (List<WebElement> list : data) {
             List<String> cols = new ArrayList<>(); 
             for (WebElement col : list) {
@@ -93,8 +100,11 @@ public class ArtMedium {
 
 
     // Update ArtMedium
-    public void navigateToUpdateArtMediumPage(List<List<WebElement>> data) {
-        data.get(0).get(3).findElement(By.linkText("Edit")).click();
+    public void clickEditButton() {
+        int dataSize = getTableData().size();
+        scrollBy();
+        String path = "//*[@id='main-content']/section/div[2]/div/section/table/tbody/tr[" + dataSize + "]/td[4]/a[1]";
+        driver.findElement(By.xpath(path)).click();
     }
 
     public void editArtMedium(String artMedium) {
@@ -113,7 +123,7 @@ public class ArtMedium {
         List<List<WebElement>> data = getTableData();
         
         if(data.size() > 0){
-            navigateToUpdateArtMediumPage(data);
+            clickEditButton();
             editArtMedium(artMedium);
             clickUpdateButton();
         }
@@ -125,12 +135,17 @@ public class ArtMedium {
 
     
     // Delete ArtMedium
+    public void clickDeleteButton() {
+        int dataSize = getTableData().size();
+        scrollBy();
+        if(dataSize > 0){
+            String path = "//*[@id='main-content']/section/div[2]/div/section/table/tbody/tr[" + dataSize + "]/td[4]/a[2]";
+            driver.findElement(By.xpath(path)).click();
+        }
+    }
+
     public void deleteArtMedium() {
         navigateToManagetoArtMediumPage();
-        List<List<WebElement>> data = getTableData();
-        
-        if(data.size() > 0){
-            data.get(0).get(3).findElement(By.linkText("Delete")).click();
-        }
+        clickDeleteButton();
     }
 }

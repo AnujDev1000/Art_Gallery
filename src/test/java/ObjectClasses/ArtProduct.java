@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -37,6 +38,7 @@ public class ArtProduct {
             data.add(rowData);
         }
 
+        System.out.println("\nArt Product Details :");
         for (List<WebElement> list : data) {
             List<String> cols = new ArrayList<>(); 
             for (WebElement col : list) {
@@ -138,7 +140,12 @@ public class ArtProduct {
     }
 
     public void clickSubmitButton() {
-        driver.findElement(By.cssSelector("//*[@id='main-content']/section/div[2]/form/p/button")).click();
+        driver.findElement(By.xpath("//*[@id='main-content']/section/div[2]/form/p/button")).click();
+    }
+
+    public void scrollBy() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
     }
 
     public void addArtProduct( String title, String imgPath, String dimension, String orientation, String size, String artist, String artType, String artMedium, String sPrice, String discription) {
@@ -149,13 +156,14 @@ public class ArtProduct {
         fillImage02(imgPath);
         fillImage03(imgPath);
         fillImage04(imgPath);
-        // fillDimensions(dimension);
         fillOrientation(orientation);
         fillSize(size);
         fillArtist(artist);
         fillArtType(artType);
         fillArtMedium(artMedium);
         fillSellingPrice(sPrice);
+        scrollBy();
+        fillDimensions(dimension);
         fillDiscription(discription);
         clickSubmitButton();
     }
@@ -174,12 +182,17 @@ public class ArtProduct {
 
         
     // Delete ArtProduct
+    public void clickDeleteButton() {
+        int dataSize = getTableData().size();
+        scrollBy();
+        if(dataSize > 0){
+            String path = "//*[@id='main-content']/section/div[2]/div/section/table/tbody/tr[" + dataSize + "]/td[6]/a[2]";
+            driver.findElement(By.xpath(path)).click();
+        }
+    }
+
     public void deleteArtProduct() {
         navigateToManagetoArtProductPage();
-        List<List<WebElement>> data = getTableData();
-
-        if(data.size() > 0){
-            data.get(0).get(5).findElement(By.linkText("Delete")).click();
-        }
+        clickDeleteButton();
     }
 }

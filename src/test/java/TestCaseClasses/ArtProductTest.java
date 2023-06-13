@@ -27,7 +27,7 @@ public class ArtProductTest {
     @Test
     public void addArtProductTest() {
         login.adminLogin();
-        artProduct.addArtProduct("Marvel", "C:/Users/Mypc/Desktop/MernProject/Fleet/public/images/placeholder.jpg", "1000", "Potrait", "Medium", "Dev", "painting", "Oil on Canvas", "7000", "ARTISTIC PAINTINGS... ");
+        artProduct.addArtProduct("Marvel", "C:/Users/Mypc/Desktop/MernProject/Fleet/public/images/placeholder.jpg", "1000", "Potrait", "Medium", "Rock", "painting", "Oil on Canvas", "7000", "ARTISTIC PAINTINGS... ");
 
         Alert alert = driver.switchTo().alert();
         System.out.println(alert.getText());    
