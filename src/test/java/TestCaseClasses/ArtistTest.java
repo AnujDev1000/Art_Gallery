@@ -3,23 +3,12 @@ package TestCaseClasses;
 import static org.junit.Assert.assertEquals;
 
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import ObjectClasses.Artist;
 import ObjectClasses.SetupDriver;
 
 public class ArtistTest extends SetupDriver{
-    // WebDriver driver;
-    // Login login;
-
-
-    // @BeforeMethod
-    // public void setupDriver() {
-    //     driver = SetupDriver.setup();
-    //     login = new Login(driver);
-    //     artist = new Artist(driver);
-    // }
     
     @Test(priority = 0)
     public void addArtistTest() {
@@ -65,9 +54,4 @@ public class ArtistTest extends SetupDriver{
         assertEquals("Data deleted", alertMsg); 
         
     }
-
-    // @AfterMethod
-    // public void tearDown() {
-    //     driver.quit();
-    // }
 }
