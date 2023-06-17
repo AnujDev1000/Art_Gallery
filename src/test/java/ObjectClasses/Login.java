@@ -16,7 +16,7 @@ public class Login {
     public void navigateToAdminLoginPage() {
         WebElement navAdmin = driver.findElement(By.xpath("//*[@id='navbarSupportedContent']/ul/li[5]/a"));
         navAdmin.click();
-    }
+    }   
 
     public void sendUsernameKey(String username) {
         WebElement usernameInput = driver.findElement(By.xpath("/html/body/div/form/div/div[1]/input"));
@@ -49,10 +49,33 @@ public class Login {
         clickLoginButton();
     }
 
+    public void navigateBackToHomePage() {
+        WebElement homepage = driver.findElement(By.xpath("/html/body/div/form/div/lable/p/a"));
+        homepage.click();
+    }
+
     public void adminLogin(String username, String password) {
         navigateToAdminLoginPage();
         sendUsernameKey(username);
         sendPasswordKey(password);
         clickLoginButton();
+    }
+
+
+
+
+    public void navigateToAdminLogoutPage() {
+        WebElement navAdmin = driver.findElement(By.xpath("/html/body/section/header/div[2]/ul/li[2]/a"));
+        navAdmin.click();
+    }   
+    
+    public void clickLogoutButton() {
+        WebElement logout = driver.findElement(By.xpath("//*[@id='container']/header/div[2]/ul/li[2]/ul/li[3]/a"));
+        logout.click();
+    }
+
+    public void adminLogout() {
+        navigateToAdminLogoutPage();
+        clickLogoutButton();
     }
 }

@@ -120,6 +120,10 @@ public class Artist {
     // Manage Artist 
     public void navigateToManagetoArtistPage() {
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[2]/a")).click();
+        try {
+            Thread.sleep(2000);
+        } catch (Exception e) {
+        }
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[2]/ul/li[2]/a")).click();
     }
 
@@ -176,7 +180,7 @@ public class Artist {
     }
 
     public void updateArtist(String name, String number, String email, String education, String award, String imagePath) {
-        navigateToManagetoArtistPage();
+        // navigateToManagetoArtistPage();
         List<List<WebElement>> data = getTableData();
         
         if(data.size() > 0){
@@ -190,8 +194,6 @@ public class Artist {
             clickUpdateButton();
         }
     }
-
-
 
 
 

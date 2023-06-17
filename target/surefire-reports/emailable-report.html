@@ -9,35 +9,29 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Art Gallery Testing</th></tr>
-<tr><th colspan="8">Login Details</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,659</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Admin: Login</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16,430</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Admin: Sidemenu</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">480</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Admin: Dashboard</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,504</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Admin: Artist</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21,150</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">13</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">50,564</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Art Gallery Testing</th></tr></tbody><tbody><tr><th colspan="4">Login Details</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCaseClasses.LoginTest</td><td><a href="#m0">AdminLoginWithInValidDetails</a></td><td rowspan="1">1686680528084</td><td rowspan="1">243</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCaseClasses.LoginTest</td><td><a href="#m1">AdminLoginWithValidDetails</a></td><td rowspan="1">1686680523446</td><td rowspan="1">4622</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Art Gallery Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Admin: Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">TestCaseClasses.LoginTest</td><td><a href="#m0">AdminLoginWithInValidDetails</a></td><td rowspan="1">1687007302848</td><td rowspan="1">12310</td></tr><tr class="passedeven"><td><a href="#m1">AdminLoginWithValidDetails</a></td><td rowspan="1">1687007315185</td><td rowspan="1">3834</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Admin: Sidemenu &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">TestCaseClasses.MenuTest</td><td><a href="#m2">artProductMenu</a></td><td rowspan="1">1687007320556</td><td rowspan="1">49</td></tr><tr class="passedeven"><td><a href="#m3">artTypeMenu</a></td><td rowspan="1">1687007320425</td><td rowspan="1">70</td></tr><tr class="passedeven"><td><a href="#m4">artistMenu</a></td><td rowspan="1">1687007320130</td><td rowspan="1">295</td></tr><tr class="passedeven"><td><a href="#m5">mediumOfArtMenu</a></td><td rowspan="1">1687007320495</td><td rowspan="1">61</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Admin: Dashboard &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">TestCaseClasses.DashboardDetailsTest</td><td><a href="#m6">artMediumDetails</a></td><td rowspan="1">1687007327467</td><td rowspan="1">2206</td></tr><tr class="passedeven"><td><a href="#m7">artProductDetails</a></td><td rowspan="1">1687007330262</td><td rowspan="1">2317</td></tr><tr class="passedeven"><td><a href="#m8">artTypeDetails</a></td><td rowspan="1">1687007324221</td><td rowspan="1">2607</td></tr><tr class="passedeven"><td><a href="#m9">artistDetails</a></td><td rowspan="1">1687007320626</td><td rowspan="1">2422</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Admin: Artist &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">TestCaseClasses.ArtistTest</td><td><a href="#m10">addArtistTest</a></td><td rowspan="1">1687007333184</td><td rowspan="1">7981</td></tr><tr class="passedeven"><td><a href="#m11">deleteArtistTest</a></td><td rowspan="1">1687007347614</td><td rowspan="1">6716</td></tr><tr class="passedeven"><td><a href="#m12">updateArtistTest</a></td><td rowspan="1">1687007341172</td><td rowspan="1">6439</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">TestCaseClasses.LoginTest#AdminLoginWithInValidDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;navbarSupportedContent&apos;]/ul/li[5]/a&quot;}
-  (Session info: chrome=114.0.5735.110)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Anuj&apos;, ip: &apos;192.168.43.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7471f29fb1f4aec2fb3bc870d6a98d34
-*** Element info: {Using=xpath, value=//*[@id=&apos;navbarSupportedContent&apos;]/ul/li[5]/a}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at ObjectClasses.Login.navigateToAdminLoginPage(Login.java:17)
-	at ObjectClasses.Login.adminLogin(Login.java:53)
-	at TestCaseClasses.LoginTest.AdminLoginWithInValidDetails(LoginTest.java:36)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Admin: Login</h2><h3 id="m0">TestCaseClasses.LoginTest#AdminLoginWithInValidDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">TestCaseClasses.LoginTest#AdminLoginWithValidDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Admin: Sidemenu</h2><h3 id="m2">TestCaseClasses.MenuTest#artProductMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestCaseClasses.MenuTest#artTypeMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestCaseClasses.MenuTest#artistMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestCaseClasses.MenuTest#mediumOfArtMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Admin: Dashboard</h2><h3 id="m6">TestCaseClasses.DashboardDetailsTest#artMediumDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestCaseClasses.DashboardDetailsTest#artProductDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestCaseClasses.DashboardDetailsTest#artTypeDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TestCaseClasses.DashboardDetailsTest#artistDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Admin: Artist</h2><h3 id="m10">TestCaseClasses.ArtistTest#addArtistTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">TestCaseClasses.ArtistTest#deleteArtistTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">TestCaseClasses.ArtistTest#updateArtistTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

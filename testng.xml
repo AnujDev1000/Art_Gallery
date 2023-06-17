@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Art Gallery Testing">
+
+    <test name="Admin: Login">
+        <classes>
+            <class name="TestCaseClasses.LoginTest" />
+        </classes>
+    </test>
+
+
+    <test name="Admin: Sidemenu">
+        <classes>
+            <class name="TestCaseClasses.MenuTest" />
+        </classes>
+    </test>
+
+    
+    <test name="Admin: Dashboard">
+        <classes>
+            <class name="TestCaseClasses.DashboardDetailsTest" />
+        </classes>
+    </test>
+
+    
+    <test name="Admin: Artist">
+        <classes>
+            <class name="TestCaseClasses.ArtistTest" />
+        </classes>
+    </test>
+</suite>
