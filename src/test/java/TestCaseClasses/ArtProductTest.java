@@ -3,62 +3,50 @@ package TestCaseClasses;
 import static org.junit.Assert.assertEquals;
 
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import ObjectClasses.ArtProduct;
-import ObjectClasses.Login;
 import ObjectClasses.SetupDriver;
 
-public class ArtProductTest {
-    WebDriver driver;
-    Login login;
-    ArtProduct artProduct;
-
-    @BeforeMethod
-    public void setupDriver() {
-        driver = SetupDriver.setup();
-        login = new Login(driver);
-        artProduct = new ArtProduct(driver);
-    }
+public class ArtProductTest extends SetupDriver{
     
-    @Test
+    @Test(priority = 0)
     public void addArtProductTest() {
-        login.adminLogin();
-        artProduct.addArtProduct("Marvel", "C:/Users/Mypc/Desktop/MernProject/Fleet/public/images/placeholder.jpg", "1000", "Potrait", "Medium", "Rock", "painting", "Oil on Canvas", "7000", "ARTISTIC PAINTINGS... ");
+        // login.adminLogin();
+        ArtProduct artProduct = new ArtProduct(driver);
+        artProduct.addArtProduct("Marvel", "C:/Users/Mypc/Desktop/MernProject/Fleet/public/images/placeholder.jpg", "1000", "Potrait", "Medium", "Maddy", "Painting", "Oil on Canvas", "7000", "ARTISTIC PAINTINGS... ");
 
         Alert alert = driver.switchTo().alert();
-        System.out.println(alert.getText());    
+        String alertMsg = alert.getText();
+        alert.accept();     
         
-        assertEquals("", ""); 
+        assertEquals("Art product details has been submitted.", alertMsg); 
     }
 
     // @Test
     // public void updateArtProductTest() {
-    //     login.adminLogin();
+    //     // login.adminLogin();
+    //     ArtProduct artProduct = new ArtProduct(driver);
     //     artProduct.updateArtProduct("Wood and Bronze");
 
     //     Alert alert = driver.switchTo().alert();
-    //     System.out.println(alert.getText());    
+    //     String alertMsg = alert.getText();
+    //     alert.accept();     
         
-    //     assertEquals("Art Product has been updated.", alert.getText()); 
+    //     assertEquals("Art Product has been updated.", alertMsg); 
     // }
 
-    @Test
+    @Test(priority = 1)
     public void deleteArtProductTest() {
-        login.adminLogin();
+        // login.adminLogin();
+        ArtProduct artProduct = new ArtProduct(driver);
         artProduct.deleteArtProduct();
 
         Alert alert = driver.switchTo().alert();
-        System.out.println(alert.getText());    
+        String alertMsg = alert.getText();
+        alert.accept();     
         
-        assertEquals("Data deleted", alert.getText()); 
+        assertEquals("Data deleted", alertMsg); 
     }
 
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
 }

@@ -96,6 +96,10 @@ public class ArtType {
     // Manage arttype
     public void navigateToManagetoArtTypePage() {
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[3]/a")).click();
+        try {
+            Thread.sleep(2000);
+        } catch (Exception e) {
+        }
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[3]/ul/li[2]/a")).click();
     }
 
@@ -106,7 +110,7 @@ public class ArtType {
     public void clickEditButton() {
         int dataSize = getTableData().size();
         scrollBy();
-        String path = "//*[@id='main-content']/section/div[2]/div/section/table/tbody/tr[" + dataSize + "]/td[6]/a[1]";
+        String path = "//*[@id='main-content']/section/div[2]/div/section/table/tbody/tr[" + dataSize + "]/td[4]/a[1]";
         driver.findElement(By.xpath(path)).click();
     }
 
@@ -122,7 +126,7 @@ public class ArtType {
     }
 
     public void updateArtType(String artType) {
-        navigateToManagetoArtTypePage();
+        // navigateToManagetoArtTypePage();
         List<List<WebElement>> data = getTableData();
         
         if(data.size() > 0){

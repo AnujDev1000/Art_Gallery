@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Art Gallery Testing]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" name="Admin: Dashboard(failed)" verbose="0">
+  <test thread-count="5" name="Admin: Enquiry(failed)" verbose="0">
     <classes>
-      <class name="TestCaseClasses.DashboardDetailsTest">
+      <class name="TestCaseClasses.EnquiryTest">
         <methods>
-          <include name="artTypeDetails"/>
-          <include name="driverNavigateBackward"/>
+          <include name="enquirySearchByMobileNumberTest"/>
           <include name="tearDown"/>
-          <include name="artistDetails"/>
           <include name="setupTest"/>
         </methods>
-      </class> <!-- TestCaseClasses.DashboardDetailsTest -->
+      </class> <!-- TestCaseClasses.EnquiryTest -->
     </classes>
-  </test> <!-- Admin: Dashboard(failed) -->
+  </test> <!-- Admin: Enquiry(failed) -->
 </suite> <!-- Failed suite [Art Gallery Testing] -->

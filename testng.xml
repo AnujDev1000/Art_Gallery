@@ -29,4 +29,32 @@
             <class name="TestCaseClasses.ArtistTest" />
         </classes>
     </test>
+
+
+    <test name="Admin: Art Type">
+        <classes>
+            <class name="TestCaseClasses.ArtTypeTest" />
+        </classes>
+    </test>
+
+
+    <test name="Admin: Art Medium">
+        <classes>
+            <class name="TestCaseClasses.ArtMediumTest" />
+        </classes>
+    </test>
+
+
+    <test name="Admin: Art Product">
+        <classes>
+            <class name="TestCaseClasses.ArtProductTest" />
+        </classes>
+    </test>
+
+
+    <test name="Admin: Enquiry ">
+        <classes>
+            <class name="TestCaseClasses.EnquiryTest" />
+        </classes>
+    </test>
 </suite>

@@ -93,6 +93,10 @@ public class ArtMedium {
     // Manage artMedium
     public void navigateToManagetoArtMediumPage() {
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[4]/a")).click();
+        try {
+            Thread.sleep(2000);
+        } catch (Exception e) {
+        }
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[4]/ul/li[2]/a")).click();
     }
 
@@ -119,7 +123,7 @@ public class ArtMedium {
     }
 
     public void updateArtMedium(String artMedium) {
-        navigateToManagetoArtMediumPage();
+        // navigateToManagetoArtMediumPage();
         List<List<WebElement>> data = getTableData();
         
         if(data.size() > 0){

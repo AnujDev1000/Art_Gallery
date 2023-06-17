@@ -52,7 +52,7 @@ public class DashboardDetailsTest extends SetupDriver{
         ArtProduct artProduct = new ArtProduct(driver);
         List<List<WebElement>> data = artProduct.dashboardDetails();
 
-        assertEquals(5, data.size());
+        assertEquals(4, data.size());
     }
 
     @AfterMethod

@@ -175,6 +175,10 @@ public class ArtProduct {
     // Manage ArtProduct
     public void navigateToManagetoArtProductPage() {
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[5]/a")).click();
+        try {
+            Thread.sleep(2000);
+        } catch (Exception e) {
+        }
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[5]/ul/li[2]/a")).click();
     }
 

@@ -12,56 +12,45 @@ import ObjectClasses.ArtType;
 import ObjectClasses.Login;
 import ObjectClasses.SetupDriver;
 
-public class ArtTypeTest {
-    WebDriver driver;
-    Login login;
-    ArtType artType;
-
-    String username = "admin";
-    String password = "Test@123";
-
-    @BeforeMethod
-    public void setupDriver() {
-        driver = SetupDriver.setup();
-        login = new Login(driver);
-        artType = new ArtType(driver);
+public class ArtTypeTest extends SetupDriver{
+    
+    @Test(priority = 0)
+    public void addArtTypeTest() {
+        // login.adminLogin();
+        ArtType artType = new ArtType(driver);
+        artType.addArtType("pottery");
+        
+        Alert alert = driver.switchTo().alert();
+        String alertMsg = alert.getText();
+        alert.accept();    
+        
+        assertEquals("Artist type has been added.", alertMsg); 
     }
     
-    @Test
-    public void addArtTypeTest() {
-        login.adminLogin();
-        artType.addArtType("pottery");
-
-        Alert alert = driver.switchTo().alert();
-        // System.out.println(alert.getText());    
-        
-        assertEquals("Artist type has been added.", alert.getText()); 
-    }
-
-    @Test
+    @Test(priority = 1)
     public void updateArtTypeTest() {
-        login.adminLogin();
+        // login.adminLogin();
+        ArtType artType = new ArtType(driver);
         artType.updateArtType("Sculpture");
-
-        Alert alert = driver.switchTo().alert();
-        System.out.println(alert.getText());    
         
-        assertEquals("Art type has been updated.", alert.getText()); 
+        Alert alert = driver.switchTo().alert();
+        String alertMsg = alert.getText();
+        alert.accept();    
+        
+        assertEquals("Art type has been updated.", alertMsg); 
     }
-
-    @Test
+    
+    @Test(priority = 2)
     public void deleteArtTypeTest() {
-        login.adminLogin();
+        // login.adminLogin();
+        ArtType artType = new ArtType(driver);
         artType.deleteArtType();
 
         Alert alert = driver.switchTo().alert();
-        System.out.println(alert.getText());    
+        String alertMsg = alert.getText();
+        alert.accept();    
         
-        assertEquals("Data deleted", alert.getText()); 
+        assertEquals("Data deleted", alertMsg); 
     }
 
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
 }

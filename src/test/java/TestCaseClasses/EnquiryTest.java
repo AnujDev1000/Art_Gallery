@@ -14,50 +14,40 @@ import ObjectClasses.Enquiry;
 import ObjectClasses.Login;
 import ObjectClasses.SetupDriver;
 
-public class EnquiryTest {
-    WebDriver driver;
-    Login login;
-    Enquiry enquiry;
-
-    @BeforeMethod
-    public void setupDriver() {
-        driver = SetupDriver.setup();
-        login = new Login(driver);
-        enquiry = new Enquiry(driver);
-    }
+public class EnquiryTest extends SetupDriver{
     
-    @Test
+    @Test(priority = 0)
     public void enquiryMenuTest() {
-        login.adminLogin();
+        // login.adminLogin();
+        Enquiry enquiry = new Enquiry(driver);
         enquiry.enquirySubmenu();
     }
-
-    @Test
+    
+    @Test(priority = 1)
     public void enquirySearchByNameTest() {
-        login.adminLogin();
+        // login.adminLogin();
+        Enquiry enquiry = new Enquiry(driver);
         List<List<WebElement>> data = enquiry.enquirySearch("Anuj");
-
+        
         assertEquals("Anuj kumar", data.get(0).get(2).getText());
     }
-
-    @Test
+    
+    @Test(priority = 2)
     public void enquirySearchByEnquiryNumberTest() {
-        login.adminLogin();
+        // login.adminLogin();
+        Enquiry enquiry = new Enquiry(driver);
         List<List<WebElement>> data = enquiry.enquirySearch("230873611");
-
+        
         assertEquals("230873611", data.get(0).get(1).getText());
     }
-
-    @Test
+    
+    @Test(priority = 3)
     public void enquirySearchByMobileNumberTest() {
-        login.adminLogin();
+        // login.adminLogin();
+        Enquiry enquiry = new Enquiry(driver);
         List<List<WebElement>> data = enquiry.enquirySearch("1234567890");
 
-        assertEquals("1234567890", data.get(0).get(1).getText());
+        assertEquals("1234567890", data.get(0).get(3).getText());
     }
 
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
 }
