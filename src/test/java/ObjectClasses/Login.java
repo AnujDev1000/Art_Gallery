@@ -38,12 +38,7 @@ public class Login {
     }
 
     public void adminLogin() {
-        // try {
-		// 	delay();
-		// } catch (InterruptedException e) {
-		// 	e.printStackTrace();
-		// }
-        navigateToAdminLoginPage();
+        // navigateToAdminLoginPage();
         sendUsernameKey(username);
         sendPasswordKey(password);
         clickLoginButton();
@@ -55,7 +50,7 @@ public class Login {
     }
 
     public void adminLogin(String username, String password) {
-        navigateToAdminLoginPage();
+        // navigateToAdminLoginPage();
         sendUsernameKey(username);
         sendPasswordKey(password);
         clickLoginButton();

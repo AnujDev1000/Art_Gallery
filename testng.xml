@@ -57,4 +57,13 @@
             <class name="TestCaseClasses.EnquiryTest" />
         </classes>
     </test>
+
+
+    <test name="Admin: Pages">
+        <classes>
+            <class name="TestCaseClasses.PagesTest" />
+        </classes>
+    </test>
+
+
 </suite>

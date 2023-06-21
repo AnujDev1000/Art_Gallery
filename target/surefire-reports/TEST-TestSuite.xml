@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="110.976" tests="25" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="39.799" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="14"/>
     <property name="webdriver.chrome.driver" value="C:/Users/Mypc/Desktop/Maven/chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14\bin"/>
-    <property name="sun.java.command" value="C:\Users\Mypc\AppData\Local\Temp\surefire4256545842594211983\surefirebooter-20230617203518765_3.jar C:\Users\Mypc\AppData\Local\Temp\surefire4256545842594211983 2023-06-17T20-35-17_981-jvmRun1 surefire-20230617203518765_1tmp surefire_0-20230617203518765_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Mypc\AppData\Local\Temp\surefire15314268162443224005\surefirebooter-20230620202743162_3.jar C:\Users\Mypc\AppData\Local\Temp\surefire15314268162443224005 2023-06-20T20-27-42_340-jvmRun1 surefire-20230620202743162_1tmp surefire_0-20230620202743162_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Mypc\Desktop\Maven\springapp\target\test-classes;C:\Users\Mypc\Desktop\Maven\springapp\target\classes;C:\Users\Mypc\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Mypc\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Mypc\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Mypc\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Mypc\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Mypc\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Mypc\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Mypc\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Mypc\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Mypc\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Mypc\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Mypc\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Mypc\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Mypc\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Mypc\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Mypc\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Mypc\AppData\Local\Temp\surefire4256545842594211983\surefirebooter-20230617203518765_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Mypc\AppData\Local\Temp\surefire15314268162443224005\surefirebooter-20230620202743162_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="14+36-1461"/>
@@ -56,246 +56,22 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="58.0"/>
   </properties>
-  <testcase name="AdminLoginWithInValidDetails" classname="TestCaseClasses.LoginTest" time="4.389">
+  <testcase name="AdminLoginWithInValidDetails" classname="TestCaseClasses.LoginTest" time="2.15">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 36285
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 25495
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1687014331.326][WARNING]: This version of ChromeDriver has not been tested with Chrome version 114.
-Jun 17, 2023 8:35:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1687273071.136][WARNING]: This version of ChromeDriver has not been tested with Chrome version 114.
+Jun 20, 2023 8:27:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AdminLoginWithValidDetails" classname="TestCaseClasses.LoginTest" time="4.507"/>
-  <testcase name="artistMenu" classname="TestCaseClasses.MenuTest" time="0.1"/>
-  <testcase name="artTypeMenu" classname="TestCaseClasses.MenuTest" time="0.061"/>
-  <testcase name="mediumOfArtMenu" classname="TestCaseClasses.MenuTest" time="0.047"/>
-  <testcase name="artProductMenu" classname="TestCaseClasses.MenuTest" time="0.058"/>
-  <testcase name="artistDetails" classname="TestCaseClasses.DashboardDetailsTest" time="1.7">
-    <system-out><![CDATA[
-Artist Details :
-[1, Maddy, maddy@gmail.com, 9687987988, 2022-12-21 13:31:25, Edit || Delete]
-[2, Abir Rajwansh, abir@gmail.com, 5687987987, 2022-12-21 13:31:25, Edit || Delete]
-[3, Krisna Dutt, krish@gmail.com, 9187987987, 2022-12-21 13:31:25, Edit || Delete]
-[4, Kajol Mannati, kajol@gmail.com, 8187987987, 2022-12-21 13:31:25, Edit || Delete]
-[5, Meera Singh, meera@gmail.com, 2987987987, 2022-12-21 13:31:25, Edit || Delete]
-]]></system-out>
-  </testcase>
-  <testcase name="artTypeDetails" classname="TestCaseClasses.DashboardDetailsTest" time="1.656">
-    <system-out><![CDATA[
-Art Type Details :
-[1, Serigraphs, 2022-12-21 14:24:46, Edit || Delete]
-[2, Prints, 2022-12-21 14:25:00, Edit || Delete]
-[3, Painting, 2022-12-21 14:25:31, Edit || Delete]
-[4, Street Art, 2022-12-21 14:26:06, Edit || Delete]
-[5, Visual art, 2022-12-21 14:26:29, Edit || Delete]
-[6, Conceptual art, 2022-12-21 14:26:45, Edit || Delete]
-[7, painting, 2023-05-10 04:41:26, Edit || Delete]
-[, , , ]
-]]></system-out>
-  </testcase>
-  <testcase name="artMediumDetails" classname="TestCaseClasses.DashboardDetailsTest" time="1.941">
-    <system-out><![CDATA[
-Art Medium Details :
-[1, Acrylic on canvas, 2022-12-22 04:57:34, Edit || Delete]
-[2, Resin, 2022-12-22 04:58:00, Edit || Delete]
-[3, Mixed Media, 2022-12-22 06:09:12, Edit || Delete]
-[4, Bronze, 2022-12-22 06:09:35, Edit || Delete]
-[5, Fibre, 2022-12-22 06:09:53, Edit || Delete]
-[6, Steel, 2022-12-22 06:10:16, Edit || Delete]
-[7, Metal, 2022-12-22 06:10:35, Edit || Delete]
-[, , , ]
-[, , , ]
-[, , , ]
-[, , , ]
-]]></system-out>
-  </testcase>
-  <testcase name="artProductDetails" classname="TestCaseClasses.DashboardDetailsTest" time="1.456">
-    <system-out><![CDATA[
-Art Product Details :
-[1, 686429002, Shiv Tandav Painting, , 2022-12-23 04:59:42, Edit || Delete]
-[2, 586429004, HKjhkj, , 2022-12-23 05:13:30, Edit || Delete]
-[3, 781396628, Sketch, , 2023-04-26 10:17:09, Edit || Delete]
-[, , , , , ]
-]]></system-out>
-  </testcase>
-  <testcase name="addArtistTest" classname="TestCaseClasses.ArtistTest" time="3.423"/>
-  <testcase name="updateArtistTest" classname="TestCaseClasses.ArtistTest" time="5.458">
-    <system-out><![CDATA[
-Artist Details :
-[1, Maddy, maddy@gmail.com, 9687987988, 2022-12-21 13:31:25, Edit || Delete]
-[2, Abir Rajwansh, abir@gmail.com, 5687987987, 2022-12-21 13:31:25, Edit || Delete]
-[3, Krisna Dutt, krish@gmail.com, 9187987987, 2022-12-21 13:31:25, Edit || Delete]
-[4, Kajol Mannati, kajol@gmail.com, 8187987987, 2022-12-21 13:31:25, Edit || Delete]
-[5, Meera Singh, meera@gmail.com, 2987987987, 2022-12-21 13:31:25, Edit || Delete]
-[6, Rock, rock@gmail.com, 1234567890, 2023-06-17 15:06:11, Edit || Delete]
-
-Artist Details :
-[1, Maddy, maddy@gmail.com, 9687987988, 2022-12-21 13:31:25, Edit || Delete]
-[2, Abir Rajwansh, abir@gmail.com, 5687987987, 2022-12-21 13:31:25, Edit || Delete]
-[3, Krisna Dutt, krish@gmail.com, 9187987987, 2022-12-21 13:31:25, Edit || Delete]
-[4, Kajol Mannati, kajol@gmail.com, 8187987987, 2022-12-21 13:31:25, Edit || Delete]
-[5, Meera Singh, meera@gmail.com, 2987987987, 2022-12-21 13:31:25, Edit || Delete]
-[6, Rock, rock@gmail.com, 1234567890, 2023-06-17 15:06:11, Edit || Delete]
-]]></system-out>
-  </testcase>
-  <testcase name="deleteArtistTest" classname="TestCaseClasses.ArtistTest" time="6.223">
-    <system-out><![CDATA[
-Artist Details :
-[1, Maddy, maddy@gmail.com, 9687987988, 2022-12-21 13:31:25, Edit || Delete]
-[2, Abir Rajwansh, abir@gmail.com, 5687987987, 2022-12-21 13:31:25, Edit || Delete]
-[3, Krisna Dutt, krish@gmail.com, 9187987987, 2022-12-21 13:31:25, Edit || Delete]
-[4, Kajol Mannati, kajol@gmail.com, 8187987987, 2022-12-21 13:31:25, Edit || Delete]
-[5, Meera Singh, meera@gmail.com, 2987987987, 2022-12-21 13:31:25, Edit || Delete]
-[6, john, john@gmail.com, 1234567890, 2023-06-17 15:06:11, Edit || Delete]
-]]></system-out>
-  </testcase>
-  <testcase name="addArtTypeTest" classname="TestCaseClasses.ArtTypeTest" time="1.634"/>
-  <testcase name="updateArtTypeTest" classname="TestCaseClasses.ArtTypeTest" time="3.913">
-    <system-out><![CDATA[
-Art Type Details :
-[1, Serigraphs, 2022-12-21 14:24:46, Edit || Delete]
-[2, Prints, 2022-12-21 14:25:00, Edit || Delete]
-[3, Painting, 2022-12-21 14:25:31, Edit || Delete]
-[4, Street Art, 2022-12-21 14:26:06, Edit || Delete]
-[5, Visual art, 2022-12-21 14:26:29, Edit || Delete]
-[6, Conceptual art, 2022-12-21 14:26:45, Edit || Delete]
-[7, painting, 2023-05-10 04:41:26, Edit || Delete]
-[, , , ]
-[, , , ]
-
-Art Type Details :
-[1, Serigraphs, 2022-12-21 14:24:46, Edit || Delete]
-[2, Prints, 2022-12-21 14:25:00, Edit || Delete]
-[3, Painting, 2022-12-21 14:25:31, Edit || Delete]
-[4, Street Art, 2022-12-21 14:26:06, Edit || Delete]
-[5, Visual art, 2022-12-21 14:26:29, Edit || Delete]
-[6, Conceptual art, 2022-12-21 14:26:45, Edit || Delete]
-[7, painting, 2023-05-10 04:41:26, Edit || Delete]
-[, , , ]
-[, , , ]
-true
-]]></system-out>
-  </testcase>
-  <testcase name="deleteArtTypeTest" classname="TestCaseClasses.ArtTypeTest" time="4.622">
-    <system-out><![CDATA[
-Art Type Details :
-[1, Serigraphs, 2022-12-21 14:24:46, Edit || Delete]
-[2, Prints, 2022-12-21 14:25:00, Edit || Delete]
-[3, Painting, 2022-12-21 14:25:31, Edit || Delete]
-[4, Street Art, 2022-12-21 14:26:06, Edit || Delete]
-[5, Visual art, 2022-12-21 14:26:29, Edit || Delete]
-[6, Conceptual art, 2022-12-21 14:26:45, Edit || Delete]
-[7, painting, 2023-05-10 04:41:26, Edit || Delete]
-[, , , ]
-[, , , ]
-]]></system-out>
-  </testcase>
-  <testcase name="addArtMediumTest" classname="TestCaseClasses.ArtMediumTest" time="1.636"/>
-  <testcase name="updateArtMediumTest" classname="TestCaseClasses.ArtMediumTest" time="4.728">
-    <system-out><![CDATA[
-Art Medium Details :
-[1, Acrylic on canvas, 2022-12-22 04:57:34, Edit || Delete]
-[2, Resin, 2022-12-22 04:58:00, Edit || Delete]
-[3, Mixed Media, 2022-12-22 06:09:12, Edit || Delete]
-[4, Bronze, 2022-12-22 06:09:35, Edit || Delete]
-[5, Fibre, 2022-12-22 06:09:53, Edit || Delete]
-[6, Steel, 2022-12-22 06:10:16, Edit || Delete]
-[7, Metal, 2022-12-22 06:10:35, Edit || Delete]
-[, , , ]
-[, , , ]
-[, , , ]
-[, , , ]
-[, , , ]
-
-Art Medium Details :
-[1, Acrylic on canvas, 2022-12-22 04:57:34, Edit || Delete]
-[2, Resin, 2022-12-22 04:58:00, Edit || Delete]
-[3, Mixed Media, 2022-12-22 06:09:12, Edit || Delete]
-[4, Bronze, 2022-12-22 06:09:35, Edit || Delete]
-[5, Fibre, 2022-12-22 06:09:53, Edit || Delete]
-[6, Steel, 2022-12-22 06:10:16, Edit || Delete]
-[7, Metal, 2022-12-22 06:10:35, Edit || Delete]
-[, , , ]
-[, , , ]
-[, , , ]
-[, , , ]
-[, , , ]
-true
-]]></system-out>
-  </testcase>
-  <testcase name="deleteArtMediumTest" classname="TestCaseClasses.ArtMediumTest" time="4.78">
-    <system-out><![CDATA[
-Art Medium Details :
-[1, Acrylic on canvas, 2022-12-22 04:57:34, Edit || Delete]
-[2, Resin, 2022-12-22 04:58:00, Edit || Delete]
-[3, Mixed Media, 2022-12-22 06:09:12, Edit || Delete]
-[4, Bronze, 2022-12-22 06:09:35, Edit || Delete]
-[5, Fibre, 2022-12-22 06:09:53, Edit || Delete]
-[6, Steel, 2022-12-22 06:10:16, Edit || Delete]
-[7, Metal, 2022-12-22 06:10:35, Edit || Delete]
-[, , , ]
-[, , , ]
-[, , , ]
-[, , , ]
-[, , , ]
-]]></system-out>
-  </testcase>
-  <testcase name="addArtProductTest" classname="TestCaseClasses.ArtProductTest" time="6.096"/>
-  <testcase name="deleteArtProductTest" classname="TestCaseClasses.ArtProductTest" time="6.239">
-    <system-out><![CDATA[
-Art Product Details :
-[1, 686429002, Shiv Tandav Painting, , 2022-12-23 04:59:42, Edit || Delete]
-[2, 586429004, HKjhkj, , 2022-12-23 05:13:30, Edit || Delete]
-[3, 781396628, Sketch, , 2023-04-26 10:17:09, Edit || Delete]
-[, , , , , ]
-[, , , , , ]
-]]></system-out>
-  </testcase>
-  <testcase name="enquiryMenuTest" classname="TestCaseClasses.EnquiryTest" time="1.323">
-    <system-out><![CDATA[Unanswer Enquiry
-Answered Enquiry
-]]></system-out>
-  </testcase>
-  <testcase name="enquirySearchByNameTest" classname="TestCaseClasses.EnquiryTest" time="2.202">
+  <testcase name="AdminLoginWithValidDetails" classname="TestCaseClasses.LoginTest" time="2.281"/>
+  <testcase name="updateAboutUsPageTest" classname="TestCaseClasses.PagesTest" time="6.433">
     <system-out><![CDATA[true
-[1, 230873611, Anuj kumar, 1234567890, 2023-01-02 18:16:47, View Details]
-]]></system-out>
-  </testcase>
-  <testcase name="enquirySearchByEnquiryNumberTest" classname="TestCaseClasses.EnquiryTest" time="2.247">
-    <system-out><![CDATA[true
-[1, 230873611, Anuj kumar, 1234567890, 2023-01-02 18:16:47, View Details]
-]]></system-out>
-  </testcase>
-  <testcase name="enquirySearchByMobileNumberTest" classname="TestCaseClasses.EnquiryTest" time="5.584">
-    <system-out><![CDATA[true
-[1, 230873611, Anuj kumar, 1234567890, 2023-01-02 18:16:47, View Details]
-[2, 998313640, jon, 1234567890, 2023-04-26 10:10:24, View Details]
-[3, 543169723, Testing, 1234567890, 2023-05-25 12:18:54, View Details]
-[4, 306867496, Testing, 1234567890, 2023-05-25 12:21:56, View Details]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
-[, , , , , ]
 ]]></system-out>
   </testcase>
 </testsuite>

@@ -23,12 +23,13 @@ public class LoginTest extends SetupDriver{
     @Test(priority = 0)
     public void AdminLoginWithInValidDetails() {
         Login login = new Login(driver);
+        login.navigateToAdminLoginPage();
         login.adminLogin("abc", "xyz"); 
         Alert alert = driver.switchTo().alert();
         String alertMsg = alert.getText();
         alert.accept();
 
-        login.navigateBackToHomePage();
+        // login.navigateBackToHomePage();
         assertEquals("Invalid Details", alertMsg);
     }
 

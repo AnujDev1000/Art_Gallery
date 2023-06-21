@@ -3,10 +3,12 @@ package ObjectClasses;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class ArtProduct {
@@ -15,6 +17,20 @@ public class ArtProduct {
     public ArtProduct(WebDriver driver) {
         this.driver = driver;
 	}
+
+    public void scrollBy() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+    }
+
+    public void scrollToWebElement(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+
+
+
 
     public void navigateToArtProductDetails() {
         driver.findElement(By.xpath("//*[@id='main-content']/section/div[3]/div[3]/div/div[2]/a")).click();
@@ -143,11 +159,6 @@ public class ArtProduct {
         driver.findElement(By.xpath("//*[@id='main-content']/section/div[2]/form/p/button")).click();
     }
 
-    public void scrollBy() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
-    }
-
     public void addArtProduct( String title, String imgPath, String dimension, String orientation, String size, String artist, String artType, String artMedium, String sPrice, String discription) {
         navigateToAddtoArtProductPage();
         fillTitle(title);
@@ -180,6 +191,114 @@ public class ArtProduct {
         } catch (Exception e) {
         }
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[5]/ul/li[2]/a")).click();
+    }
+
+
+
+
+
+    // Update Artist
+    public void clickEditButton() {
+        int dataSize = getTableData().size();
+        scrollBy();
+        String path = "//*[@id='main-content']/section/div[2]/div/section/table/tbody/tr[" + dataSize + "]/td[6]/a[1]";
+        driver.findElement(By.xpath(path)).click();
+    }
+
+    public void editTitle( String title) {
+        driver.findElement(By.xpath("//*[@id='title']")).clear();
+        fillTitle(title);
+    }
+
+    public void editDimensions( String dimension) {
+        driver.findElement(By.cssSelector("#dimension")).clear();
+        fillDimensions(dimension);
+    }
+    
+    public void editSellingPrice( String sPrice) {
+        WebElement elm = driver.findElement(By.xpath("//*[@id='sprice']"));
+        fillSellingPrice(sPrice);
+        elm.clear();
+        scrollToWebElement(elm);
+    }
+    
+    public void editDiscription( String discription) {
+        driver.findElement(By.xpath("//*[@id='description']")).clear();
+        fillDiscription(discription);
+    }
+    
+    public void navigateToEditImage(String path) {
+        driver.findElement(By.xpath(path)).click();
+    }
+    
+    public void editImage(String image) {
+        driver.findElement(By.xpath("//*[@id='images']")).sendKeys(image);
+        driver.findElement(By.xpath("//*[@id='main-content']/section/div[2]/div/section/div/form/p/button")).click();
+        
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+
+        driver.navigate().back();
+        driver.navigate().back();
+    }
+    
+    public void clickUpdateButton() {
+        WebElement elm = driver.findElement(By.cssSelector("#main-content > section > div:nth-child(2) > form > p > button"));
+
+        // JavascriptExecutor js = (JavascriptExecutor) driver;
+        // js.executeScript("arguments[0].click();", elm);
+        
+        // Actions actions = new Actions(driver);
+        // actions.moveToElement(elm);
+        // actions.click();
+        // actions.perform();
+
+        elm.click();
+    }
+
+
+    public void updateArtProduct(String title, String imgPath, String dimension, String orientation, String size, String artist, String artType, String artMedium, String sPrice, String discription) {
+        navigateToManagetoArtProductPage();
+        List<List<WebElement>> data = getTableData();
+        
+        if(data.size() > 0){
+            clickEditButton();
+            editTitle(title);
+
+            // image01
+            navigateToEditImage("//*[@id='main-content']/section/div[2]/form/div[1]/section/div/div[2]/div/a");
+            editImage(imgPath);
+
+            // image02
+            navigateToEditImage("//*[@id='main-content']/section/div[2]/form/div[1]/section/div/div[3]/div/a");
+            editImage(imgPath);
+            
+            fillOrientation(orientation);
+            fillSize(size);
+            fillArtist(artist);
+            fillArtType(artType);
+            fillArtMedium(artMedium);
+
+            editSellingPrice(sPrice);
+            
+            // image03
+            navigateToEditImage("//*[@id='main-content']/section/div[2]/form/div[1]/section/div/div[4]/div/a");
+            editImage(imgPath);
+            
+            editDiscription(discription);
+            scrollBy();
+            
+            // image04
+            navigateToEditImage("//*[@id='main-content']/section/div[2]/form/div[1]/section/div/div[5]/div/a");
+            editImage(imgPath);
+            
+            // image05
+            navigateToEditImage("//*[@id='main-content']/section/div[2]/form/div[1]/section/div/div[6]/div/a");
+            editImage(imgPath);
+
+            editDimensions(dimension);
+            clickUpdateButton();
+        }
     }
 
 

@@ -14,7 +14,7 @@ public class ArtProductTest extends SetupDriver{
     public void addArtProductTest() {
         // login.adminLogin();
         ArtProduct artProduct = new ArtProduct(driver);
-        artProduct.addArtProduct("Marvel", "C:/Users/Mypc/Desktop/MernProject/Fleet/public/images/placeholder.jpg", "1000", "Potrait", "Medium", "Maddy", "Painting", "Oil on Canvas", "7000", "ARTISTIC PAINTINGS... ");
+        artProduct.addArtProduct("Marvel", "F:/photos/illustration4.jpg", "1000", "Potrait", "Medium", "Maddy", "Painting", "Oil on Canvas", "7000", "ARTISTIC PAINTINGS... ");
 
         Alert alert = driver.switchTo().alert();
         String alertMsg = alert.getText();
@@ -23,11 +23,11 @@ public class ArtProductTest extends SetupDriver{
         assertEquals("Art product details has been submitted.", alertMsg); 
     }
 
-    // @Test
+    // @Test(priority = 1)
     // public void updateArtProductTest() {
     //     // login.adminLogin();
     //     ArtProduct artProduct = new ArtProduct(driver);
-    //     artProduct.updateArtProduct("Wood and Bronze");
+    //     artProduct.updateArtProduct("Illustration", "F:/photos/illustration4.jpg", "1000", "Landscape", "Small", "Abir Rajwansh", "Prints", "Acrylics on paper", "5000", "Cool Illustration... ");
 
     //     Alert alert = driver.switchTo().alert();
     //     String alertMsg = alert.getText();

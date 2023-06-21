@@ -31,16 +31,26 @@ public class Pages {
         submenuElements();
     }
     
+
+
+
+
+
+    // About page
     public void navigateToAboutUsPage() {
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[8]/ul/li[1]/a")).click();
     }
     
     public void fillPageTitle(String title) {
-        driver.findElement(By.xpath("//*[@id='main-content']/section/div[3]/div/section/div/div/form/div[1]/div/input")).sendKeys(title);
+        WebElement elm = driver.findElement(By.xpath("//*[@id='main-content']/section/div[3]/div/section/div/div/form/div[1]/div/input"));
+        elm.clear();
+        elm.sendKeys(title);
     }
 
     public void fillPageDescription(String description) {
-        driver.findElement(By.xpath("//*[@id='pagedes']")).sendKeys(description);
+        WebElement elm = driver.findElement(By.xpath("//*[@id='pagedes']"));
+        elm.clear();
+        elm.sendKeys(description);
     }
     
     public void clickUpdateButton() {
