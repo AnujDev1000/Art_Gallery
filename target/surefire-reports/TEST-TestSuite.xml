@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="218.519" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="408.05" tests="41" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="14"/>
     <property name="webdriver.chrome.driver" value="chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14\bin"/>
-    <property name="sun.java.command" value="C:\Users\Mypc\AppData\Local\Temp\surefire1624372570168072072\surefirebooter-20230625173635214_3.jar C:\Users\Mypc\AppData\Local\Temp\surefire1624372570168072072 2023-06-25T17-36-34_648-jvmRun1 surefire-20230625173635214_1tmp surefire_0-20230625173635214_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Mypc\AppData\Local\Temp\surefire8939663177545526692\surefirebooter-20230625183447219_3.jar C:\Users\Mypc\AppData\Local\Temp\surefire8939663177545526692 2023-06-25T18-34-46_393-jvmRun1 surefire-20230625183447219_1tmp surefire_0-20230625183447219_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Mypc\Desktop\Maven\springapp\target\test-classes;C:\Users\Mypc\Desktop\Maven\springapp\target\classes;C:\Users\Mypc\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Mypc\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Mypc\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Mypc\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Mypc\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Mypc\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Mypc\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Mypc\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Mypc\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Mypc\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Mypc\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Mypc\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Mypc\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Mypc\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Mypc\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Mypc\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Mypc\AppData\Local\Temp\surefire1624372570168072072\surefirebooter-20230625173635214_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Mypc\AppData\Local\Temp\surefire8939663177545526692\surefirebooter-20230625183447219_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="14+36-1461"/>
@@ -56,21 +56,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="58.0"/>
   </properties>
-  <testcase name="AdminLoginWithInValidDetails" classname="TestCaseClasses.LoginTest" time="28.628">
+  <testcase name="AdminLoginWithInValidDetails" classname="TestCaseClasses.LoginTest" time="8.169">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 24440
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 12494
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1687694818.177][WARNING]: This version of ChromeDriver has not been tested with Chrome version 114.
-Jun 25, 2023 5:36:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1687698315.753][WARNING]: This version of ChromeDriver has not been tested with Chrome version 114.
+Jun 25, 2023 6:35:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AdminLoginWithValidDetails" classname="TestCaseClasses.LoginTest" time="19.872"/>
-  <testcase name="artistDetails" classname="TestCaseClasses.DashboardDetailsTest" time="2.385">
+  <testcase name="AdminLoginWithValidDetails" classname="TestCaseClasses.LoginTest" time="4.286"/>
+  <testcase name="artistDetails" classname="TestCaseClasses.DashboardDetailsTest" time="1.991">
     <system-out><![CDATA[
 
 || ADMIN DASHBOARD ||
@@ -83,7 +83,7 @@ Artist Details!
 5 Harry harry@gmail.com 2585794613 2023-06-25 11:54:46 
 ]]></system-out>
   </testcase>
-  <testcase name="artTypeDetails" classname="TestCaseClasses.DashboardDetailsTest" time="2.54">
+  <testcase name="artTypeDetails" classname="TestCaseClasses.DashboardDetailsTest" time="1.61">
     <system-out><![CDATA[
 ArtType Details!
 1 Serigraphs 2022-12-21 14:24:46 
@@ -96,7 +96,7 @@ ArtType Details!
 8 illustration 2023-06-16 13:46:00 
 ]]></system-out>
   </testcase>
-  <testcase name="artMediumDetails" classname="TestCaseClasses.DashboardDetailsTest" time="1.82">
+  <testcase name="artMediumDetails" classname="TestCaseClasses.DashboardDetailsTest" time="1.631">
     <system-out><![CDATA[
 Art Medium Details!
 1 Acrylic on canvas 2022-12-22 04:57:34 
@@ -112,15 +112,16 @@ Art Medium Details!
 11 Hand-painted on particle wood/MDF 2022-12-22 06:14:03 
 ]]></system-out>
   </testcase>
-  <testcase name="artProductDetails" classname="TestCaseClasses.DashboardDetailsTest" time="26.882">
+  <testcase name="artProductDetails" classname="TestCaseClasses.DashboardDetailsTest" time="1.836">
     <system-out><![CDATA[
 Art Product Details!
 1 255288886 radhakrishna 2023-06-18 07:58:55 
 2 652700923 art 2023-06-18 07:59:55 
 3 365300848 night 2023-06-18 08:01:35 
+4 804256536 Nature Illustration 2023-06-25 12:42:05 
 ]]></system-out>
   </testcase>
-  <testcase name="AnsweredEnquiryDetails" classname="TestCaseClasses.DashboardDetailsTest" time="6.802">
+  <testcase name="AnsweredEnquiryDetails" classname="TestCaseClasses.DashboardDetailsTest" time="7.304">
     <system-out><![CDATA[
 Answered Enquiry Details!
 1 230873611 Anuj kumar 1234567890 2023-01-02 18:16:47 
@@ -188,9 +189,13 @@ Answered Enquiry Details!
 63 631171919 Ryan 4516481455 2023-06-25 05:48:05 
 64 842007213 Ryan 4516481455 2023-06-25 07:05:48 
 65 453083645 Jack 6514175478 2023-06-25 11:37:09 
+66 320133172 Jack 6514175478 2023-06-25 12:25:43 
+67 405350688 Jack 6514175478 2023-06-25 12:41:50 
+68 348796561 Jack 6514175478 2023-06-25 12:47:06 
+69 231186963 Jack 6514175478 2023-06-25 12:52:52 
 ]]></system-out>
   </testcase>
-  <testcase name="UnansweredEnquiryDetails" classname="TestCaseClasses.DashboardDetailsTest" time="8.973">
+  <testcase name="UnansweredEnquiryDetails" classname="TestCaseClasses.DashboardDetailsTest" time="3.423">
     <system-out><![CDATA[
 Unanswered Enquiry Details!
 1 709871969 vinni 987654321 2023-05-28 06:20:00 
@@ -219,6 +224,359 @@ Unanswered Enquiry Details!
 24 653625290 tom 789456123 2023-06-22 11:35:20 
 25 491608963 tom 789456123 2023-06-22 13:27:40 
 26 564005849 Roman 4741175541 2023-06-24 13:35:54 
+]]></system-out>
+  </testcase>
+  <testcase name="addArtistTest" classname="TestCaseClasses.ArtistTest" time="6.984">
+    <system-out><![CDATA[
+
+|| ARTIST ||
+
+Artist Added SuccessFully!
+1 Maddy maddy@gmail.com 9687987988 2022-12-21 13:31:25 
+2 Abir Rajwansh abir@gmail.com 5687987987 2022-12-21 13:31:25 
+3 Ryan ryan@gmail.com 7414895623 2023-06-25 11:51:28 
+4 Roman roman@gmail.com 1232475869 2023-06-25 11:52:21 
+5 Harry harry@gmail.com 2585794613 2023-06-25 11:54:46 
+6 Rock rock@gmail.com 1234567890 2023-06-25 13:06:28 
+]]></system-out>
+  </testcase>
+  <testcase name="updateArtistTest" classname="TestCaseClasses.ArtistTest" time="12.197">
+    <system-out><![CDATA[
+Artist Updated SuccessFully!
+1 Maddy maddy@gmail.com 9687987988 2022-12-21 13:31:25 
+2 Abir Rajwansh abir@gmail.com 5687987987 2022-12-21 13:31:25 
+3 Ryan ryan@gmail.com 7414895623 2023-06-25 11:51:28 
+4 Roman roman@gmail.com 1232475869 2023-06-25 11:52:21 
+5 Harry harry@gmail.com 2585794613 2023-06-25 11:54:46 
+6 john john@gmail.com 1234567890 2023-06-25 13:06:28 
+]]></system-out>
+  </testcase>
+  <testcase name="deleteArtistTest" classname="TestCaseClasses.ArtistTest" time="1.255">
+    <system-out><![CDATA[
+Artist Deleted SuccessFully!
+1 Maddy maddy@gmail.com 9687987988 2022-12-21 13:31:25 
+2 Abir Rajwansh abir@gmail.com 5687987987 2022-12-21 13:31:25 
+3 Ryan ryan@gmail.com 7414895623 2023-06-25 11:51:28 
+4 Roman roman@gmail.com 1232475869 2023-06-25 11:52:21 
+5 Harry harry@gmail.com 2585794613 2023-06-25 11:54:46 
+]]></system-out>
+  </testcase>
+  <testcase name="addArtTypeTest" classname="TestCaseClasses.ArtTypeTest" time="2.371">
+    <system-out><![CDATA[
+
+|| ARTTYPE ||
+
+ArtType Added SuccessFully!
+1 Serigraphs 2022-12-21 14:24:46 
+2 Prints 2022-12-21 14:25:00 
+3 Painting 2022-12-21 14:25:31 
+4 Street Art 2022-12-21 14:26:06 
+5 Visual art 2022-12-21 14:26:29 
+6 Conceptual art 2022-12-21 14:26:45 
+7 painting 2023-05-10 04:41:26 
+8 illustration 2023-06-16 13:46:00 
+9 pottery 2023-06-25 13:06:43 
+]]></system-out>
+  </testcase>
+  <testcase name="updateArtTypeTest" classname="TestCaseClasses.ArtTypeTest" time="5.512">
+    <system-out><![CDATA[
+ArtType Updated Successfully!
+1 Serigraphs 2022-12-21 14:24:46 
+2 Prints 2022-12-21 14:25:00 
+3 Painting 2022-12-21 14:25:31 
+4 Street Art 2022-12-21 14:26:06 
+5 Visual art 2022-12-21 14:26:29 
+6 Conceptual art 2022-12-21 14:26:45 
+7 painting 2023-05-10 04:41:26 
+8 illustration 2023-06-16 13:46:00 
+9 Sculpture 2023-06-25 13:06:43 
+]]></system-out>
+  </testcase>
+  <testcase name="deleteArtTypeTest" classname="TestCaseClasses.ArtTypeTest" time="1.379">
+    <system-out><![CDATA[
+ArtType Deleted Successfully!
+1 Serigraphs 2022-12-21 14:24:46 
+2 Prints 2022-12-21 14:25:00 
+3 Painting 2022-12-21 14:25:31 
+4 Street Art 2022-12-21 14:26:06 
+5 Visual art 2022-12-21 14:26:29 
+6 Conceptual art 2022-12-21 14:26:45 
+7 painting 2023-05-10 04:41:26 
+8 illustration 2023-06-16 13:46:00 
+]]></system-out>
+  </testcase>
+  <testcase name="addArtMediumTest" classname="TestCaseClasses.ArtMediumTest" time="2.194">
+    <system-out><![CDATA[
+
+|| ART MEDIUM ||
+
+Art Medium Added SuccessFully!
+1 Acrylic on canvas 2022-12-22 04:57:34 
+2 Resin 2022-12-22 04:58:00 
+3 Mixed Media 2022-12-22 06:09:12 
+4 Bronze 2022-12-22 06:09:35 
+5 Fibre 2022-12-22 06:09:53 
+6 Steel 2022-12-22 06:10:16 
+7 Metal 2022-12-22 06:10:35 
+8 Oil on Canvas 2022-12-22 06:11:31 
+9 Oil on Linen 2022-12-22 06:12:12 
+10 Acrylics on paper 2022-12-22 06:13:11 
+11 Hand-painted on particle wood/MDF 2022-12-22 06:14:03 
+12 Gold 2023-06-25 13:06:53 
+]]></system-out>
+  </testcase>
+  <testcase name="updateArtMediumTest" classname="TestCaseClasses.ArtMediumTest" time="5.325">
+    <system-out><![CDATA[
+Art Medium Updated SuccessFully!
+1 Acrylic on canvas 2022-12-22 04:57:34 
+2 Resin 2022-12-22 04:58:00 
+3 Mixed Media 2022-12-22 06:09:12 
+4 Bronze 2022-12-22 06:09:35 
+5 Fibre 2022-12-22 06:09:53 
+6 Steel 2022-12-22 06:10:16 
+7 Metal 2022-12-22 06:10:35 
+8 Oil on Canvas 2022-12-22 06:11:31 
+9 Oil on Linen 2022-12-22 06:12:12 
+10 Acrylics on paper 2022-12-22 06:13:11 
+11 Hand-painted on particle wood/MDF 2022-12-22 06:14:03 
+12 Wood and Bronze 2023-06-25 13:06:53 
+]]></system-out>
+  </testcase>
+  <testcase name="deleteArtMediumTest" classname="TestCaseClasses.ArtMediumTest" time="2.24">
+    <system-out><![CDATA[
+Art Medium Deleted SuccessFully!
+1 Acrylic on canvas 2022-12-22 04:57:34 
+2 Resin 2022-12-22 04:58:00 
+3 Mixed Media 2022-12-22 06:09:12 
+4 Bronze 2022-12-22 06:09:35 
+5 Fibre 2022-12-22 06:09:53 
+6 Steel 2022-12-22 06:10:16 
+7 Metal 2022-12-22 06:10:35 
+8 Oil on Canvas 2022-12-22 06:11:31 
+9 Oil on Linen 2022-12-22 06:12:12 
+10 Acrylics on paper 2022-12-22 06:13:11 
+11 Hand-painted on particle wood/MDF 2022-12-22 06:14:03 
+]]></system-out>
+  </testcase>
+  <testcase name="addArtProductTest" classname="TestCaseClasses.ArtProductTest" time="10.171">
+    <system-out><![CDATA[
+
+|| ART PRODUCT ||
+
+Art Product Added SuccessFully!
+1 255288886 radhakrishna 2023-06-18 07:58:55 
+2 652700923 art 2023-06-18 07:59:55 
+3 365300848 night 2023-06-18 08:01:35 
+4 804256536 Nature Illustration 2023-06-25 12:42:05 
+5 391575709 Marvel 2023-06-25 13:07:08 
+]]></system-out>
+  </testcase>
+  <testcase name="updateArtProductTest" classname="TestCaseClasses.ArtProductTest" time="17.924">
+    <system-out><![CDATA[
+Art Product Updated SuccessFully!
+1 255288886 radhakrishna 2023-06-18 07:58:55 
+2 652700923 art 2023-06-18 07:59:55 
+3 365300848 night 2023-06-18 08:01:35 
+4 804256536 Nature Illustration 2023-06-25 12:42:05 
+5 391575709 Illustration 2023-06-25 13:07:08 
+]]></system-out>
+  </testcase>
+  <testcase name="deleteArtProductTest" classname="TestCaseClasses.ArtProductTest" time="1.563">
+    <system-out><![CDATA[
+Art Product Deleted SuccessFully!
+1 255288886 radhakrishna 2023-06-18 07:58:55 
+2 652700923 art 2023-06-18 07:59:55 
+3 365300848 night 2023-06-18 08:01:35 
+4 804256536 Nature Illustration 2023-06-25 12:42:05 
+]]></system-out>
+  </testcase>
+  <testcase name="addEnquiryTest" classname="TestCaseClasses.EnquiryTest" time="8.507">
+    <system-out><![CDATA[
+
+|| ENQUIRY ||
+
+]]></system-out>
+  </testcase>
+  <testcase name="unansweredEnquiryTest" classname="TestCaseClasses.EnquiryTest" time="3.897">
+    <system-out><![CDATA[
+Unanswered Enquiry Details 
+
+Enquiry Number : 227447297
+Full Name : Jack
+Art Name : night
+View Details
+Art Reference Number : 365300848
+Email : jack@gmail.com
+MobileNumber : 6514175478
+Enquiry Date : 2023-06-25 13:07:40
+Message : Awesome Art!
+Status : Unanswer Enquiry
+Remark : : 
+]]></system-out>
+  </testcase>
+  <testcase name="answeredEnquiryTest" classname="TestCaseClasses.EnquiryTest" time="6.802">
+    <system-out><![CDATA[
+Answered Enquiry Details 
+
+Enquiry Number : 227447297
+Full Name : Jack
+Art Name : night
+View Details
+Art Reference Number : 365300848
+Email : jack@gmail.com
+MobileNumber : 6514175478
+Enquiry Date : 2023-06-25 13:07:40
+Message : Awesome Art!
+Status : Answer Enquiry
+Remark : Successfully Answered!
+Remark date : 2023-06-25 13:07:44
+]]></system-out>
+  </testcase>
+  <testcase name="enquirySearchByNameTest" classname="TestCaseClasses.EnquirySearchTest" time="1.628">
+    <system-out><![CDATA[
+
+|| ENQUIRY SEARCH ||
+
+
+Enquiry Search By Name : Jack
+1 453083645 Jack 6514175478 2023-06-25 11:37:09 
+2 320133172 Jack 6514175478 2023-06-25 12:25:43 
+3 405350688 Jack 6514175478 2023-06-25 12:41:50 
+4 348796561 Jack 6514175478 2023-06-25 12:47:06 
+5 231186963 Jack 6514175478 2023-06-25 12:52:52 
+6 227447297 Jack 6514175478 2023-06-25 13:07:40 
+]]></system-out>
+  </testcase>
+  <testcase name="enquirySearchByEnquiryNumberTest" classname="TestCaseClasses.EnquirySearchTest" time="1.483">
+    <system-out><![CDATA[
+Enquiry Search By Number : 227447297
+1 227447297 Jack 6514175478 2023-06-25 13:07:40 
+]]></system-out>
+  </testcase>
+  <testcase name="enquirySearchByMobileNumberTest" classname="TestCaseClasses.EnquirySearchTest" time="1.559">
+    <system-out><![CDATA[
+Enquiry Search By Mobile Number : 6514175478
+1 453083645 Jack 6514175478 2023-06-25 11:37:09 
+2 320133172 Jack 6514175478 2023-06-25 12:25:43 
+3 405350688 Jack 6514175478 2023-06-25 12:41:50 
+4 348796561 Jack 6514175478 2023-06-25 12:47:06 
+5 231186963 Jack 6514175478 2023-06-25 12:52:52 
+6 227447297 Jack 6514175478 2023-06-25 13:07:40 
+]]></system-out>
+  </testcase>
+  <testcase name="pagesMenuTestaboutus" classname="TestCaseClasses.PagesTest" time="0.384">
+    <system-out><![CDATA[About Us
+]]></system-out>
+  </testcase>
+  <testcase name="updateAboutUsPageTestaboutus" classname="TestCaseClasses.PagesTest" time="15.673">
+    <system-out><![CDATA[Updated title for about us: About Us
+Updated description for about us: This is Art Gallery Management system where you can buy art products categorised into different art type with the mission to uplift the gig working artist force.
+Checking information at user side...
+User side Title: About Us
+User side Description: This is Art Gallery Management system where you can buy art products categorised into different art type with the mission to uplift the gig working artist force.
+Verified: User side updated properly for About Us.
+]]></system-out>
+  </testcase>
+  <testcase name="pagesMenuTestcontactus" classname="TestCaseClasses.PagesTest" time="0.326">
+    <system-out><![CDATA[Contact Us
+]]></system-out>
+  </testcase>
+  <testcase name="updateAboutUsPageTestcontactus" classname="TestCaseClasses.PagesTest" time="10.108">
+    <system-out><![CDATA[Updated title for contact us: Contact Us
+Updated email for contact us: artgallery@gmail.com
+Updated phone number for contact us: 9988548822
+Updated timings for contact us: 9:00 am to 6:00 pm
+Updated description for contact us: Our art gallery contact service is active within provided timings for more 24/7 service please reach us by provided email id
+Checking information at user side...
+User side Title: Contact Us
+User side Email: artgallery@gmail.com
+User side Phone number  and Timings: 9988548822
+Time: 9:00 am to 6:00 pm
+User side Description: Ourartgallerycontactserviceisactivewithinprovidedtimingsformore24/7servicepleasereachusbyprovidedemailid
+Incorrect information for Contact Us.
+]]></system-out>
+  </testcase>
+  <testcase name="AdminLogout" classname="TestCaseClasses.LogoutTest" time="14.57"/>
+  <testcase name="home" classname="TestCaseClasses.userNavbarTest" time="2.157"/>
+  <testcase name="about" classname="TestCaseClasses.userNavbarTest" time="0.944"/>
+  <testcase name="arttype" classname="TestCaseClasses.userNavbarTest" time="0.401">
+    <system-out><![CDATA[option name:Serigraphs
+option name:Prints
+option name:Painting
+option name:Street Art
+option name:Visual art 
+option name:Conceptual art
+option name:painting
+option name:illustration
+]]></system-out>
+  </testcase>
+  <testcase name="contactus" classname="TestCaseClasses.userNavbarTest" time="0.624"/>
+  <testcase name="admin" classname="TestCaseClasses.userNavbarTest" time="2.383"/>
+  <testcase name="dropdown" classname="TestCaseClasses.userDropdownTest" time="23.362">
+    <system-out><![CDATA[Headline: Serigraphs
+Headline: Prints
+Headline: Painting
+Headline: Street Art
+Headline: Visual art
+Headline: Conceptual art
+Headline: painting
+Headline: illustration
+]]></system-out>
+  </testcase>
+  <testcase name="dropdown" classname="TestCaseClasses.userEnquiryTest" time="54.079">
+    <system-out><![CDATA[Art Type with no product records: Serigraphs
+Art Type with no product records: Prints
+Art Type with no product records: Painting
+Art Gallery Management System | Art Enquiry button clicked for NIGHT
+Art Gallery Management System | Art Enquiry button clicked for NATURE ILLUSTRATION
+Art Gallery Management System | Art Enquiry button clicked for ART
+Art Type with no product records: Conceptual art
+Art Gallery Management System | Art Enquiry button clicked for RADHAKRISHNA
+Art Type with no product records: illustration
+]]></system-out>
+  </testcase>
+  <testcase name="linkcheck" classname="TestCaseClasses.userLinksTest" time="15.868"/>
+  <testcase name="search" classname="TestCaseClasses.userViewDetatilsTest" time="60.137">
+    <system-out><![CDATA[No product available for Serigraphs
+No product available for Prints
+No product available for Painting
+NIGHT
+Size : Small
+Dimension : 500*500
+Orientation : Potrait
+Art Types : Street Art
+Art Medium : Oil on Canvas
+Art Reference Number : 365300848
+NATURE ILLUSTRATION
+Size : Medium
+Dimension : 1000
+Orientation : Landscape
+Art Types : Street Art
+Art Medium : Acrylic on canvas
+Art Reference Number : 804256536
+ART
+Size : Medium
+Dimension : 736*736
+Orientation : Potrait
+Art Types : Visual art
+Art Medium : Fibre
+Art Reference Number : 652700923
+No product available for Conceptual art
+RADHAKRISHNA
+Size : Medium
+Dimension : 1920*2607
+Orientation : Potrait
+Art Types : painting
+Art Medium : Oil on Canvas
+Art Reference Number : 255288886
+No product available for illustration
+]]></system-out>
+  </testcase>
+  <testcase name="search" classname="TestCaseClasses.userSearchTest" time="5.42">
+    <system-out><![CDATA[Search Result Againt keyword "A"
+Search for A is RADHAKRISHNA.
+Search for A is ART.
+Search for A is NATURE ILLUSTRATION.
 ]]></system-out>
   </testcase>
 </testsuite>
