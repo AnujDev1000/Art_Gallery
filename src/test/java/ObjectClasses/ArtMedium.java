@@ -20,6 +20,11 @@ public class ArtMedium {
         js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
     }
 
+    public void scrollToWebElement(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
     public void navigateToArtMediumDetails() {
         driver.findElement(By.xpath("//*[@id='main-content']/section/div[3]/div[2]/div/div[2]/a")).click();
     } 
@@ -41,18 +46,18 @@ public class ArtMedium {
             data.add(rowData);
         }
         
-        System.out.println("\nArt Medium Details :");
-        for (List<WebElement> list : data) {
-            List<String> cols = new ArrayList<>(); 
-            for (WebElement col : list) {
-                cols.add(col.getText());
-            }
-
-            System.out.println(cols);
-        }
-        
         return data;
 
+    }
+
+    public void printTable() {
+        WebElement tableBody = driver.findElement(By.xpath("//*[@id='main-content']/section/div[2]/div/section/table/tbody"));
+        
+        List<WebElement> rows = tableBody.findElements(By.tagName("tr"));
+        for(WebElement row:rows){
+            scrollToWebElement(row);
+            System.out.println(row.getText().split("Edit")[0]);
+        }
     }
 
     public List<List<WebElement>> dashboardDetails() {
@@ -117,8 +122,6 @@ public class ArtMedium {
     }
 
     public void clickUpdateButton() {
-        System.out.println(driver.findElement(By.xpath("//*[@id='main-content']/section/div[2]/div/section/div/form/p/button")).isEnabled());
-
         driver.findElement(By.xpath("//*[@id='main-content']/section/div[2]/div/section/div/form/p/button")).click();
     }
 
@@ -149,7 +152,6 @@ public class ArtMedium {
     }
 
     public void deleteArtMedium() {
-        navigateToManagetoArtMediumPage();
         clickDeleteButton();
     }
 }

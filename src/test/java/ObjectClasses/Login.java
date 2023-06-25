@@ -44,10 +44,6 @@ public class Login {
         clickLoginButton();
     }
 
-    public void navigateBackToHomePage() {
-        WebElement homepage = driver.findElement(By.xpath("/html/body/div/form/div/lable/p/a"));
-        homepage.click();
-    }
 
     public void adminLogin(String username, String password) {
         // navigateToAdminLoginPage();
@@ -72,5 +68,9 @@ public class Login {
     public void adminLogout() {
         navigateToAdminLogoutPage();
         clickLogoutButton();
+    }
+
+    public void navigateBackToHomePage() {
+        driver.get("https://artgallery.neohire.io/");
     }
 }

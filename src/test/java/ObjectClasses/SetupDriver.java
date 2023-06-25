@@ -10,7 +10,7 @@ public class SetupDriver {
 
     @BeforeSuite(alwaysRun = true)
     public static void setupTest() {
-        System.setProperty("webdriver.chrome.driver", "C:/Users/Mypc/Desktop/Maven/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         driver = new ChromeDriver();
 		driver.manage().window().maximize();
         driver.get("https://artgallery.neohire.io/");

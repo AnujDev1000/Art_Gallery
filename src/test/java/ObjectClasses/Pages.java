@@ -54,7 +54,6 @@ public class Pages {
     }
     
     public void clickUpdateButton() {
-        System.out.println(driver.findElement(By.xpath("//*[@id='main-content']/section/div[3]/div/section/div/div/form/div[3]/div/button")).isEnabled());
         driver.findElement(By.xpath("//*[@id='main-content']/section/div[3]/div/section/div/div/form/div[3]/div/button")).click();
     }
 

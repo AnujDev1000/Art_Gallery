@@ -9,7 +9,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ArtProduct {
     WebDriver driver;
@@ -53,19 +55,20 @@ public class ArtProduct {
 
             data.add(rowData);
         }
-
-        System.out.println("\nArt Product Details :");
-        for (List<WebElement> list : data) {
-            List<String> cols = new ArrayList<>(); 
-            for (WebElement col : list) {
-                cols.add(col.getText());
-            }
-
-            System.out.println(cols);
-        }
         
         return data;
 
+    }
+
+    
+    public void printTable() {
+        WebElement tableBody = driver.findElement(By.xpath("//*[@id='main-content']/section/div[2]/div/section/table/tbody"));
+        
+        List<WebElement> rows = tableBody.findElements(By.tagName("tr"));
+        for(WebElement row:rows){
+            scrollToWebElement(row);
+            System.out.println(row.getText().split("Edit")[0]);
+        }
     }
 
     public List<List<WebElement>> dashboardDetails() {
@@ -217,8 +220,8 @@ public class ArtProduct {
     
     public void editSellingPrice( String sPrice) {
         WebElement elm = driver.findElement(By.xpath("//*[@id='sprice']"));
-        fillSellingPrice(sPrice);
         elm.clear();
+        fillSellingPrice(sPrice);
         scrollToWebElement(elm);
     }
     
@@ -243,22 +246,14 @@ public class ArtProduct {
     }
     
     public void clickUpdateButton() {
-        WebElement elm = driver.findElement(By.cssSelector("#main-content > section > div:nth-child(2) > form > p > button"));
-
-        // JavascriptExecutor js = (JavascriptExecutor) driver;
-        // js.executeScript("arguments[0].click();", elm);
-        
-        // Actions actions = new Actions(driver);
-        // actions.moveToElement(elm);
-        // actions.click();
-        // actions.perform();
+        WebDriverWait wait = new WebDriverWait(driver,  10);
+		WebElement elm = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#main-content > section > div:nth-child(2) > form > p > button")));
 
         elm.click();
     }
 
 
     public void updateArtProduct(String title, String imgPath, String dimension, String orientation, String size, String artist, String artType, String artMedium, String sPrice, String discription) {
-        navigateToManagetoArtProductPage();
         List<List<WebElement>> data = getTableData();
         
         if(data.size() > 0){
@@ -315,7 +310,6 @@ public class ArtProduct {
     }
 
     public void deleteArtProduct() {
-        navigateToManagetoArtProductPage();
         clickDeleteButton();
     }
 }

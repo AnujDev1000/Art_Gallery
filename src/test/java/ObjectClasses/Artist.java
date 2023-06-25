@@ -16,6 +16,19 @@ public class Artist {
         this.driver = driver;
     }
 
+    public void scrollBy() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+    }
+
+    public void scrollToWebElement(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+
+
+
     public void navigateToArtistDetails() {
         driver.findElement(By.xpath("//*[@id='main-content']/section/div[2]/div[1]/div/div[2]/a")).click();
     }
@@ -37,19 +50,19 @@ public class Artist {
             data.add(rowData);
         }
 
-        System.out.println("\nArtist Details :");
-        for (List<WebElement> list : data) {
-            List<String> cols = new ArrayList<>(); 
-            for (WebElement col : list) {
-                cols.add(col.getText());
-            }
-
-            System.out.println(cols);
-        }
         
         return data;
     }
 
+    public void printTable() {
+        WebElement tableBody = driver.findElement(By.xpath("//*[@id='main-content']/section/div[2]/div/section/table/tbody"));
+        
+        List<WebElement> rows = tableBody.findElements(By.tagName("tr"));
+        for(WebElement row:rows){
+            scrollToWebElement(row);
+            System.out.println(row.getText().split("Edit")[0]);
+        }
+    }
     
     public List<List<WebElement>> dashboardDetails() {
         navigateToArtistDetails();
@@ -93,11 +106,6 @@ public class Artist {
 
     public void clickSubmitButton() {
         driver.findElement(By.cssSelector("#main-content > section > div:nth-child(2) > div > section > div > form > p > button")).click();
-    }
-
-    public void scrollBy() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
     }
 
     public void addArtist(String name, String number, String email, String education, String award, String imagePath) {
@@ -165,20 +173,25 @@ public class Artist {
         fillAward(award);
     }
     
-    public void editImage(String imagePath) {
+    public void navigateToEditImage() {
         driver.findElement(By.xpath("//*[@id='main-content']/section/div[2]/div/section/div/form/div[6]/div/a")).click();
-        fillImage(imagePath);
-        driver.findElement(By.cssSelector("#main-content > section > div:nth-child(2) > div > section > div > form > p > button")).click();
+    }
 
+    public void editImage(String image) {
+        driver.findElement(By.xpath("//*[@id='images']")).sendKeys(image);
+        driver.findElement(By.xpath("//*[@id='main-content']/section/div[2]/div/section/div/form/p/button")).click();
+        
         Alert alert = driver.switchTo().alert();
         alert.accept();
+
+        driver.navigate().back();
+        driver.navigate().back();
     }
 
     public void clickUpdateButton() {
-        scrollBy();
         driver.findElement(By.cssSelector("#main-content > section > div:nth-child(2) > div > section > div > form > p:nth-child(8) > button")).click();
     }
-
+    
     public void updateArtist(String name, String number, String email, String education, String award, String imagePath) {
         // navigateToManagetoArtistPage();
         List<List<WebElement>> data = getTableData();
@@ -190,7 +203,9 @@ public class Artist {
             editEmail(email);
             editEducation(education);
             editAward(award);
-            // editImage(imagePath);
+            scrollBy();
+            navigateToEditImage();
+            editImage(imagePath);
             clickUpdateButton();
         }
     }
@@ -211,7 +226,6 @@ public class Artist {
     }
 
     public void deleteArtist() {
-        navigateToManagetoArtistPage();
         clickDeleteButton();
     }
 

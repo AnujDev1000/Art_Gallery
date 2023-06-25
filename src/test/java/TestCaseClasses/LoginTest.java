@@ -3,7 +3,6 @@ package TestCaseClasses;
 import static org.junit.Assert.assertEquals;
 
 import org.openqa.selenium.Alert;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import ObjectClasses.Login;
@@ -33,12 +32,4 @@ public class LoginTest extends SetupDriver{
         assertEquals("Invalid Details", alertMsg);
     }
 
-    @Ignore
-    public void AdminLogout() {
-        Login login = new Login(driver);
-        login.adminLogout();
-
-        String title = driver.getTitle();
-        assertEquals("Login| Art Gallery Management System", title);
-    }
 }

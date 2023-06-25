@@ -1,37 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-20T20:28:10 IST" name="Art Gallery Testing" finished-at="2023-06-20T20:28:21 IST" duration-ms="11121">
+  <suite started-at="2023-06-25T17:38:26 IST" name="Art Gallery Testing" finished-at="2023-06-25T17:40:11 IST" duration-ms="105412">
     <groups>
     </groups>
-    <test started-at="2023-06-20T20:28:10 IST" name="Admin: Login" finished-at="2023-06-20T20:28:15 IST" duration-ms="4604">
+    <test started-at="2023-06-25T17:38:26 IST" name="Admin: Login" finished-at="2023-06-25T17:39:15 IST" duration-ms="49346">
       <class name="TestCaseClasses.LoginTest">
-        <test-method signature="AdminLoginWithInValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@7f552bd3]" started-at="2023-06-20T20:28:10 IST" name="AdminLoginWithInValidDetails" finished-at="2023-06-20T20:28:12 IST" duration-ms="2113" status="PASS">
+        <test-method signature="AdminLoginWithInValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@79b06cab]" started-at="2023-06-25T17:38:26 IST" name="AdminLoginWithInValidDetails" finished-at="2023-06-25T17:38:55 IST" duration-ms="28605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AdminLoginWithInValidDetails -->
-        <test-method signature="AdminLoginWithValidDetails()[pri:1, instance:TestCaseClasses.LoginTest@7f552bd3]" started-at="2023-06-20T20:28:12 IST" name="AdminLoginWithValidDetails" finished-at="2023-06-20T20:28:15 IST" duration-ms="2307" status="PASS">
+        <test-method signature="AdminLoginWithValidDetails()[pri:1, instance:TestCaseClasses.LoginTest@79b06cab]" started-at="2023-06-25T17:38:55 IST" name="AdminLoginWithValidDetails" finished-at="2023-06-25T17:39:15 IST" duration-ms="19871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AdminLoginWithValidDetails -->
       </class> <!-- TestCaseClasses.LoginTest -->
     </test> <!-- Admin: Login -->
-    <test started-at="2023-06-20T20:28:15 IST" name="Admin: Pages" finished-at="2023-06-20T20:28:21 IST" duration-ms="6432">
-      <class name="TestCaseClasses.PagesTest">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:TestCaseClasses.PagesTest@9353778]" started-at="2023-06-20T20:27:46 IST" name="setupTest" finished-at="2023-06-20T20:28:10 IST" duration-ms="24283" status="PASS">
+    <test started-at="2023-06-25T17:39:15 IST" name="Admin: Dashboard" finished-at="2023-06-25T17:40:11 IST" duration-ms="55562">
+      <class name="TestCaseClasses.DashboardDetailsTest">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:36:37 IST" name="setupTest" finished-at="2023-06-25T17:38:26 IST" duration-ms="108258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="updateAboutUsPageTest()[pri:0, instance:TestCaseClasses.PagesTest@9353778]" started-at="2023-06-20T20:28:15 IST" name="updateAboutUsPageTest" finished-at="2023-06-20T20:28:21 IST" duration-ms="6428" status="PASS">
+        <test-method is-config="true" signature="artType()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:39:15 IST" name="artType" finished-at="2023-06-25T17:39:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateAboutUsPageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCaseClasses.PagesTest@9353778]" started-at="2023-06-20T20:28:21 IST" name="tearDown" finished-at="2023-06-20T20:28:24 IST" duration-ms="2254" status="PASS">
+        </test-method> <!-- artType -->
+        <test-method signature="artistDetails()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:39:15 IST" name="artistDetails" finished-at="2023-06-25T17:39:18 IST" duration-ms="2397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- artistDetails -->
+        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:39:18 IST" name="driverNavigateBackward" finished-at="2023-06-25T17:39:19 IST" duration-ms="1146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverNavigateBackward -->
+        <test-method signature="artTypeDetails()[pri:1, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:39:19 IST" name="artTypeDetails" finished-at="2023-06-25T17:39:21 IST" duration-ms="2523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- artTypeDetails -->
+        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:39:21 IST" name="driverNavigateBackward" finished-at="2023-06-25T17:39:23 IST" duration-ms="1024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverNavigateBackward -->
+        <test-method signature="artMediumDetails()[pri:2, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:39:23 IST" name="artMediumDetails" finished-at="2023-06-25T17:39:24 IST" duration-ms="1815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- artMediumDetails -->
+        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:39:24 IST" name="driverNavigateBackward" finished-at="2023-06-25T17:39:25 IST" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverNavigateBackward -->
+        <test-method signature="artProductDetails()[pri:3, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:39:25 IST" name="artProductDetails" finished-at="2023-06-25T17:39:52 IST" duration-ms="26883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- artProductDetails -->
+        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:39:52 IST" name="driverNavigateBackward" finished-at="2023-06-25T17:39:53 IST" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverNavigateBackward -->
+        <test-method signature="AnsweredEnquiryDetails()[pri:4, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:39:53 IST" name="AnsweredEnquiryDetails" finished-at="2023-06-25T17:39:59 IST" duration-ms="6795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AnsweredEnquiryDetails -->
+        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:39:59 IST" name="driverNavigateBackward" finished-at="2023-06-25T17:40:01 IST" duration-ms="1174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverNavigateBackward -->
+        <test-method signature="UnansweredEnquiryDetails()[pri:5, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:40:01 IST" name="UnansweredEnquiryDetails" finished-at="2023-06-25T17:40:10 IST" duration-ms="8976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UnansweredEnquiryDetails -->
+        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:40:10 IST" name="driverNavigateBackward" finished-at="2023-06-25T17:40:11 IST" duration-ms="1382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverNavigateBackward -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@41e36e46]" started-at="2023-06-25T17:40:11 IST" name="tearDown" finished-at="2023-06-25T17:40:13 IST" duration-ms="1877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TestCaseClasses.PagesTest -->
-    </test> <!-- Admin: Pages -->
+      </class> <!-- TestCaseClasses.DashboardDetailsTest -->
+    </test> <!-- Admin: Dashboard -->
   </suite> <!-- Art Gallery Testing -->
 </testng-results>

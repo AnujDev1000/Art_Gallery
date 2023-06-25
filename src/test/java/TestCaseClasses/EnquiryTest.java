@@ -1,53 +1,54 @@
 package TestCaseClasses;
 
-import static org.junit.Assert.assertEquals;
-
-import java.util.List;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import org.openqa.selenium.Alert;
 
 import ObjectClasses.Enquiry;
-import ObjectClasses.Login;
 import ObjectClasses.SetupDriver;
 
 public class EnquiryTest extends SetupDriver{
-    
+
+    String enquiryNumber;
+
     @Test(priority = 0)
-    public void enquiryMenuTest() {
-        // login.adminLogin();
+    public void addEnquiryTest() {
+        System.out.println("\n\n|| ENQUIRY ||\n");
+
         Enquiry enquiry = new Enquiry(driver);
-        enquiry.enquirySubmenu();
+        enquiry.openNewTab();
+        enquiry.addEnquiry("Jack", "jack@gmail.com", "6514175478", "Awesome Art!");
+        
+        Alert alert = driver.switchTo().alert();
+        String alertMsg = alert.getText();
+        alert.accept(); 
+
+        enquiry.closeNewTab();
+        enquiryNumber = alertMsg.split("is")[1].strip();
+        assertEquals("Your enquiry successfully send. Your Enquiry number", alertMsg.split("is")[0].strip());
     }
     
     @Test(priority = 1)
-    public void enquirySearchByNameTest() {
-        // login.adminLogin();
+    public void unansweredEnquiryTest() {
         Enquiry enquiry = new Enquiry(driver);
-        List<List<WebElement>> data = enquiry.enquirySearch("Anuj");
-        
-        assertEquals("Anuj kumar", data.get(0).get(2).getText());
+        enquiry.unansweredEnquiry();
+
+        Alert alert = driver.switchTo().alert();
+        alert.accept(); 
+
+        assertTrue(!enquiry.getRemarkDate().isBlank());
     }
     
     @Test(priority = 2)
-    public void enquirySearchByEnquiryNumberTest() {
-        // login.adminLogin();
+    public void answeredEnquiryTest() {
         Enquiry enquiry = new Enquiry(driver);
-        List<List<WebElement>> data = enquiry.enquirySearch("230873611");
+        enquiry.answeredEnquiry();
+
+        System.out.println("\nAnswered Enquiry Details \n");
+        enquiry.printEnquiryDetails();
         
-        assertEquals("230873611", data.get(0).get(1).getText());
+        assertEquals(enquiryNumber, enquiry.getEnquiryNumber());
     }
-    
-    @Test(priority = 3)
-    public void enquirySearchByMobileNumberTest() {
-        // login.adminLogin();
-        Enquiry enquiry = new Enquiry(driver);
-        List<List<WebElement>> data = enquiry.enquirySearch("1234567890");
-
-        assertEquals("1234567890", data.get(0).get(3).getText());
-    }
-
 }

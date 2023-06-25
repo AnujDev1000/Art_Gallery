@@ -5,29 +5,55 @@ import static org.junit.Assert.assertEquals;
 import org.openqa.selenium.Alert;
 import org.testng.annotations.Test;
 
-import ObjectClasses.Pages;
+import ObjectClasses.AboutUs;
+import ObjectClasses.ContactUs;
 import ObjectClasses.SetupDriver;
 
+
 public class PagesTest extends SetupDriver{
-    
-    // @Test
-    // public void enquiryMenuTest() {
-    //     // login.adminLogin();
-    //     Pages pages = new Pages(driver);
-    //     pages.pageSubmenu();
-    // }
 
     @Test(priority = 0)
-    public void updateAboutUsPageTest() {
-        // login.adminLogin();
-        Pages pages = new Pages(driver);
-        pages.updateAboutUsPage("About Us", "<span style='color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 16px;'>An art gallery is </span><b style='color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 16px;'>an exhibition space to display and sell artworks</b><span style='color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 16px;'>. As a result, the art gallery is a commercial enterprise working with a portfolio of artists. The gallery acts as the dealer representing, supporting, and distributing the artworks by the artists in question.</span><br>");
+    public void pagesMenuTestaboutus() {
+        AboutUs aboutus = new AboutUs(driver);
+        aboutus.pageSubmenu();
+    }
+
+    @Test(priority = 1)
+    public void updateAboutUsPageTestaboutus() {
+        AboutUs aboutus = new AboutUs(driver);
+        String title = "About Us";
+        String description = "This is Art Gallery Management system where you can buy art products categorised into different art type with the mission to uplift the gig working artist force.";
+        aboutus.updateAboutUsPage(title,description);
 
         Alert alert = driver.switchTo().alert();
-        String alertMsg = alert.getText();
+        assertEquals("About Us has been updated.", alert.getText());
         alert.accept();
-
-        assertEquals("Something went wrong.", alertMsg);
+        driver.navigate().to("http://artgallery.neohire.io/admin/dashboard.php");
+        aboutus.userSideCheckAboutus(title, description);
     }
-    
+
+    @Test(priority = 2)
+    public void pagesMenuTestcontactus() {
+        ContactUs contactus = new ContactUs(driver);
+        contactus.pageSubmenu();
+    }
+
+    @Test(priority = 3)
+    public void updateAboutUsPageTestcontactus() {
+        ContactUs contactus = new ContactUs(driver);
+        String title = "Contact Us";
+        String email = "artgallery@gmail.com";
+        String phonenumber = "9988548822";
+        String timings = "9:00 am to 6:00 pm";
+
+        String description = "Our art gallery contact service is active within provided timings for more 24/7 service please reach us by provided email id";
+       
+        contactus.updateContactUsPage(title, email, phonenumber, timings, description);
+
+        Alert alert = driver.switchTo().alert();
+        assertEquals("Contact Us has been updated..", alert.getText());
+        alert.accept();
+        driver.navigate().to("http://artgallery.neohire.io/admin/dashboard.php");
+        contactus.userSideCheckContactus(title, email, phonenumber, timings, description);
+    }
 }

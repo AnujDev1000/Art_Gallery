@@ -3,28 +3,33 @@ package TestCaseClasses;
 import static org.junit.Assert.assertEquals;
 
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import ObjectClasses.ArtType;
-import ObjectClasses.Login;
 import ObjectClasses.SetupDriver;
 
 public class ArtTypeTest extends SetupDriver{
+
+    @BeforeClass
+    public void artType() {
+        System.out.println("\n\n|| ARTTYPE ||");
+    }
     
     @Test(priority = 0)
     public void addArtTypeTest() {
+
         // login.adminLogin();
         ArtType artType = new ArtType(driver);
         artType.addArtType("pottery");
         
         Alert alert = driver.switchTo().alert();
         String alertMsg = alert.getText();
-        alert.accept();    
+        alert.accept(); 
         
         assertEquals("Artist type has been added.", alertMsg); 
+        System.out.println("\nArtType Added SuccessFully!");
+        artType.printTable();
     }
     
     @Test(priority = 1)
@@ -36,8 +41,11 @@ public class ArtTypeTest extends SetupDriver{
         Alert alert = driver.switchTo().alert();
         String alertMsg = alert.getText();
         alert.accept();    
-        
+
         assertEquals("Art type has been updated.", alertMsg); 
+        System.out.println("\nArtType Updated Successfully!");
+        artType.navigateToManagetoArtTypePage();
+        artType.printTable();
     }
     
     @Test(priority = 2)
@@ -49,8 +57,9 @@ public class ArtTypeTest extends SetupDriver{
         Alert alert = driver.switchTo().alert();
         String alertMsg = alert.getText();
         alert.accept();    
-        
-        assertEquals("Data deleted", alertMsg); 
-    }
 
+        assertEquals("Data deleted", alertMsg); 
+        System.out.println("\nArtType Deleted Successfully!");
+        artType.printTable();
+    }
 }
