@@ -11,18 +11,21 @@ import ObjectClasses.SetupDriver;
 
 public class ArtistTest extends SetupDriver{
 
+    String imgpath = System.getProperty("user.dir") + "/resources/placeholder.jpg";
+    
     @BeforeClass
     public void artType() {
         System.out.println("\n\n|| ARTIST ||");
     }
     
-    @Test(priority = 0)
+    @Test(priority = 6, groups = {"admin", "smoketest"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void addArtistTest() {
         // login.adminLogin();
         Artist artist = new Artist(driver);
-        artist.addArtist("Rock", "1234567890", "rock@gmail.com", "exampleEducation", "exampleEducation", "C:/Users/Mypc/Desktop/MernProject/Fleet/public/images/placeholder.jpg");
 
-        
+        artist.addArtist("Rock", "1234567890", "rock@gmail.com", "exampleEducation", "exampleEducation", imgpath);
+
+    
         Alert alert = driver.switchTo().alert();
         String alertMsg = alert.getText();
         alert.accept();    
@@ -32,11 +35,11 @@ public class ArtistTest extends SetupDriver{
         artist.printTable();
     }
 
-    @Test(priority = 1)
+    @Test(priority = 7, groups = {"admin", "smoketest"}, dependsOnMethods = "addArtistTest")
     public void updateArtistTest() {
         // login.adminLogin();
         Artist artist = new Artist(driver);
-        artist.updateArtist("john", "1234567890", "john@gmail.com", "exampleEducation", "exampleEducation", "C:/Users/Mypc/Desktop/MernProject/Fleet/public/images/placeholder.jpg");
+        artist.updateArtist("john", "1234567890", "john@gmail.com", "exampleEducation", "exampleEducation", imgpath);
 
         Alert alert = driver.switchTo().alert();
         String alertMsg = alert.getText();
@@ -48,7 +51,7 @@ public class ArtistTest extends SetupDriver{
         artist.printTable();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 8, groups = {"admin", "smoketest"}, dependsOnMethods = "addArtistTest")
     public void deleteArtistTest() {
         // login.adminLogin();
         Artist artist = new Artist(driver);

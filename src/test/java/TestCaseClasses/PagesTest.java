@@ -12,13 +12,13 @@ import ObjectClasses.SetupDriver;
 
 public class PagesTest extends SetupDriver{
 
-    @Test(priority = 0)
+    @Test(priority = 24, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void pagesMenuTestaboutus() {
         AboutUs aboutus = new AboutUs(driver);
         aboutus.pageSubmenu();
     }
 
-    @Test(priority = 1)
+    @Test(priority = 25, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void updateAboutUsPageTestaboutus() {
         AboutUs aboutus = new AboutUs(driver);
         String title = "About Us";
@@ -32,13 +32,13 @@ public class PagesTest extends SetupDriver{
         aboutus.userSideCheckAboutus(title, description);
     }
 
-    @Test(priority = 2)
+    @Test(priority = 26, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void pagesMenuTestcontactus() {
         ContactUs contactus = new ContactUs(driver);
         contactus.pageSubmenu();
     }
 
-    @Test(priority = 3)
+    @Test(priority = 27, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void updateAboutUsPageTestcontactus() {
         ContactUs contactus = new ContactUs(driver);
         String title = "Contact Us";

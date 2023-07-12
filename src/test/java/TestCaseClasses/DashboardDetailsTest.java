@@ -25,7 +25,7 @@ public class DashboardDetailsTest extends SetupDriver{
         System.out.println("\n\n|| ADMIN DASHBOARD ||");
     }
     
-    @Test(priority = 0)
+    @Test(priority = 0, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void artistDetails() {
         // login.adminLogin();
         Artist artist = new Artist(driver);
@@ -40,7 +40,7 @@ public class DashboardDetailsTest extends SetupDriver{
         artist.printTable();
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1 , groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void artTypeDetails() {
         // login.adminLogin();
         ArtType artType = new ArtType(driver);
@@ -55,7 +55,7 @@ public class DashboardDetailsTest extends SetupDriver{
         artType.printTable();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2 , groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void artMediumDetails() {
         // login.adminLogin();
         ArtMedium artMedium = new ArtMedium(driver);
@@ -70,7 +70,7 @@ public class DashboardDetailsTest extends SetupDriver{
         artMedium.printTable();
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3 , groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void artProductDetails() {
         // login.adminLogin();
         ArtProduct artProduct = new ArtProduct(driver);
@@ -84,7 +84,7 @@ public class DashboardDetailsTest extends SetupDriver{
         artProduct.printTable();
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4 , groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void AnsweredEnquiryDetails() {
         // login.adminLogin();
         Enquiry enquiry = new Enquiry(driver);

@@ -10,17 +10,19 @@ import ObjectClasses.ArtProduct;
 import ObjectClasses.SetupDriver;
 
 public class ArtProductTest extends SetupDriver{
+
+    String imgpath = System.getProperty("user.dir") + "/resources/illustration4.jpg";
     
     @BeforeClass
     public void artType() {
         System.out.println("\n\n|| ART PRODUCT ||");
     }
 
-    @Test(priority = 0)
+    @Test(priority = 15, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void addArtProductTest() {
         // login.adminLogin();
         ArtProduct artProduct = new ArtProduct(driver);
-        artProduct.addArtProduct("Marvel", "F:/photos/illustration4.jpg", "1000", "Potrait", "Medium", "Maddy", "Painting", "Oil on Canvas", "7000", "ARTISTIC PAINTINGS... ");
+        artProduct.addArtProduct("Marvel", imgpath, "1000", "Potrait", "Medium", "Maddy", "Painting", "Oil on Canvas", "7000", "ARTISTIC PAINTINGS... ");
 
         Alert alert = driver.switchTo().alert();
         String alertMsg = alert.getText();
@@ -32,11 +34,11 @@ public class ArtProductTest extends SetupDriver{
         artProduct.printTable();
     }
 
-    @Test(priority = 1)
+    @Test(priority = 16, groups = {"admin"}, dependsOnMethods = "addArtProductTest")
     public void updateArtProductTest() {
         // login.adminLogin();
         ArtProduct artProduct = new ArtProduct(driver);
-        artProduct.updateArtProduct("Illustration", "F:/photos/illustration4.jpg", "1000", "Landscape", "Small", "Abir Rajwansh", "Prints", "Acrylics on paper", "5000", "Cool Illustration... ");
+        artProduct.updateArtProduct("Illustration", imgpath, "1000", "Landscape", "Small", "Abir Rajwansh", "Prints", "Acrylics on paper", "5000", "Cool Illustration... ");
 
         Alert alert = driver.switchTo().alert();
         String alertMsg = alert.getText();
@@ -48,7 +50,7 @@ public class ArtProductTest extends SetupDriver{
         artProduct.printTable();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 17, groups = {"admin"}, dependsOnMethods = "addArtProductTest")
     public void deleteArtProductTest() {
         // login.adminLogin();
         ArtProduct artProduct = new ArtProduct(driver);

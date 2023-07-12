@@ -9,7 +9,7 @@ import ObjectClasses.userLinks;
 import ObjectClasses.userNavbar;
 
 public class userLinksTest extends SetupDriver{
-    @Test(priority = 0)
+    @Test(priority = 35, groups = {"user"})
     public void linkcheck()
     {
         userLinks uLinks = new userLinks(driver);

@@ -16,7 +16,7 @@ import ObjectClasses.userNavbar;
 
 public class userNavbarTest extends SetupDriver {
 
-    @Test(priority = 0)
+    @Test(priority = 28, groups = {"user", "regression"})
     public void home()
     {
         userNavbar uNavbar = new userNavbar(driver);
@@ -25,7 +25,7 @@ public class userNavbarTest extends SetupDriver {
         assertEquals("Art Gallery Management System | Home Page",title);
     }
 
-    @Test(priority = 1)
+    @Test(priority = 29, groups = {"user", "regression"})
     public void about()
     {
         userNavbar uNavbar = new userNavbar(driver);
@@ -34,7 +34,7 @@ public class userNavbarTest extends SetupDriver {
         assertEquals("Art Gallery Management System | About Us Page",title);
     }
 
-    @Test(priority = 2)
+    @Test(priority = 30, groups = {"user", "regression"})
     public void arttype()
     {
         userNavbar uNavbar = new userNavbar(driver);
@@ -50,7 +50,7 @@ public class userNavbarTest extends SetupDriver {
         assertEquals(size,count);
     }
 
-    @Test(priority = 3)
+    @Test(priority = 31, groups = {"user", "regression"})
     public void contactus()
     {
         userNavbar uNavbar = new userNavbar(driver);
@@ -59,7 +59,7 @@ public class userNavbarTest extends SetupDriver {
         assertEquals("Art Gallery Management System | Contact Us Page",title);
     }
 
-    @Test(priority = 4)
+    @Test(priority = 32, groups = {"user", "regression"})
     public void admin()
     {
         userNavbar uNavbar = new userNavbar(driver);

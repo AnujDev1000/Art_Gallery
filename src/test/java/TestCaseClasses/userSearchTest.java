@@ -8,7 +8,7 @@ import ObjectClasses.userSearch;
 
 public class userSearchTest extends SetupDriver {
 
-    @Test(priority = 0)
+    @Test(priority = 37, groups = {"user"})
     public void search()
     {
         userSearch uSearch = new userSearch(driver);

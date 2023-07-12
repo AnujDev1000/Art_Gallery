@@ -7,7 +7,7 @@ import ObjectClasses.userDropdown;
 
 public class userDropdownTest extends SetupDriver {
 
-    @Test(priority = 0)
+    @Test(priority = 33, groups = {"user", "regression"})
     public void dropdown()
     {
         userDropdown uDropdown = new userDropdown(driver);

@@ -10,7 +10,7 @@ import ObjectClasses.SetupDriver;
 
 public class LoginTest extends SetupDriver{
     
-    @Test(priority = 1)
+    @Test(groups = {"login"}, dependsOnMethods = {"AdminLoginWithInValidDetails"})
     public void AdminLoginWithValidDetails() {
         Login login = new Login(driver);
         login.adminLogin();
@@ -19,7 +19,7 @@ public class LoginTest extends SetupDriver{
         assertEquals("Art Gallery Management System - Admin Dashboard", title);
     }
     
-    @Test(priority = 0)
+    @Test( groups = {"login"})
     public void AdminLoginWithInValidDetails() {
         Login login = new Login(driver);
         login.navigateToAdminLoginPage();

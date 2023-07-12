@@ -13,7 +13,7 @@ public class EnquiryTest extends SetupDriver{
 
     String enquiryNumber;
 
-    @Test(priority = 0)
+    @Test(priority = 18, groups = {"admin"})
     public void addEnquiryTest() {
         System.out.println("\n\n|| ENQUIRY ||\n");
 
@@ -30,7 +30,7 @@ public class EnquiryTest extends SetupDriver{
         assertEquals("Your enquiry successfully send. Your Enquiry number", alertMsg.split("is")[0].strip());
     }
     
-    @Test(priority = 1)
+    @Test(priority = 19, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void unansweredEnquiryTest() {
         Enquiry enquiry = new Enquiry(driver);
         enquiry.unansweredEnquiry();
@@ -41,7 +41,7 @@ public class EnquiryTest extends SetupDriver{
         assertTrue(!enquiry.getRemarkDate().isBlank());
     }
     
-    @Test(priority = 2)
+    @Test(priority = 20, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void answeredEnquiryTest() {
         Enquiry enquiry = new Enquiry(driver);
         enquiry.answeredEnquiry();

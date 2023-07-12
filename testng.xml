@@ -3,7 +3,40 @@
 
 <suite name="Art Gallery Testing">
 
-    <test name="Admin: Login">
+    <test name="test">
+        <groups>
+            <run>
+                <include name="login" />
+                <!-- <include name="smoketest" /> -->
+                <include name="admin" />
+                <include name="logout" />
+                <include name="user" />
+            </run>
+        </groups>
+        <classes>
+            <class name="TestCaseClasses.LoginTest" />
+            <class name="TestCaseClasses.DashboardDetailsTest" />
+            <class name="TestCaseClasses.ArtistTest" />
+            <class name="TestCaseClasses.ArtTypeTest" />
+            <class name="TestCaseClasses.ArtMediumTest" />
+            <class name="TestCaseClasses.ArtProductTest" />
+            <class name="TestCaseClasses.EnquiryTest" />
+            <class name="TestCaseClasses.EnquirySearchTest" />
+            <class name="TestCaseClasses.PagesTest" />
+            <class name="TestCaseClasses.LogoutTest" />
+            <class name="TestCaseClasses.userNavbarTest" />
+            <class name="TestCaseClasses.userDropdownTest" />
+            <class name="TestCaseClasses.userEnquiryTest" />
+            <class name="TestCaseClasses.userLinksTest" />
+            <class name="TestCaseClasses.userEnquiryTest" />
+            <class name="TestCaseClasses.userViewDetatilsTest" />
+            <class name="TestCaseClasses.userSearchTest" />
+        </classes>
+    </test>
+ 
+
+
+    <!-- <test name="Admin: Login">
         <classes>
             <class name="TestCaseClasses.LoginTest" />
         </classes>
@@ -13,7 +46,7 @@
         <classes>
             <class name="TestCaseClasses.DashboardDetailsTest" />
         </classes>
-    </test> 
+    </test>  
 
    
     <test name="Admin: Artist">
@@ -28,7 +61,7 @@
             <class name="TestCaseClasses.ArtTypeTest" />
         </classes>
     </test>
-
+ 
 
     <test name="Admin: Art Medium">
         <classes>
@@ -36,7 +69,7 @@
         </classes>
     </test>
 
- 
+
     <test name="Admin: Art Product">
         <classes>
             <class name="TestCaseClasses.ArtProductTest" />
@@ -111,6 +144,6 @@
         <classes>
             <class name="TestCaseClasses.userSearchTest" />
         </classes>
-    </test>  
+    </test>    -->
 
 </suite>
