@@ -1,34 +1,33 @@
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\LogoutTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\userNavbarTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\PagesTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\Artist.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\EnquiryTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\EnquirySearchTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\userSearch.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\ArtType.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\userLinks.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\DashboardDetailsTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\MenuTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\ArtistTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\userEnquiryTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\ArtProductTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\Login.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\userEnquiry.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\ArtTypeTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\SetupDriver.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\ArtProduct.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\Enquiry.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\userDropdown.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\userLinksTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\utils\ExtentReport.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\userSearchTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\ArtMedium.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\userViewDetails.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\Pages.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\userViewDetatilsTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\userNavbar.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\ContactUs.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\AboutUs.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\LoginTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\ArtMediumTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\userDropdownTest.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\ArtistTest.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\LogoutTest.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\userEnquiryTest.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\ArtProduct.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\userDropdownTest.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\userLinksTest.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\EnquirySearchTest.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\PagesTest.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\AboutUs.java
+D:\Projects\Art Gallery\src\test\java\utils\ExtentReport.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\ArtType.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\userSearchTest.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\SetupDriver.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\Login.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\ArtMedium.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\userNavbar.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\userEnquiry.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\Artist.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\userNavbarTest.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\userDropdown.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\Enquiry.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\DashboardDetailsTest.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\ArtProductTest.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\ContactUs.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\Pages.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\userViewDetatilsTest.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\EnquiryTest.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\userLinks.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\ArtMediumTest.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\userViewDetails.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\ArtTypeTest.java
+D:\Projects\Art Gallery\src\test\java\TestCaseClasses\LoginTest.java
+D:\Projects\Art Gallery\src\test\java\ObjectClasses\userSearch.java

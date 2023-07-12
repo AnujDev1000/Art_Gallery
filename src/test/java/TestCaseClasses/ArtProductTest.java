@@ -13,7 +13,7 @@ public class ArtProductTest extends SetupDriver{
 
     String imgpath = System.getProperty("user.dir") + "/resources/illustration4.jpg";
     
-    @BeforeClass
+    @BeforeClass(alwaysRun=true)
     public void artType() {
         System.out.println("\n\n|| ART PRODUCT ||");
     }

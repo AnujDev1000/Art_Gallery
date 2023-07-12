@@ -11,7 +11,7 @@ import ObjectClasses.SetupDriver;
 
 public class ArtMediumTest extends SetupDriver {
     
-    @BeforeClass
+    @BeforeClass(alwaysRun=true)
     public void artType() {
         System.out.println("\n\n|| ART MEDIUM ||");
     }

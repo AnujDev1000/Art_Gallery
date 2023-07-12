@@ -7,7 +7,6 @@ TestCaseClasses\DashboardDetailsTest.class
 TestCaseClasses\LoginTest.class
 ObjectClasses\ArtMedium.class
 TestCaseClasses\ArtistTest.class
-TestCaseClasses\MenuTest.class
 TestCaseClasses\EnquiryTest.class
 ObjectClasses\ArtProduct.class
 ObjectClasses\Artist.class

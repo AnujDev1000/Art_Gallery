@@ -17,7 +17,7 @@ public class EnquirySearchTest extends SetupDriver{
     static String sEnquiryNumber;
     static String sMobileNumber;
     
-    @BeforeClass
+    @BeforeClass(alwaysRun=true)
     public void fetchData() {
         System.out.println("\n\n|| ENQUIRY SEARCH ||\n");
         Enquiry enquiry = new Enquiry(driver);
