@@ -19,7 +19,7 @@ public class EnquiryTest extends SetupDriver{
 
         Enquiry enquiry = new Enquiry(driver);
         enquiry.openNewTab();
-        enquiry.addEnquiry("John", "john@gmail.com", "1594826370", "Awesome Art!");
+        enquiry.addEnquiry("john", "john@gmail.com", "1594826370", "Awesome Art!");
         
         Alert alert = driver.switchTo().alert();
         String alertMsg = alert.getText();
