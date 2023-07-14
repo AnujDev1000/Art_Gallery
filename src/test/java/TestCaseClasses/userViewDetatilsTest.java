@@ -8,7 +8,7 @@ import ObjectClasses.userViewDetails;
 
 public class userViewDetatilsTest extends SetupDriver {
 
-    @Test(priority = 36, groups = {"user", "regression"})
+    @Test(priority = 37, groups = {"user", "regression"})
     public void search()
     {
         userViewDetails uDetails = new userViewDetails(driver);

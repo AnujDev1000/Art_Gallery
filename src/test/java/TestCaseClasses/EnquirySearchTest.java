@@ -27,7 +27,7 @@ public class EnquirySearchTest extends SetupDriver{
         sMobileNumber = searchData[3];
     }
 
-    @Test(priority = 21, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
+    @Test(priority = 21, groups = {"admin", "enquiry"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void enquirySearchByNameTest() {
         // login.adminLogin();
         Enquiry enquiry = new Enquiry(driver);
@@ -38,7 +38,7 @@ public class EnquirySearchTest extends SetupDriver{
         enquiry.printTable();
     }
     
-    @Test(priority = 22, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
+    @Test(priority = 22, groups = {"admin", "enquiry"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void enquirySearchByEnquiryNumberTest() {
         // login.adminLogin();
         Enquiry enquiry = new Enquiry(driver);
@@ -49,7 +49,7 @@ public class EnquirySearchTest extends SetupDriver{
         enquiry.printTable();
     }
     
-    @Test(priority = 23, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
+    @Test(priority = 23, groups = {"admin", "enquiry"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void enquirySearchByMobileNumberTest() {
         // login.adminLogin();
         Enquiry enquiry = new Enquiry(driver);

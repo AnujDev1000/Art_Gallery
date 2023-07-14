@@ -16,7 +16,7 @@ public class ArtMediumTest extends SetupDriver {
         System.out.println("\n\n|| ART MEDIUM ||");
     }
 
-    @Test(priority = 12, groups = {"admin", "smoketest"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
+    @Test(priority = 12, groups = {"admin", "artMedium", "smoketest"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void addArtMediumTest() {
         // login.adminLogin();
         ArtMedium artMedium = new ArtMedium(driver);
@@ -32,7 +32,7 @@ public class ArtMediumTest extends SetupDriver {
         artMedium.printTable();
     }
     
-    @Test(priority = 13, groups = {"admin", "smoketest"}, dependsOnMethods = "addArtMediumTest")
+    @Test(priority = 13, groups = {"admin", "artMedium"}, dependsOnMethods = "addArtMediumTest")
     public void updateArtMediumTest() {
         // login.adminLogin();
         ArtMedium artMedium = new ArtMedium(driver);
@@ -49,7 +49,7 @@ public class ArtMediumTest extends SetupDriver {
         artMedium.printTable();
     }
     
-    @Test(priority = 14, groups = {"admin", "smoketest"}, dependsOnMethods = "addArtMediumTest")
+    @Test(priority = 14, groups = {"admin", "artMedium", "smoketest"}, dependsOnMethods = "addArtMediumTest")
     public void deleteArtMediumTest() {
         // login.adminLogin();
         ArtMedium artMedium = new ArtMedium(driver);

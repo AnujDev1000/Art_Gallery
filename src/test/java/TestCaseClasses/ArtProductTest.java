@@ -18,7 +18,7 @@ public class ArtProductTest extends SetupDriver{
         System.out.println("\n\n|| ART PRODUCT ||");
     }
 
-    @Test(priority = 15, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
+    @Test(priority = 15, groups = {"admin", "artProduct"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void addArtProductTest() {
         // login.adminLogin();
         ArtProduct artProduct = new ArtProduct(driver);
@@ -34,7 +34,7 @@ public class ArtProductTest extends SetupDriver{
         artProduct.printTable();
     }
 
-    @Test(priority = 16, groups = {"admin"}, dependsOnMethods = "addArtProductTest")
+    @Test(priority = 16, groups = {"admin", "artProduct"}, dependsOnMethods = "addArtProductTest")
     public void updateArtProductTest() {
         // login.adminLogin();
         ArtProduct artProduct = new ArtProduct(driver);
@@ -50,7 +50,7 @@ public class ArtProductTest extends SetupDriver{
         artProduct.printTable();
     }
 
-    @Test(priority = 17, groups = {"admin"}, dependsOnMethods = "addArtProductTest")
+    @Test(priority = 17, groups = {"admin", "artProduct"}, dependsOnMethods = "addArtProductTest")
     public void deleteArtProductTest() {
         // login.adminLogin();
         ArtProduct artProduct = new ArtProduct(driver);

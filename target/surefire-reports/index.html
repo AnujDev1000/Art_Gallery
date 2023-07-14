@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Art_Gallery_Testing" class="navigator-link">
-              <span class="suite-name border-passed">Art Gallery Testing</span>
+              <span class="suite-name border-failed">Art Gallery Testing</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Art_Gallery_Testing" class="navigator-link ">
-                    <span>D:\Projects\Art Gallery\testng.xml</span>
+                    <span>C:\Users\Mypc\Desktop\Maven\springapp\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Art_Gallery_Testing" class="navigator-link ">
-                    <span>3 groups</span>
+                    <span>10 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">30 methods, 2 failed,   28 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Art_Gallery_Testing" class="hide-methods failed suite-Art_Gallery_Testing"> (hide)</a> <!-- hide-methods failed suite-Art_Gallery_Testing -->
+                      <a href="#" panel-name="suite-Art_Gallery_Testing" class="show-methods failed suite-Art_Gallery_Testing"> (show)</a> <!-- show-methods failed suite-Art_Gallery_Testing -->
+                    </span>
+                    <div class="method-list-content failed suite-Art_Gallery_Testing">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.PagesTest" class="method navigator-link" hash-for-method="updateAboutUsPageTestaboutus">updateAboutUsPageTestaboutus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.PagesTest" class="method navigator-link" hash-for-method="updateContactUsPageTestContactUs">updateContactUsPageTestContactUs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Art_Gallery_Testing -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,7 +132,27 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.DashboardDetailsTest" class="method navigator-link" hash-for-method="AnsweredEnquiryDetails">AnsweredEnquiryDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.DashboardDetailsTest" class="method navigator-link" hash-for-method="UnansweredEnquiryDetails">UnansweredEnquiryDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.ArtMediumTest" class="method navigator-link" hash-for-method="addArtMediumTest">addArtMediumTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.ArtProductTest" class="method navigator-link" hash-for-method="addArtProductTest">addArtProductTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.ArtTypeTest" class="method navigator-link" hash-for-method="addArtTypeTest">addArtTypeTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -123,7 +162,47 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.EnquiryTest" class="method navigator-link" hash-for-method="addEnquiryTest">addEnquiryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.EnquiryTest" class="method navigator-link" hash-for-method="answeredEnquiryTest">answeredEnquiryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.DashboardDetailsTest" class="method navigator-link" hash-for-method="artMediumDetails">artMediumDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.DashboardDetailsTest" class="method navigator-link" hash-for-method="artProductDetails">artProductDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.DashboardDetailsTest" class="method navigator-link" hash-for-method="artTypeDetails">artTypeDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.DashboardDetailsTest" class="method navigator-link" hash-for-method="artistDetails">artistDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.ArtMediumTest" class="method navigator-link" hash-for-method="deleteArtMediumTest">deleteArtMediumTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.ArtProductTest" class="method navigator-link" hash-for-method="deleteArtProductTest">deleteArtProductTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.ArtTypeTest" class="method navigator-link" hash-for-method="deleteArtTypeTest">deleteArtTypeTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,7 +212,47 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.EnquirySearchTest" class="method navigator-link" hash-for-method="enquirySearchByEnquiryNumberTest">enquirySearchByEnquiryNumberTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.EnquirySearchTest" class="method navigator-link" hash-for-method="enquirySearchByMobileNumberTest">enquirySearchByMobileNumberTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.EnquirySearchTest" class="method navigator-link" hash-for-method="enquirySearchByNameTest">enquirySearchByNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.PagesTest" class="method navigator-link" hash-for-method="pagesMenuTestaboutus">pagesMenuTestaboutus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.PagesTest" class="method navigator-link" hash-for-method="pagesMenuTestcontactus">pagesMenuTestcontactus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.EnquiryTest" class="method navigator-link" hash-for-method="unansweredEnquiryTest">unansweredEnquiryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.ArtMediumTest" class="method navigator-link" hash-for-method="updateArtMediumTest">updateArtMediumTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.ArtProductTest" class="method navigator-link" hash-for-method="updateArtProductTest">updateArtProductTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Art_Gallery_Testing" title="TestCaseClasses.ArtTypeTest" class="method navigator-link" hash-for-method="updateArtTypeTest">updateArtTypeTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -153,6 +272,74 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Art_Gallery_Testing" class="panel Art_Gallery_Testing">
+          <div class="suite-Art_Gallery_Testing-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCaseClasses.PagesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateAboutUsPageTestaboutus">
+                  </a> <!-- updateAboutUsPageTestaboutus -->
+                  <span class="method-name">updateAboutUsPageTestaboutus</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;&quot; href=&quot;aboutus.php&quot;&gt;...&lt;/a&gt; is not clickable at point (90, 477). Other element would receive the click: &lt;div id=&quot;sidebar&quot; class=&quot;nav-collapse &quot; tabindex=&quot;5000&quot; style=&quot;overflow: hidden; outline: none;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=114.0.5735.199)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Anuj&apos;, ip: &apos;192.168.43.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63ff2a8e795c6579b3100122f20b159f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at ObjectClasses.AboutUs.navigateToAboutUsPage(AboutUs.java:37)
+	at ObjectClasses.AboutUs.updateAboutUsPage(AboutUs.java:93)
+	at TestCaseClasses.PagesTest.updateAboutUsPageTestaboutus(PagesTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateContactUsPageTestContactUs">
+                  </a> <!-- updateContactUsPageTestContactUs -->
+                  <span class="method-name">updateContactUsPageTestContactUs</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;main-content&quot;]/section/div[3]/div/section/div/div/form/div[5]/div/div[2]/div&quot;}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Anuj&apos;, ip: &apos;192.168.43.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63ff2a8e795c6579b3100122f20b159f
+*** Element info: {Using=xpath, value=//*[@id=&quot;main-content&quot;]/section/div[3]/div/section/div/div/form/div[5]/div/div[2]/div}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at ObjectClasses.ContactUs.fillPageDescription(ContactUs.java:58)
+	at ObjectClasses.ContactUs.updateContactUsPage(ContactUs.java:115)
+	at TestCaseClasses.PagesTest.updateContactUsPageTestContactUs(PagesTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Art_Gallery_Testing-class-failed -->
           <div class="suite-Art_Gallery_Testing-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -178,6 +365,57 @@
                   <a name="updateArtistTest">
                   </a> <!-- updateArtistTest -->
                   <span class="method-name">updateArtistTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Art_Gallery_Testing-class-passed -->
+          <div class="suite-Art_Gallery_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCaseClasses.ArtProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addArtProductTest">
+                  </a> <!-- addArtProductTest -->
+                  <span class="method-name">addArtProductTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteArtProductTest">
+                  </a> <!-- deleteArtProductTest -->
+                  <span class="method-name">deleteArtProductTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateArtProductTest">
+                  </a> <!-- updateArtProductTest -->
+                  <span class="method-name">updateArtProductTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Art_Gallery_Testing-class-passed -->
+          <div class="suite-Art_Gallery_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCaseClasses.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AdminLoginWithInValidDetails">
+                  </a> <!-- AdminLoginWithInValidDetails -->
+                  <span class="method-name">AdminLoginWithInValidDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AdminLoginWithValidDetails">
+                  </a> <!-- AdminLoginWithValidDetails -->
+                  <span class="method-name">AdminLoginWithValidDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,21 +452,158 @@
           <div class="suite-Art_Gallery_Testing-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCaseClasses.LoginTest</span>
+              <span class="class-name">TestCaseClasses.ArtTypeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AdminLoginWithInValidDetails">
-                  </a> <!-- AdminLoginWithInValidDetails -->
-                  <span class="method-name">AdminLoginWithInValidDetails</span>
+                  <a name="addArtTypeTest">
+                  </a> <!-- addArtTypeTest -->
+                  <span class="method-name">addArtTypeTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="AdminLoginWithValidDetails">
-                  </a> <!-- AdminLoginWithValidDetails -->
-                  <span class="method-name">AdminLoginWithValidDetails</span>
+                  <a name="deleteArtTypeTest">
+                  </a> <!-- deleteArtTypeTest -->
+                  <span class="method-name">deleteArtTypeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateArtTypeTest">
+                  </a> <!-- updateArtTypeTest -->
+                  <span class="method-name">updateArtTypeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Art_Gallery_Testing-class-passed -->
+          <div class="suite-Art_Gallery_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCaseClasses.PagesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="pagesMenuTestaboutus">
+                  </a> <!-- pagesMenuTestaboutus -->
+                  <span class="method-name">pagesMenuTestaboutus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pagesMenuTestcontactus">
+                  </a> <!-- pagesMenuTestcontactus -->
+                  <span class="method-name">pagesMenuTestcontactus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Art_Gallery_Testing-class-passed -->
+          <div class="suite-Art_Gallery_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCaseClasses.DashboardDetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AnsweredEnquiryDetails">
+                  </a> <!-- AnsweredEnquiryDetails -->
+                  <span class="method-name">AnsweredEnquiryDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UnansweredEnquiryDetails">
+                  </a> <!-- UnansweredEnquiryDetails -->
+                  <span class="method-name">UnansweredEnquiryDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="artMediumDetails">
+                  </a> <!-- artMediumDetails -->
+                  <span class="method-name">artMediumDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="artProductDetails">
+                  </a> <!-- artProductDetails -->
+                  <span class="method-name">artProductDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="artTypeDetails">
+                  </a> <!-- artTypeDetails -->
+                  <span class="method-name">artTypeDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="artistDetails">
+                  </a> <!-- artistDetails -->
+                  <span class="method-name">artistDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Art_Gallery_Testing-class-passed -->
+          <div class="suite-Art_Gallery_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCaseClasses.EnquirySearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enquirySearchByEnquiryNumberTest">
+                  </a> <!-- enquirySearchByEnquiryNumberTest -->
+                  <span class="method-name">enquirySearchByEnquiryNumberTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enquirySearchByMobileNumberTest">
+                  </a> <!-- enquirySearchByMobileNumberTest -->
+                  <span class="method-name">enquirySearchByMobileNumberTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enquirySearchByNameTest">
+                  </a> <!-- enquirySearchByNameTest -->
+                  <span class="method-name">enquirySearchByNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Art_Gallery_Testing-class-passed -->
+          <div class="suite-Art_Gallery_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCaseClasses.EnquiryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEnquiryTest">
+                  </a> <!-- addEnquiryTest -->
+                  <span class="method-name">addEnquiryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="answeredEnquiryTest">
+                  </a> <!-- answeredEnquiryTest -->
+                  <span class="method-name">answeredEnquiryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="unansweredEnquiryTest">
+                  </a> <!-- unansweredEnquiryTest -->
+                  <span class="method-name">unansweredEnquiryTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -236,7 +611,7 @@
         </div> <!-- panel Art_Gallery_Testing -->
         <div panel-name="test-xml-Art_Gallery_Testing" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Projects\Art Gallery\testng.xml</span>
+            <span class="header-content">C:\Users\Mypc\Desktop\Maven\springapp\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -247,7 +622,7 @@
     &lt;groups&gt;
       &lt;run&gt;
         &lt;include name=&quot;login&quot;/&gt;
-        &lt;include name=&quot;smoketest&quot;/&gt;
+        &lt;include name=&quot;admin&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -295,7 +670,23 @@
               <span class="test-group-name">admin</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">AnsweredEnquiryDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">UnansweredEnquiryDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">addArtMediumTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">addArtProductTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">addArtTypeTest</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -303,7 +694,39 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">addEnquiryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">answeredEnquiryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">artMediumDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">artProductDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">artTypeDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">artistDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">deleteArtMediumTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteArtProductTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteArtTypeTest</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -311,11 +734,171 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">enquirySearchByEnquiryNumberTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">enquirySearchByMobileNumberTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">enquirySearchByNameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">pagesMenuTestaboutus</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">pagesMenuTestcontactus</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">unansweredEnquiryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateAboutUsPageTestaboutus</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">updateArtMediumTest</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">updateArtProductTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateArtTypeTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">updateArtistTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateContactUsPageTestContactUs</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">artMedium</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addArtMediumTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteArtMediumTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateArtMediumTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">artProduct</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addArtProductTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteArtProductTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateArtProductTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">artist</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addArtistTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteArtistTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateArtistTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">arttype</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addArtTypeTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteArtTypeTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateArtTypeTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">dashboard</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">AnsweredEnquiryDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">UnansweredEnquiryDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">artMediumDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">artProductDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">artTypeDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">artistDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">enquiry</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addEnquiryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">answeredEnquiryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">enquirySearchByEnquiryNumberTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">enquirySearchByMobileNumberTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">enquirySearchByNameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">unansweredEnquiryTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -328,6 +911,26 @@
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">AdminLoginWithValidDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">pages</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">pagesMenuTestaboutus</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">pagesMenuTestcontactus</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateAboutUsPageTestaboutus</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateContactUsPageTestContactUs</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -350,14 +953,6 @@
                 <span class="method-in-group-name">deleteArtistTest</span>
                 <br/>
               </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">updateArtMediumTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">updateArtistTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -375,44 +970,132 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(30);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'updateArtistTest')
-data.setCell(0, 2, 'TestCaseClasses.ArtistTest')
-data.setCell(0, 3, 6161);
+data.setCell(0, 1, 'updateArtProductTest')
+data.setCell(0, 2, 'TestCaseClasses.ArtProductTest')
+data.setCell(0, 3, 32268);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'updateArtMediumTest')
-data.setCell(1, 2, 'TestCaseClasses.ArtMediumTest')
-data.setCell(1, 3, 4048);
+data.setCell(1, 1, 'AnsweredEnquiryDetails')
+data.setCell(1, 2, 'TestCaseClasses.DashboardDetailsTest')
+data.setCell(1, 3, 17149);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'AdminLoginWithInValidDetails')
-data.setCell(2, 2, 'TestCaseClasses.LoginTest')
-data.setCell(2, 3, 1959);
+data.setCell(2, 1, 'updateArtistTest')
+data.setCell(2, 2, 'TestCaseClasses.ArtistTest')
+data.setCell(2, 3, 12232);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'addArtistTest')
-data.setCell(3, 2, 'TestCaseClasses.ArtistTest')
-data.setCell(3, 3, 1913);
+data.setCell(3, 1, 'addEnquiryTest')
+data.setCell(3, 2, 'TestCaseClasses.EnquiryTest')
+data.setCell(3, 3, 10769);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'addArtMediumTest')
-data.setCell(4, 2, 'TestCaseClasses.ArtMediumTest')
-data.setCell(4, 3, 1301);
+data.setCell(4, 1, 'addArtProductTest')
+data.setCell(4, 2, 'TestCaseClasses.ArtProductTest')
+data.setCell(4, 3, 9585);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'AdminLoginWithValidDetails')
-data.setCell(5, 2, 'TestCaseClasses.LoginTest')
-data.setCell(5, 3, 1127);
+data.setCell(5, 1, 'updateArtMediumTest')
+data.setCell(5, 2, 'TestCaseClasses.ArtMediumTest')
+data.setCell(5, 3, 8871);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'deleteArtistTest')
-data.setCell(6, 2, 'TestCaseClasses.ArtistTest')
-data.setCell(6, 3, 970);
+data.setCell(6, 1, 'updateArtTypeTest')
+data.setCell(6, 2, 'TestCaseClasses.ArtTypeTest')
+data.setCell(6, 3, 8749);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'deleteArtMediumTest')
-data.setCell(7, 2, 'TestCaseClasses.ArtMediumTest')
-data.setCell(7, 3, 927);
+data.setCell(7, 1, 'enquirySearchByNameTest')
+data.setCell(7, 2, 'TestCaseClasses.EnquirySearchTest')
+data.setCell(7, 3, 6735);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'answeredEnquiryTest')
+data.setCell(8, 2, 'TestCaseClasses.EnquiryTest')
+data.setCell(8, 3, 6658);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'enquirySearchByMobileNumberTest')
+data.setCell(9, 2, 'TestCaseClasses.EnquirySearchTest')
+data.setCell(9, 3, 6568);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'unansweredEnquiryTest')
+data.setCell(10, 2, 'TestCaseClasses.EnquiryTest')
+data.setCell(10, 3, 6314);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addArtistTest')
+data.setCell(11, 2, 'TestCaseClasses.ArtistTest')
+data.setCell(11, 3, 6220);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'deleteArtProductTest')
+data.setCell(12, 2, 'TestCaseClasses.ArtProductTest')
+data.setCell(12, 3, 5809);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'UnansweredEnquiryDetails')
+data.setCell(13, 2, 'TestCaseClasses.DashboardDetailsTest')
+data.setCell(13, 3, 5529);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'deleteArtTypeTest')
+data.setCell(14, 2, 'TestCaseClasses.ArtTypeTest')
+data.setCell(14, 3, 5180);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'deleteArtMediumTest')
+data.setCell(15, 2, 'TestCaseClasses.ArtMediumTest')
+data.setCell(15, 3, 4898);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'deleteArtistTest')
+data.setCell(16, 2, 'TestCaseClasses.ArtistTest')
+data.setCell(16, 3, 4775);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'AdminLoginWithInValidDetails')
+data.setCell(17, 2, 'TestCaseClasses.LoginTest')
+data.setCell(17, 3, 3727);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'addArtMediumTest')
+data.setCell(18, 2, 'TestCaseClasses.ArtMediumTest')
+data.setCell(18, 3, 3164);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'addArtTypeTest')
+data.setCell(19, 2, 'TestCaseClasses.ArtTypeTest')
+data.setCell(19, 3, 2676);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'artistDetails')
+data.setCell(20, 2, 'TestCaseClasses.DashboardDetailsTest')
+data.setCell(20, 3, 2576);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'updateContactUsPageTestContactUs')
+data.setCell(21, 2, 'TestCaseClasses.PagesTest')
+data.setCell(21, 3, 2427);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'AdminLoginWithValidDetails')
+data.setCell(22, 2, 'TestCaseClasses.LoginTest')
+data.setCell(22, 3, 2414);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'artMediumDetails')
+data.setCell(23, 2, 'TestCaseClasses.DashboardDetailsTest')
+data.setCell(23, 3, 2267);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'artProductDetails')
+data.setCell(24, 2, 'TestCaseClasses.DashboardDetailsTest')
+data.setCell(24, 3, 2254);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'enquirySearchByEnquiryNumberTest')
+data.setCell(25, 2, 'TestCaseClasses.EnquirySearchTest')
+data.setCell(25, 3, 1885);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'artTypeDetails')
+data.setCell(26, 2, 'TestCaseClasses.DashboardDetailsTest')
+data.setCell(26, 3, 1786);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'updateAboutUsPageTestaboutus')
+data.setCell(27, 2, 'TestCaseClasses.PagesTest')
+data.setCell(27, 3, 1523);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'pagesMenuTestaboutus')
+data.setCell(28, 2, 'TestCaseClasses.PagesTest')
+data.setCell(28, 3, 465);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'pagesMenuTestcontactus')
+data.setCell(29, 2, 'TestCaseClasses.PagesTest')
+data.setCell(29, 3, 217);
 window.suiteTableData['Art_Gallery_Testing']= { tableData: data, tableDiv: 'times-div-Art_Gallery_Testing'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Art_Gallery_Testing">
               </div> <!-- times-div-Art_Gallery_Testing -->
             </div> <!-- times-div -->
@@ -427,95 +1110,44 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Art_Gallery_Testing" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">63 ignored methods</span>
+            <span class="header-content">41 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCaseClasses.LogoutTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">AdminLogout</span>
-                <br/>
-                <span class="ignored-method-name">setupTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCaseClasses.userEnquiryTest</span>
+              <span class="ignored-class-name">TestCaseClasses.ArtistTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setupTest</span>
-                <br/>
-                <span class="ignored-method-name">dropdown</span>
                 <br/>
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCaseClasses.userViewDetatilsTest</span>
+              <span class="ignored-class-name">TestCaseClasses.ArtProductTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupTest</span>
-                <br/>
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
+                <span class="ignored-method-name">setupTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCaseClasses.userSearchTest</span>
+              <div class="ignored-methods-div">
                 <span class="ignored-method-name">search</span>
+                <br/>
+                <span class="ignored-method-name">setupTest</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestCaseClasses.ArtMediumTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupTest</span>
-                <br/>
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCaseClasses.DashboardDetailsTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">UnansweredEnquiryDetails</span>
-                <br/>
-                <span class="ignored-method-name">artProductDetails</span>
-                <br/>
-                <span class="ignored-method-name">AnsweredEnquiryDetails</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">artMediumDetails</span>
-                <br/>
-                <span class="ignored-method-name">artTypeDetails</span>
-                <br/>
-                <span class="ignored-method-name">artistDetails</span>
-                <br/>
                 <span class="ignored-method-name">setupTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCaseClasses.EnquirySearchTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">enquirySearchByMobileNumberTest</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">enquirySearchByEnquiryNumberTest</span>
-                <br/>
-                <span class="ignored-method-name">enquirySearchByNameTest</span>
-                <br/>
-                <span class="ignored-method-name">setupTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCaseClasses.userDropdownTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupTest</span>
-                <br/>
-                <span class="ignored-method-name">dropdown</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -531,52 +1163,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCaseClasses.ArtProductTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">deleteArtProductTest</span>
-                <br/>
-                <span class="ignored-method-name">updateArtProductTest</span>
-                <br/>
-                <span class="ignored-method-name">addArtProductTest</span>
-                <br/>
-                <span class="ignored-method-name">setupTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCaseClasses.EnquiryTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">answeredEnquiryTest</span>
-                <br/>
-                <span class="ignored-method-name">setupTest</span>
-                <br/>
-                <span class="ignored-method-name">unansweredEnquiryTest</span>
-                <br/>
-                <span class="ignored-method-name">addEnquiryTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCaseClasses.ArtTypeTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">updateArtTypeTest</span>
-                <br/>
-                <span class="ignored-method-name">setupTest</span>
-                <br/>
-                <span class="ignored-method-name">addArtTypeTest</span>
-                <br/>
-                <span class="ignored-method-name">deleteArtTypeTest</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCaseClasses.ArtistTest</span>
+              <span class="ignored-class-name">TestCaseClasses.PagesTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -585,26 +1172,16 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCaseClasses.userNavbarTest</span>
+              <span class="ignored-class-name">TestCaseClasses.DashboardDetailsTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupTest</span>
-                <br/>
-                <span class="ignored-method-name">about</span>
-                <br/>
-                <span class="ignored-method-name">contactus</span>
-                <br/>
-                <span class="ignored-method-name">home</span>
-                <br/>
-                <span class="ignored-method-name">admin</span>
-                <br/>
-                <span class="ignored-method-name">arttype</span>
-                <br/>
                 <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setupTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCaseClasses.userSearchTest</span>
+              <span class="ignored-class-name">TestCaseClasses.userViewDetatilsTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">search</span>
                 <br/>
@@ -615,19 +1192,81 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCaseClasses.PagesTest</span>
+              <span class="ignored-class-name">TestCaseClasses.LogoutTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">updateAboutUsPageTestaboutus</span>
-                <br/>
-                <span class="ignored-method-name">pagesMenuTestaboutus</span>
+                <span class="ignored-method-name">setupTest</span>
                 <br/>
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
-                <span class="ignored-method-name">pagesMenuTestcontactus</span>
+                <span class="ignored-method-name">AdminLogout</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCaseClasses.ArtTypeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
                 <br/>
                 <span class="ignored-method-name">setupTest</span>
                 <br/>
-                <span class="ignored-method-name">updateAboutUsPageTestcontactus</span>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCaseClasses.userNavbarTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">about</span>
+                <br/>
+                <span class="ignored-method-name">setupTest</span>
+                <br/>
+                <span class="ignored-method-name">arttype</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">contactus</span>
+                <br/>
+                <span class="ignored-method-name">admin</span>
+                <br/>
+                <span class="ignored-method-name">home</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCaseClasses.EnquirySearchTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupTest</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCaseClasses.userEnquiryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupTest</span>
+                <br/>
+                <span class="ignored-method-name">dropdown</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCaseClasses.userDropdownTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">dropdown</span>
+                <br/>
+                <span class="ignored-method-name">setupTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCaseClasses.EnquiryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupTest</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -646,56 +1285,210 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">AdminLoginWithInValidDetails</span>
-                <span class="method-start">11832 ms</span>
+                <span class="method-start">29412 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AdminLoginWithValidDetails</span>
-                <span class="method-start">13819 ms</span>
+                <span class="method-start">33173 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCaseClasses.DashboardDetailsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">artType</span>
+                <span class="method-start">35587 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">artistDetails</span>
+                <span class="method-start">35587 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverNavigateBackward</span>
+                <span class="method-start">38179 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">artTypeDetails</span>
+                <span class="method-start">39154 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverNavigateBackward</span>
+                <span class="method-start">40940 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">artMediumDetails</span>
+                <span class="method-start">41960 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverNavigateBackward</span>
+                <span class="method-start">44227 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">artProductDetails</span>
+                <span class="method-start">45026 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverNavigateBackward</span>
+                <span class="method-start">47281 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">AnsweredEnquiryDetails</span>
+                <span class="method-start">48065 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverNavigateBackward</span>
+                <span class="method-start">65214 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">UnansweredEnquiryDetails</span>
+                <span class="method-start">66354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverNavigateBackward</span>
+                <span class="method-start">71884 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCaseClasses.ArtistTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">artType</span>
-                <span class="method-start">14947 ms</span>
+                <span class="method-start">72927 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">addArtistTest</span>
-                <span class="method-start">14949 ms</span>
+                <span class="method-start">72931 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateArtistTest</span>
-                <span class="method-start">16863 ms</span>
+                <span class="method-start">79151 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteArtistTest</span>
-                <span class="method-start">23027 ms</span>
+                <span class="method-start">91383 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCaseClasses.ArtTypeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">artType</span>
+                <span class="method-start">96158 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addArtTypeTest</span>
+                <span class="method-start">96162 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateArtTypeTest</span>
+                <span class="method-start">98838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteArtTypeTest</span>
+                <span class="method-start">107587 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCaseClasses.ArtMediumTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">artType</span>
-                <span class="method-start">23998 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">addArtMediumTest</span>
-                <span class="method-start">24000 ms</span>
+                <span class="method-start">112783 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">artType</span>
+                <span class="method-start">112783 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">updateArtMediumTest</span>
-                <span class="method-start">25306 ms</span>
+                <span class="method-start">115947 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteArtMediumTest</span>
-                <span class="method-start">29355 ms</span>
+                <span class="method-start">124818 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCaseClasses.ArtProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">artType</span>
+                <span class="method-start">129716 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addArtProductTest</span>
+                <span class="method-start">129732 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateArtProductTest</span>
+                <span class="method-start">139320 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteArtProductTest</span>
+                <span class="method-start">171590 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCaseClasses.EnquiryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addEnquiryTest</span>
+                <span class="method-start">177401 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">unansweredEnquiryTest</span>
+                <span class="method-start">188175 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">answeredEnquiryTest</span>
+                <span class="method-start">194491 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCaseClasses.EnquirySearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">fetchData</span>
+                <span class="method-start">201152 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">enquirySearchByNameTest</span>
+                <span class="method-start">206446 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enquirySearchByEnquiryNumberTest</span>
+                <span class="method-start">213197 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enquirySearchByMobileNumberTest</span>
+                <span class="method-start">215082 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCaseClasses.PagesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">artType</span>
+                <span class="method-start">221650 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">pagesMenuTestaboutus</span>
+                <span class="method-start">221650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateAboutUsPageTestaboutus</span>
+                <span class="method-start">222118 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">pagesMenuTestcontactus</span>
+                <span class="method-start">223673 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateContactUsPageTestContactUs</span>
+                <span class="method-start">223892 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCaseClasses.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">30350 ms</span>
+                <span class="method-start">226609 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

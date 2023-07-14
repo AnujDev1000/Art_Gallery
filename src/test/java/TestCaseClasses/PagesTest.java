@@ -3,6 +3,7 @@ package TestCaseClasses;
 import static org.junit.Assert.assertEquals;
 
 import org.openqa.selenium.Alert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import ObjectClasses.AboutUs;
@@ -11,14 +12,18 @@ import ObjectClasses.SetupDriver;
 
 
 public class PagesTest extends SetupDriver{
+    @BeforeClass(alwaysRun = true)
+    public void artType() {
+        System.out.println("\n\n|| ADMIN PAGES ||");
+    }
 
-    @Test(priority = 24, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
+    @Test(priority = 24, groups = {"admin", "pages"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void pagesMenuTestaboutus() {
         AboutUs aboutus = new AboutUs(driver);
         aboutus.pageSubmenu();
     }
 
-    @Test(priority = 25, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
+    @Test(priority = 25, groups = {"admin", "pages"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void updateAboutUsPageTestaboutus() {
         AboutUs aboutus = new AboutUs(driver);
         String title = "About Us";
@@ -32,14 +37,14 @@ public class PagesTest extends SetupDriver{
         aboutus.userSideCheckAboutus(title, description);
     }
 
-    @Test(priority = 26, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
+    @Test(priority = 26, groups = {"admin", "pages"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void pagesMenuTestcontactus() {
         ContactUs contactus = new ContactUs(driver);
         contactus.pageSubmenu();
     }
 
-    @Test(priority = 27, groups = {"admin"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
-    public void updateAboutUsPageTestcontactus() {
+    @Test(priority = 27, groups = {"admin", "pages"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
+    public void updateContactUsPageTestContactUs() {
         ContactUs contactus = new ContactUs(driver);
         String title = "Contact Us";
         String email = "artgallery@gmail.com";

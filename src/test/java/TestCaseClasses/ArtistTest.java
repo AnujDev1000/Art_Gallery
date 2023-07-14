@@ -18,7 +18,7 @@ public class ArtistTest extends SetupDriver{
         System.out.println("\n\n|| ARTIST ||");
     }
     
-    @Test(priority = 6, groups = {"admin", "smoketest"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
+    @Test(priority = 6, groups = {"admin", "artist", "smoketest"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void addArtistTest() {
         // login.adminLogin();
         Artist artist = new Artist(driver);
@@ -35,7 +35,7 @@ public class ArtistTest extends SetupDriver{
         artist.printTable();
     }
 
-    @Test(priority = 7, groups = {"admin", "smoketest"}, dependsOnMethods = "addArtistTest")
+    @Test(priority = 7, groups = {"admin", "artist"}, dependsOnMethods = "addArtistTest")
     public void updateArtistTest() {
         // login.adminLogin();
         Artist artist = new Artist(driver);
@@ -51,7 +51,7 @@ public class ArtistTest extends SetupDriver{
         artist.printTable();
     }
 
-    @Test(priority = 8, groups = {"admin", "smoketest"}, dependsOnMethods = "addArtistTest")
+    @Test(priority = 8, groups = {"admin", "artist", "smoketest"}, dependsOnMethods = "addArtistTest")
     public void deleteArtistTest() {
         // login.adminLogin();
         Artist artist = new Artist(driver);

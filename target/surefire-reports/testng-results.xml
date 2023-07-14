@@ -1,85 +1,435 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="63" total="71" passed="8" failed="0" skipped="0">
+<testng-results ignored="41" total="71" passed="28" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-13T00:41:28 IST" name="Art Gallery Testing" finished-at="2023-07-13T00:41:47 IST" duration-ms="18582">
+  <suite started-at="2023-07-14T19:45:55 IST" name="Art Gallery Testing" finished-at="2023-07-14T19:49:12 IST" duration-ms="197030">
     <groups>
+      <group name="artProduct">
+        <method signature="ArtProductTest.addArtProductTest()[pri:15, instance:TestCaseClasses.ArtProductTest@3427b02d]" name="addArtProductTest" class="TestCaseClasses.ArtProductTest"/>
+        <method signature="ArtProductTest.updateArtProductTest()[pri:16, instance:TestCaseClasses.ArtProductTest@3427b02d]" name="updateArtProductTest" class="TestCaseClasses.ArtProductTest"/>
+        <method signature="ArtProductTest.deleteArtProductTest()[pri:17, instance:TestCaseClasses.ArtProductTest@3427b02d]" name="deleteArtProductTest" class="TestCaseClasses.ArtProductTest"/>
+      </group> <!-- artProduct -->
+      <group name="artMedium">
+        <method signature="ArtMediumTest.addArtMediumTest()[pri:12, instance:TestCaseClasses.ArtMediumTest@28eaa59a]" name="addArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
+        <method signature="ArtMediumTest.updateArtMediumTest()[pri:13, instance:TestCaseClasses.ArtMediumTest@28eaa59a]" name="updateArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
+        <method signature="ArtMediumTest.deleteArtMediumTest()[pri:14, instance:TestCaseClasses.ArtMediumTest@28eaa59a]" name="deleteArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
+      </group> <!-- artMedium -->
+      <group name="pages">
+        <method signature="PagesTest.pagesMenuTestaboutus()[pri:24, instance:TestCaseClasses.PagesTest@3c407114]" name="pagesMenuTestaboutus" class="TestCaseClasses.PagesTest"/>
+        <method signature="PagesTest.updateAboutUsPageTestaboutus()[pri:25, instance:TestCaseClasses.PagesTest@3c407114]" name="updateAboutUsPageTestaboutus" class="TestCaseClasses.PagesTest"/>
+        <method signature="PagesTest.pagesMenuTestcontactus()[pri:26, instance:TestCaseClasses.PagesTest@3c407114]" name="pagesMenuTestcontactus" class="TestCaseClasses.PagesTest"/>
+        <method signature="PagesTest.updateContactUsPageTestContactUs()[pri:27, instance:TestCaseClasses.PagesTest@3c407114]" name="updateContactUsPageTestContactUs" class="TestCaseClasses.PagesTest"/>
+      </group> <!-- pages -->
+      <group name="arttype">
+        <method signature="ArtTypeTest.addArtTypeTest()[pri:9, instance:TestCaseClasses.ArtTypeTest@7ed7259e]" name="addArtTypeTest" class="TestCaseClasses.ArtTypeTest"/>
+        <method signature="ArtTypeTest.updateArtTypeTest()[pri:10, instance:TestCaseClasses.ArtTypeTest@7ed7259e]" name="updateArtTypeTest" class="TestCaseClasses.ArtTypeTest"/>
+        <method signature="ArtTypeTest.deleteArtTypeTest()[pri:11, instance:TestCaseClasses.ArtTypeTest@7ed7259e]" name="deleteArtTypeTest" class="TestCaseClasses.ArtTypeTest"/>
+      </group> <!-- arttype -->
+      <group name="artist">
+        <method signature="ArtistTest.addArtistTest()[pri:6, instance:TestCaseClasses.ArtistTest@3d51f06e]" name="addArtistTest" class="TestCaseClasses.ArtistTest"/>
+        <method signature="ArtistTest.updateArtistTest()[pri:7, instance:TestCaseClasses.ArtistTest@3d51f06e]" name="updateArtistTest" class="TestCaseClasses.ArtistTest"/>
+        <method signature="ArtistTest.deleteArtistTest()[pri:8, instance:TestCaseClasses.ArtistTest@3d51f06e]" name="deleteArtistTest" class="TestCaseClasses.ArtistTest"/>
+      </group> <!-- artist -->
       <group name="admin">
-        <method signature="ArtistTest.addArtistTest()[pri:6, instance:TestCaseClasses.ArtistTest@61862a7f]" name="addArtistTest" class="TestCaseClasses.ArtistTest"/>
-        <method signature="ArtistTest.updateArtistTest()[pri:7, instance:TestCaseClasses.ArtistTest@61862a7f]" name="updateArtistTest" class="TestCaseClasses.ArtistTest"/>
-        <method signature="ArtistTest.deleteArtistTest()[pri:8, instance:TestCaseClasses.ArtistTest@61862a7f]" name="deleteArtistTest" class="TestCaseClasses.ArtistTest"/>
-        <method signature="ArtMediumTest.addArtMediumTest()[pri:12, instance:TestCaseClasses.ArtMediumTest@7334aada]" name="addArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
-        <method signature="ArtMediumTest.updateArtMediumTest()[pri:13, instance:TestCaseClasses.ArtMediumTest@7334aada]" name="updateArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
-        <method signature="ArtMediumTest.deleteArtMediumTest()[pri:14, instance:TestCaseClasses.ArtMediumTest@7334aada]" name="deleteArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
+        <method signature="DashboardDetailsTest.artistDetails()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" name="artistDetails" class="TestCaseClasses.DashboardDetailsTest"/>
+        <method signature="DashboardDetailsTest.artTypeDetails()[pri:1, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" name="artTypeDetails" class="TestCaseClasses.DashboardDetailsTest"/>
+        <method signature="DashboardDetailsTest.artMediumDetails()[pri:2, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" name="artMediumDetails" class="TestCaseClasses.DashboardDetailsTest"/>
+        <method signature="DashboardDetailsTest.artProductDetails()[pri:3, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" name="artProductDetails" class="TestCaseClasses.DashboardDetailsTest"/>
+        <method signature="DashboardDetailsTest.AnsweredEnquiryDetails()[pri:4, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" name="AnsweredEnquiryDetails" class="TestCaseClasses.DashboardDetailsTest"/>
+        <method signature="DashboardDetailsTest.UnansweredEnquiryDetails()[pri:5, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" name="UnansweredEnquiryDetails" class="TestCaseClasses.DashboardDetailsTest"/>
+        <method signature="ArtistTest.addArtistTest()[pri:6, instance:TestCaseClasses.ArtistTest@3d51f06e]" name="addArtistTest" class="TestCaseClasses.ArtistTest"/>
+        <method signature="ArtistTest.updateArtistTest()[pri:7, instance:TestCaseClasses.ArtistTest@3d51f06e]" name="updateArtistTest" class="TestCaseClasses.ArtistTest"/>
+        <method signature="ArtistTest.deleteArtistTest()[pri:8, instance:TestCaseClasses.ArtistTest@3d51f06e]" name="deleteArtistTest" class="TestCaseClasses.ArtistTest"/>
+        <method signature="ArtTypeTest.addArtTypeTest()[pri:9, instance:TestCaseClasses.ArtTypeTest@7ed7259e]" name="addArtTypeTest" class="TestCaseClasses.ArtTypeTest"/>
+        <method signature="ArtTypeTest.updateArtTypeTest()[pri:10, instance:TestCaseClasses.ArtTypeTest@7ed7259e]" name="updateArtTypeTest" class="TestCaseClasses.ArtTypeTest"/>
+        <method signature="ArtTypeTest.deleteArtTypeTest()[pri:11, instance:TestCaseClasses.ArtTypeTest@7ed7259e]" name="deleteArtTypeTest" class="TestCaseClasses.ArtTypeTest"/>
+        <method signature="ArtMediumTest.addArtMediumTest()[pri:12, instance:TestCaseClasses.ArtMediumTest@28eaa59a]" name="addArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
+        <method signature="ArtMediumTest.updateArtMediumTest()[pri:13, instance:TestCaseClasses.ArtMediumTest@28eaa59a]" name="updateArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
+        <method signature="ArtMediumTest.deleteArtMediumTest()[pri:14, instance:TestCaseClasses.ArtMediumTest@28eaa59a]" name="deleteArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
+        <method signature="ArtProductTest.addArtProductTest()[pri:15, instance:TestCaseClasses.ArtProductTest@3427b02d]" name="addArtProductTest" class="TestCaseClasses.ArtProductTest"/>
+        <method signature="ArtProductTest.updateArtProductTest()[pri:16, instance:TestCaseClasses.ArtProductTest@3427b02d]" name="updateArtProductTest" class="TestCaseClasses.ArtProductTest"/>
+        <method signature="ArtProductTest.deleteArtProductTest()[pri:17, instance:TestCaseClasses.ArtProductTest@3427b02d]" name="deleteArtProductTest" class="TestCaseClasses.ArtProductTest"/>
+        <method signature="EnquiryTest.addEnquiryTest()[pri:18, instance:TestCaseClasses.EnquiryTest@647e447]" name="addEnquiryTest" class="TestCaseClasses.EnquiryTest"/>
+        <method signature="EnquiryTest.unansweredEnquiryTest()[pri:19, instance:TestCaseClasses.EnquiryTest@647e447]" name="unansweredEnquiryTest" class="TestCaseClasses.EnquiryTest"/>
+        <method signature="EnquiryTest.answeredEnquiryTest()[pri:20, instance:TestCaseClasses.EnquiryTest@647e447]" name="answeredEnquiryTest" class="TestCaseClasses.EnquiryTest"/>
+        <method signature="EnquirySearchTest.enquirySearchByNameTest()[pri:21, instance:TestCaseClasses.EnquirySearchTest@41fbdac4]" name="enquirySearchByNameTest" class="TestCaseClasses.EnquirySearchTest"/>
+        <method signature="EnquirySearchTest.enquirySearchByEnquiryNumberTest()[pri:22, instance:TestCaseClasses.EnquirySearchTest@41fbdac4]" name="enquirySearchByEnquiryNumberTest" class="TestCaseClasses.EnquirySearchTest"/>
+        <method signature="EnquirySearchTest.enquirySearchByMobileNumberTest()[pri:23, instance:TestCaseClasses.EnquirySearchTest@41fbdac4]" name="enquirySearchByMobileNumberTest" class="TestCaseClasses.EnquirySearchTest"/>
+        <method signature="PagesTest.pagesMenuTestaboutus()[pri:24, instance:TestCaseClasses.PagesTest@3c407114]" name="pagesMenuTestaboutus" class="TestCaseClasses.PagesTest"/>
+        <method signature="PagesTest.updateAboutUsPageTestaboutus()[pri:25, instance:TestCaseClasses.PagesTest@3c407114]" name="updateAboutUsPageTestaboutus" class="TestCaseClasses.PagesTest"/>
+        <method signature="PagesTest.pagesMenuTestcontactus()[pri:26, instance:TestCaseClasses.PagesTest@3c407114]" name="pagesMenuTestcontactus" class="TestCaseClasses.PagesTest"/>
+        <method signature="PagesTest.updateContactUsPageTestContactUs()[pri:27, instance:TestCaseClasses.PagesTest@3c407114]" name="updateContactUsPageTestContactUs" class="TestCaseClasses.PagesTest"/>
       </group> <!-- admin -->
+      <group name="enquiry">
+        <method signature="EnquiryTest.addEnquiryTest()[pri:18, instance:TestCaseClasses.EnquiryTest@647e447]" name="addEnquiryTest" class="TestCaseClasses.EnquiryTest"/>
+        <method signature="EnquiryTest.unansweredEnquiryTest()[pri:19, instance:TestCaseClasses.EnquiryTest@647e447]" name="unansweredEnquiryTest" class="TestCaseClasses.EnquiryTest"/>
+        <method signature="EnquiryTest.answeredEnquiryTest()[pri:20, instance:TestCaseClasses.EnquiryTest@647e447]" name="answeredEnquiryTest" class="TestCaseClasses.EnquiryTest"/>
+        <method signature="EnquirySearchTest.enquirySearchByNameTest()[pri:21, instance:TestCaseClasses.EnquirySearchTest@41fbdac4]" name="enquirySearchByNameTest" class="TestCaseClasses.EnquirySearchTest"/>
+        <method signature="EnquirySearchTest.enquirySearchByEnquiryNumberTest()[pri:22, instance:TestCaseClasses.EnquirySearchTest@41fbdac4]" name="enquirySearchByEnquiryNumberTest" class="TestCaseClasses.EnquirySearchTest"/>
+        <method signature="EnquirySearchTest.enquirySearchByMobileNumberTest()[pri:23, instance:TestCaseClasses.EnquirySearchTest@41fbdac4]" name="enquirySearchByMobileNumberTest" class="TestCaseClasses.EnquirySearchTest"/>
+      </group> <!-- enquiry -->
       <group name="smoketest">
-        <method signature="ArtistTest.addArtistTest()[pri:6, instance:TestCaseClasses.ArtistTest@61862a7f]" name="addArtistTest" class="TestCaseClasses.ArtistTest"/>
-        <method signature="ArtistTest.updateArtistTest()[pri:7, instance:TestCaseClasses.ArtistTest@61862a7f]" name="updateArtistTest" class="TestCaseClasses.ArtistTest"/>
-        <method signature="ArtistTest.deleteArtistTest()[pri:8, instance:TestCaseClasses.ArtistTest@61862a7f]" name="deleteArtistTest" class="TestCaseClasses.ArtistTest"/>
-        <method signature="ArtMediumTest.addArtMediumTest()[pri:12, instance:TestCaseClasses.ArtMediumTest@7334aada]" name="addArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
-        <method signature="ArtMediumTest.updateArtMediumTest()[pri:13, instance:TestCaseClasses.ArtMediumTest@7334aada]" name="updateArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
-        <method signature="ArtMediumTest.deleteArtMediumTest()[pri:14, instance:TestCaseClasses.ArtMediumTest@7334aada]" name="deleteArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
+        <method signature="ArtistTest.addArtistTest()[pri:6, instance:TestCaseClasses.ArtistTest@3d51f06e]" name="addArtistTest" class="TestCaseClasses.ArtistTest"/>
+        <method signature="ArtistTest.deleteArtistTest()[pri:8, instance:TestCaseClasses.ArtistTest@3d51f06e]" name="deleteArtistTest" class="TestCaseClasses.ArtistTest"/>
+        <method signature="ArtMediumTest.addArtMediumTest()[pri:12, instance:TestCaseClasses.ArtMediumTest@28eaa59a]" name="addArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
+        <method signature="ArtMediumTest.deleteArtMediumTest()[pri:14, instance:TestCaseClasses.ArtMediumTest@28eaa59a]" name="deleteArtMediumTest" class="TestCaseClasses.ArtMediumTest"/>
       </group> <!-- smoketest -->
       <group name="login">
-        <method signature="LoginTest.AdminLoginWithInValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@40ef3420]" name="AdminLoginWithInValidDetails" class="TestCaseClasses.LoginTest"/>
-        <method signature="LoginTest.AdminLoginWithValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@40ef3420]" name="AdminLoginWithValidDetails" class="TestCaseClasses.LoginTest"/>
+        <method signature="LoginTest.AdminLoginWithInValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@4f209819]" name="AdminLoginWithInValidDetails" class="TestCaseClasses.LoginTest"/>
+        <method signature="LoginTest.AdminLoginWithValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@4f209819]" name="AdminLoginWithValidDetails" class="TestCaseClasses.LoginTest"/>
       </group> <!-- login -->
+      <group name="dashboard">
+        <method signature="DashboardDetailsTest.artistDetails()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" name="artistDetails" class="TestCaseClasses.DashboardDetailsTest"/>
+        <method signature="DashboardDetailsTest.artTypeDetails()[pri:1, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" name="artTypeDetails" class="TestCaseClasses.DashboardDetailsTest"/>
+        <method signature="DashboardDetailsTest.artMediumDetails()[pri:2, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" name="artMediumDetails" class="TestCaseClasses.DashboardDetailsTest"/>
+        <method signature="DashboardDetailsTest.artProductDetails()[pri:3, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" name="artProductDetails" class="TestCaseClasses.DashboardDetailsTest"/>
+        <method signature="DashboardDetailsTest.AnsweredEnquiryDetails()[pri:4, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" name="AnsweredEnquiryDetails" class="TestCaseClasses.DashboardDetailsTest"/>
+        <method signature="DashboardDetailsTest.UnansweredEnquiryDetails()[pri:5, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" name="UnansweredEnquiryDetails" class="TestCaseClasses.DashboardDetailsTest"/>
+      </group> <!-- dashboard -->
     </groups>
-    <test started-at="2023-07-13T00:41:28 IST" name="test" finished-at="2023-07-13T00:41:47 IST" duration-ms="18582">
+    <test started-at="2023-07-14T19:45:55 IST" name="test" finished-at="2023-07-14T19:49:12 IST" duration-ms="197030">
       <class name="TestCaseClasses.ArtMediumTest">
-        <test-method is-config="true" signature="artType()[pri:0, instance:TestCaseClasses.ArtMediumTest@7334aada]" started-at="2023-07-13T00:41:41 IST" name="artType" finished-at="2023-07-13T00:41:41 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- artType -->
-        <test-method signature="addArtMediumTest()[pri:12, instance:TestCaseClasses.ArtMediumTest@7334aada]" started-at="2023-07-13T00:41:41 IST" name="addArtMediumTest" finished-at="2023-07-13T00:41:42 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="1301" status="PASS">
+        <test-method signature="addArtMediumTest()[pri:12, instance:TestCaseClasses.ArtMediumTest@28eaa59a]" started-at="2023-07-14T19:47:19 IST" name="addArtMediumTest" finished-at="2023-07-14T19:47:22 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="3164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addArtMediumTest -->
-        <test-method signature="updateArtMediumTest()[pri:13, instance:TestCaseClasses.ArtMediumTest@7334aada]" started-at="2023-07-13T00:41:42 IST" name="updateArtMediumTest" finished-at="2023-07-13T00:41:46 IST" depends-on-methods="TestCaseClasses.ArtMediumTest.addArtMediumTest" duration-ms="4048" status="PASS">
+        <test-method is-config="true" signature="artType()[pri:0, instance:TestCaseClasses.ArtMediumTest@28eaa59a]" started-at="2023-07-14T19:47:19 IST" name="artType" finished-at="2023-07-14T19:47:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- artType -->
+        <test-method signature="updateArtMediumTest()[pri:13, instance:TestCaseClasses.ArtMediumTest@28eaa59a]" started-at="2023-07-14T19:47:22 IST" name="updateArtMediumTest" finished-at="2023-07-14T19:47:31 IST" depends-on-methods="TestCaseClasses.ArtMediumTest.addArtMediumTest" duration-ms="8871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateArtMediumTest -->
-        <test-method signature="deleteArtMediumTest()[pri:14, instance:TestCaseClasses.ArtMediumTest@7334aada]" started-at="2023-07-13T00:41:46 IST" name="deleteArtMediumTest" finished-at="2023-07-13T00:41:47 IST" depends-on-methods="TestCaseClasses.ArtMediumTest.addArtMediumTest" duration-ms="927" status="PASS">
+        <test-method signature="deleteArtMediumTest()[pri:14, instance:TestCaseClasses.ArtMediumTest@28eaa59a]" started-at="2023-07-14T19:47:31 IST" name="deleteArtMediumTest" finished-at="2023-07-14T19:47:36 IST" depends-on-methods="TestCaseClasses.ArtMediumTest.addArtMediumTest" duration-ms="4898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteArtMediumTest -->
       </class> <!-- TestCaseClasses.ArtMediumTest -->
+      <class name="TestCaseClasses.ArtTypeTest">
+        <test-method is-config="true" signature="artType()[pri:0, instance:TestCaseClasses.ArtTypeTest@7ed7259e]" started-at="2023-07-14T19:47:02 IST" name="artType" finished-at="2023-07-14T19:47:02 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- artType -->
+        <test-method signature="addArtTypeTest()[pri:9, instance:TestCaseClasses.ArtTypeTest@7ed7259e]" started-at="2023-07-14T19:47:02 IST" name="addArtTypeTest" finished-at="2023-07-14T19:47:05 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="2676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addArtTypeTest -->
+        <test-method signature="updateArtTypeTest()[pri:10, instance:TestCaseClasses.ArtTypeTest@7ed7259e]" started-at="2023-07-14T19:47:05 IST" name="updateArtTypeTest" finished-at="2023-07-14T19:47:14 IST" depends-on-methods="TestCaseClasses.ArtTypeTest.addArtTypeTest" duration-ms="8749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateArtTypeTest -->
+        <test-method signature="deleteArtTypeTest()[pri:11, instance:TestCaseClasses.ArtTypeTest@7ed7259e]" started-at="2023-07-14T19:47:14 IST" name="deleteArtTypeTest" finished-at="2023-07-14T19:47:19 IST" depends-on-methods="TestCaseClasses.ArtTypeTest.addArtTypeTest" duration-ms="5180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteArtTypeTest -->
+      </class> <!-- TestCaseClasses.ArtTypeTest -->
       <class name="TestCaseClasses.LoginTest">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:TestCaseClasses.LoginTest@40ef3420]" started-at="2023-07-13T00:41:17 IST" name="setupTest" finished-at="2023-07-13T00:41:28 IST" duration-ms="11701" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:TestCaseClasses.LoginTest@4f209819]" started-at="2023-07-14T19:45:26 IST" name="setupTest" finished-at="2023-07-14T19:45:55 IST" duration-ms="29283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="AdminLoginWithInValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@40ef3420]" started-at="2023-07-13T00:41:29 IST" name="AdminLoginWithInValidDetails" finished-at="2023-07-13T00:41:31 IST" duration-ms="1959" status="PASS">
+        <test-method signature="AdminLoginWithInValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@4f209819]" started-at="2023-07-14T19:45:56 IST" name="AdminLoginWithInValidDetails" finished-at="2023-07-14T19:45:59 IST" duration-ms="3727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AdminLoginWithInValidDetails -->
-        <test-method signature="AdminLoginWithValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@40ef3420]" started-at="2023-07-13T00:41:31 IST" name="AdminLoginWithValidDetails" finished-at="2023-07-13T00:41:32 IST" depends-on-methods="TestCaseClasses.LoginTest.AdminLoginWithInValidDetails" duration-ms="1127" status="PASS">
+        <test-method signature="AdminLoginWithValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@4f209819]" started-at="2023-07-14T19:45:59 IST" name="AdminLoginWithValidDetails" finished-at="2023-07-14T19:46:02 IST" depends-on-methods="TestCaseClasses.LoginTest.AdminLoginWithInValidDetails" duration-ms="2414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AdminLoginWithValidDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCaseClasses.LoginTest@40ef3420]" started-at="2023-07-13T00:41:47 IST" name="tearDown" finished-at="2023-07-13T00:41:48 IST" duration-ms="851" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCaseClasses.LoginTest@4f209819]" started-at="2023-07-14T19:49:13 IST" name="tearDown" finished-at="2023-07-14T19:49:14 IST" duration-ms="1598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCaseClasses.LoginTest -->
-      <class name="TestCaseClasses.ArtistTest">
-        <test-method is-config="true" signature="artType()[pri:0, instance:TestCaseClasses.ArtistTest@61862a7f]" started-at="2023-07-13T00:41:32 IST" name="artType" finished-at="2023-07-13T00:41:32 IST" duration-ms="1" status="PASS">
+      <class name="TestCaseClasses.PagesTest">
+        <test-method signature="pagesMenuTestaboutus()[pri:24, instance:TestCaseClasses.PagesTest@3c407114]" started-at="2023-07-14T19:49:08 IST" name="pagesMenuTestaboutus" finished-at="2023-07-14T19:49:08 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pagesMenuTestaboutus -->
+        <test-method is-config="true" signature="artType()[pri:0, instance:TestCaseClasses.PagesTest@3c407114]" started-at="2023-07-14T19:49:08 IST" name="artType" finished-at="2023-07-14T19:49:08 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- artType -->
-        <test-method signature="addArtistTest()[pri:6, instance:TestCaseClasses.ArtistTest@61862a7f]" started-at="2023-07-13T00:41:32 IST" name="addArtistTest" finished-at="2023-07-13T00:41:34 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="1913" status="PASS">
+        <test-method signature="updateAboutUsPageTestaboutus()[pri:25, instance:TestCaseClasses.PagesTest@3c407114]" started-at="2023-07-14T19:49:08 IST" name="updateAboutUsPageTestaboutus" finished-at="2023-07-14T19:49:10 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="1523" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="" href="aboutus.php">...</a> is not clickable at point (90, 477). Other element would receive the click: <div id="sidebar" class="nav-collapse " tabindex="5000" style="overflow: hidden; outline: none;">...</div>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anuj', ip: '192.168.43.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63ff2a8e795c6579b3100122f20b159f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="" href="aboutus.php">...</a> is not clickable at point (90, 477). Other element would receive the click: <div id="sidebar" class="nav-collapse " tabindex="5000" style="overflow: hidden; outline: none;">...</div>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anuj', ip: '192.168.43.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63ff2a8e795c6579b3100122f20b159f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at ObjectClasses.AboutUs.navigateToAboutUsPage(AboutUs.java:37)
+at ObjectClasses.AboutUs.updateAboutUsPage(AboutUs.java:93)
+at TestCaseClasses.PagesTest.updateAboutUsPageTestaboutus(PagesTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAboutUsPageTestaboutus -->
+        <test-method signature="pagesMenuTestcontactus()[pri:26, instance:TestCaseClasses.PagesTest@3c407114]" started-at="2023-07-14T19:49:10 IST" name="pagesMenuTestcontactus" finished-at="2023-07-14T19:49:10 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pagesMenuTestcontactus -->
+        <test-method signature="updateContactUsPageTestContactUs()[pri:27, instance:TestCaseClasses.PagesTest@3c407114]" started-at="2023-07-14T19:49:10 IST" name="updateContactUsPageTestContactUs" finished-at="2023-07-14T19:49:12 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="2427" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main-content"]/section/div[3]/div/section/div/div/form/div[5]/div/div[2]/div"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anuj', ip: '192.168.43.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63ff2a8e795c6579b3100122f20b159f
+*** Element info: {Using=xpath, value=//*[@id="main-content"]/section/div[3]/div/section/div/div/form/div[5]/div/div[2]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main-content"]/section/div[3]/div/section/div/div/form/div[5]/div/div[2]/div"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anuj', ip: '192.168.43.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63ff2a8e795c6579b3100122f20b159f
+*** Element info: {Using=xpath, value=//*[@id="main-content"]/section/div[3]/div/section/div/div/form/div[5]/div/div[2]/div}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at ObjectClasses.ContactUs.fillPageDescription(ContactUs.java:58)
+at ObjectClasses.ContactUs.updateContactUsPage(ContactUs.java:115)
+at TestCaseClasses.PagesTest.updateContactUsPageTestContactUs(PagesTest.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateContactUsPageTestContactUs -->
+      </class> <!-- TestCaseClasses.PagesTest -->
+      <class name="TestCaseClasses.EnquiryTest">
+        <test-method signature="addEnquiryTest()[pri:18, instance:TestCaseClasses.EnquiryTest@647e447]" started-at="2023-07-14T19:48:24 IST" name="addEnquiryTest" finished-at="2023-07-14T19:48:34 IST" duration-ms="10769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEnquiryTest -->
+        <test-method signature="unansweredEnquiryTest()[pri:19, instance:TestCaseClasses.EnquiryTest@647e447]" started-at="2023-07-14T19:48:34 IST" name="unansweredEnquiryTest" finished-at="2023-07-14T19:48:41 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="6314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unansweredEnquiryTest -->
+        <test-method signature="answeredEnquiryTest()[pri:20, instance:TestCaseClasses.EnquiryTest@647e447]" started-at="2023-07-14T19:48:41 IST" name="answeredEnquiryTest" finished-at="2023-07-14T19:48:47 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="6658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- answeredEnquiryTest -->
+      </class> <!-- TestCaseClasses.EnquiryTest -->
+      <class name="TestCaseClasses.ArtProductTest">
+        <test-method is-config="true" signature="artType()[pri:0, instance:TestCaseClasses.ArtProductTest@3427b02d]" started-at="2023-07-14T19:47:36 IST" name="artType" finished-at="2023-07-14T19:47:36 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- artType -->
+        <test-method signature="addArtProductTest()[pri:15, instance:TestCaseClasses.ArtProductTest@3427b02d]" started-at="2023-07-14T19:47:36 IST" name="addArtProductTest" finished-at="2023-07-14T19:47:45 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="9585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addArtProductTest -->
+        <test-method signature="updateArtProductTest()[pri:16, instance:TestCaseClasses.ArtProductTest@3427b02d]" started-at="2023-07-14T19:47:45 IST" name="updateArtProductTest" finished-at="2023-07-14T19:48:18 IST" depends-on-methods="TestCaseClasses.ArtProductTest.addArtProductTest" duration-ms="32268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateArtProductTest -->
+        <test-method signature="deleteArtProductTest()[pri:17, instance:TestCaseClasses.ArtProductTest@3427b02d]" started-at="2023-07-14T19:48:18 IST" name="deleteArtProductTest" finished-at="2023-07-14T19:48:24 IST" depends-on-methods="TestCaseClasses.ArtProductTest.addArtProductTest" duration-ms="5809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteArtProductTest -->
+      </class> <!-- TestCaseClasses.ArtProductTest -->
+      <class name="TestCaseClasses.EnquirySearchTest">
+        <test-method is-config="true" signature="fetchData()[pri:0, instance:TestCaseClasses.EnquirySearchTest@41fbdac4]" started-at="2023-07-14T19:48:47 IST" name="fetchData" finished-at="2023-07-14T19:48:53 IST" duration-ms="5294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchData -->
+        <test-method signature="enquirySearchByNameTest()[pri:21, instance:TestCaseClasses.EnquirySearchTest@41fbdac4]" started-at="2023-07-14T19:48:53 IST" name="enquirySearchByNameTest" finished-at="2023-07-14T19:48:59 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="6735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enquirySearchByNameTest -->
+        <test-method signature="enquirySearchByEnquiryNumberTest()[pri:22, instance:TestCaseClasses.EnquirySearchTest@41fbdac4]" started-at="2023-07-14T19:48:59 IST" name="enquirySearchByEnquiryNumberTest" finished-at="2023-07-14T19:49:01 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="1885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enquirySearchByEnquiryNumberTest -->
+        <test-method signature="enquirySearchByMobileNumberTest()[pri:23, instance:TestCaseClasses.EnquirySearchTest@41fbdac4]" started-at="2023-07-14T19:49:01 IST" name="enquirySearchByMobileNumberTest" finished-at="2023-07-14T19:49:08 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="6568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enquirySearchByMobileNumberTest -->
+      </class> <!-- TestCaseClasses.EnquirySearchTest -->
+      <class name="TestCaseClasses.ArtistTest">
+        <test-method is-config="true" signature="artType()[pri:0, instance:TestCaseClasses.ArtistTest@3d51f06e]" started-at="2023-07-14T19:46:39 IST" name="artType" finished-at="2023-07-14T19:46:39 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- artType -->
+        <test-method signature="addArtistTest()[pri:6, instance:TestCaseClasses.ArtistTest@3d51f06e]" started-at="2023-07-14T19:46:39 IST" name="addArtistTest" finished-at="2023-07-14T19:46:45 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="6220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addArtistTest -->
-        <test-method signature="updateArtistTest()[pri:7, instance:TestCaseClasses.ArtistTest@61862a7f]" started-at="2023-07-13T00:41:34 IST" name="updateArtistTest" finished-at="2023-07-13T00:41:40 IST" depends-on-methods="TestCaseClasses.ArtistTest.addArtistTest" duration-ms="6161" status="PASS">
+        <test-method signature="updateArtistTest()[pri:7, instance:TestCaseClasses.ArtistTest@3d51f06e]" started-at="2023-07-14T19:46:45 IST" name="updateArtistTest" finished-at="2023-07-14T19:46:58 IST" depends-on-methods="TestCaseClasses.ArtistTest.addArtistTest" duration-ms="12232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateArtistTest -->
-        <test-method signature="deleteArtistTest()[pri:8, instance:TestCaseClasses.ArtistTest@61862a7f]" started-at="2023-07-13T00:41:40 IST" name="deleteArtistTest" finished-at="2023-07-13T00:41:41 IST" depends-on-methods="TestCaseClasses.ArtistTest.addArtistTest" duration-ms="970" status="PASS">
+        <test-method signature="deleteArtistTest()[pri:8, instance:TestCaseClasses.ArtistTest@3d51f06e]" started-at="2023-07-14T19:46:58 IST" name="deleteArtistTest" finished-at="2023-07-14T19:47:02 IST" depends-on-methods="TestCaseClasses.ArtistTest.addArtistTest" duration-ms="4775" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteArtistTest -->
       </class> <!-- TestCaseClasses.ArtistTest -->
+      <class name="TestCaseClasses.DashboardDetailsTest">
+        <test-method signature="artistDetails()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" started-at="2023-07-14T19:46:02 IST" name="artistDetails" finished-at="2023-07-14T19:46:04 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="2576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- artistDetails -->
+        <test-method is-config="true" signature="artType()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" started-at="2023-07-14T19:46:02 IST" name="artType" finished-at="2023-07-14T19:46:02 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- artType -->
+        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" started-at="2023-07-14T19:46:04 IST" name="driverNavigateBackward" finished-at="2023-07-14T19:46:05 IST" duration-ms="967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverNavigateBackward -->
+        <test-method signature="artTypeDetails()[pri:1, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" started-at="2023-07-14T19:46:05 IST" name="artTypeDetails" finished-at="2023-07-14T19:46:07 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="1786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- artTypeDetails -->
+        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" started-at="2023-07-14T19:46:07 IST" name="driverNavigateBackward" finished-at="2023-07-14T19:46:08 IST" duration-ms="1016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverNavigateBackward -->
+        <test-method signature="artMediumDetails()[pri:2, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" started-at="2023-07-14T19:46:08 IST" name="artMediumDetails" finished-at="2023-07-14T19:46:10 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="2267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- artMediumDetails -->
+        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" started-at="2023-07-14T19:46:10 IST" name="driverNavigateBackward" finished-at="2023-07-14T19:46:11 IST" duration-ms="796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverNavigateBackward -->
+        <test-method signature="artProductDetails()[pri:3, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" started-at="2023-07-14T19:46:11 IST" name="artProductDetails" finished-at="2023-07-14T19:46:13 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="2254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- artProductDetails -->
+        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" started-at="2023-07-14T19:46:13 IST" name="driverNavigateBackward" finished-at="2023-07-14T19:46:14 IST" duration-ms="781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverNavigateBackward -->
+        <test-method signature="AnsweredEnquiryDetails()[pri:4, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" started-at="2023-07-14T19:46:14 IST" name="AnsweredEnquiryDetails" finished-at="2023-07-14T19:46:31 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="17149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AnsweredEnquiryDetails -->
+        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" started-at="2023-07-14T19:46:31 IST" name="driverNavigateBackward" finished-at="2023-07-14T19:46:33 IST" duration-ms="1136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverNavigateBackward -->
+        <test-method signature="UnansweredEnquiryDetails()[pri:5, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" started-at="2023-07-14T19:46:33 IST" name="UnansweredEnquiryDetails" finished-at="2023-07-14T19:46:38 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="5529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UnansweredEnquiryDetails -->
+        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@481a996b]" started-at="2023-07-14T19:46:38 IST" name="driverNavigateBackward" finished-at="2023-07-14T19:46:39 IST" duration-ms="1041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverNavigateBackward -->
+      </class> <!-- TestCaseClasses.DashboardDetailsTest -->
     </test> <!-- test -->
   </suite> <!-- Art Gallery Testing -->
 </testng-results>

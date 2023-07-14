@@ -9,7 +9,7 @@ import ObjectClasses.SetupDriver;
 
 public class LogoutTest extends SetupDriver{
     
-    @Test(groups = {"logout"}, dependsOnGroups = {"admin"})
+    @Test(priority = 28, groups = {"logout"})
     public void AdminLogout() {
         Login login = new Login(driver);
         login.adminLogout();

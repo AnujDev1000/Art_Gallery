@@ -1,167 +1,744 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="32.696" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="232.754" tests="30" errors="0" skipped="0" failures="2">
   <properties>
-    <property name="java.specification.version" value="19"/>
+    <property name="java.specification.version" value="14"/>
     <property name="webdriver.chrome.driver" value="chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\Projects\Art Gallery\target\test-classes;D:\Projects\Art Gallery\target\classes;C:\Users\adity\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\adity\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\adity\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\adity\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\adity\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\adity\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\adity\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\adity\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\adity\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\adity\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\adity\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\adity\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\adity\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\adity\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\adity\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\adity\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\adity\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\adity\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\adity\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\adity\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\adity\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\adity\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\adity\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\adity\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\adity\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\adity\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\adity\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;"/>
+    <property name="java.class.path" value="C:\Users\Mypc\Desktop\Maven\springapp\target\test-classes;C:\Users\Mypc\Desktop\Maven\springapp\target\classes;C:\Users\Mypc\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Mypc\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Mypc\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Mypc\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Mypc\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Mypc\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Mypc\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Mypc\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Mypc\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Mypc\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Mypc\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Mypc\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Mypc\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Mypc\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Mypc\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Mypc\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Mypc\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\Mypc\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Mypc\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Mypc\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Mypc\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Mypc\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\Mypc\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\Mypc\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Mypc\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\Mypc\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Mypc\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="os.name" value="Windows 11"/>
-    <property name="java.vm.specification.version" value="19"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="14"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="IN"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
-    <property name="sun.java.command" value="C:\Users\adity\AppData\Local\Temp\surefire15436454493136955296\surefirebooter-20230713004115140_3.jar C:\Users\adity\AppData\Local\Temp\surefire15436454493136955296 2023-07-13T00-41-14_682-jvmRun1 surefire-20230713004115140_1tmp surefire_0-20230713004115140_2tmp"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14\bin"/>
+    <property name="sun.java.command" value="C:\Users\Mypc\AppData\Local\Temp\surefire1298532402574732022\surefirebooter-20230714194520936_3.jar C:\Users\Mypc\AppData\Local\Temp\surefire1298532402574732022 2023-07-14T19-45-19_402-jvmRun1 surefire-20230714194520936_1tmp surefire_0-20230714194520936_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="D:\Projects\Art Gallery\target\test-classes;D:\Projects\Art Gallery\target\classes;C:\Users\adity\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\adity\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\adity\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\adity\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\adity\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\adity\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\adity\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\adity\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\adity\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\adity\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\adity\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\adity\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\adity\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\adity\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\adity\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\adity\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\adity\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\adity\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\adity\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\adity\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\adity\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\adity\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\adity\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\adity\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\adity\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\adity\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\adity\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\adity\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\Mypc\Desktop\Maven\springapp\target\test-classes;C:\Users\Mypc\Desktop\Maven\springapp\target\classes;C:\Users\Mypc\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Mypc\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Mypc\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Mypc\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Mypc\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Mypc\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Mypc\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Mypc\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Mypc\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Mypc\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Mypc\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Mypc\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Mypc\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Mypc\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Mypc\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Mypc\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Mypc\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\Mypc\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Mypc\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Mypc\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Mypc\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Mypc\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\Mypc\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\Mypc\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Mypc\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\Mypc\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Mypc\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\adity"/>
+    <property name="user.home" value="C:\Users\Mypc"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2022-10-18"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+    <property name="java.version.date" value="2020-03-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-14"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="D:\Projects\Art Gallery"/>
+    <property name="basedir" value="C:\Users\Mypc\Desktop\Maven\springapp"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\adity\AppData\Local\Temp\surefire15436454493136955296\surefirebooter-20230713004115140_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Mypc\AppData\Local\Temp\surefire1298532402574732022\surefirebooter-20230714194520936_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="19.0.1+10-21"/>
-    <property name="user.name" value="Aditya"/>
-    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="java.runtime.version" value="14+36-1461"/>
+    <property name="user.name" value="Mypc"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="file.encoding" value="Cp1252"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\adity\.m2\repository"/>
+    <property name="localRepository" value="C:\Users\Mypc\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\adity\AppData\Local\Temp\"/>
-    <property name="java.version" value="19.0.1"/>
-    <property name="user.dir" value="D:\Projects\Art Gallery"/>
+    <property name="java.io.tmpdir" value="C:\Users\Mypc\AppData\Local\Temp\"/>
+    <property name="java.version" value="14"/>
+    <property name="user.dir" value="C:\Users\Mypc\Desktop\Maven\springapp"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Python310\Scripts\;C:\Python310\;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\mingw-w64\mingw32\bin;C:\Program Files\Dart\dart-sdk\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\heroku\bin;C:\Program Files\heroku\client\bin;C:\Program Files\nodejs\;C:\Program Files\Maven\apache-maven-3.9.2\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\adity\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\adity\AppData\Local\Programs\Python\Python38\;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\bin;;C:\Users\adity\AppData\Local\Microsoft\WindowsApps;C:\Users\adity\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\adity\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Users\adity\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-14\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\Mypc\bin;E:\Git\mingw64\bin;E:\Git\usr\local\bin;E:\Git\usr\bin;E:\Git\usr\bin;E:\Git\mingw64\bin;E:\Git\usr\bin;C:\Users\Mypc\bin;E:\db_home\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Java\jdk-14\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Users\Mypc\AppData\Local\Android\Sdk\platforms;C:\Users\Mypc\AppData\Local\Android\Sdk\platform-tools;C:\Users\Mypc\AppData\Local\Android\Sdk;C:\Users\Mypc\AppData\Local\Android\Sdk\emulator;E:\Git\cmd;E:\nodejs;C:\Program Files\Maven\apache-maven-3.9.1\bin;C:\Users\Mypc\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-14\bin;C:\Users\Mypc\AppData\Local\Android\Sdk;E:\Microsoft VS Code\bin;E:\flutter\bin;C:\Users\Mypc\AppData\Roaming\npm;E:\Git\usr\bin\vendor_perl;E:\Git\usr\bin\core_perl;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="19.0.1+10-21"/>
+    <property name="java.vm.version" value="14+36-1461"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="63.0"/>
+    <property name="java.class.version" value="58.0"/>
   </properties>
-  <testcase name="AdminLoginWithInValidDetails" classname="TestCaseClasses.LoginTest" time="1.966">
+  <testcase name="AdminLoginWithInValidDetails" classname="TestCaseClasses.LoginTest" time="3.751">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 53863
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 23921
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1689189081.350][WARNING]: This version of ChromeDriver has not been tested with Chrome version 114.
-Jul 13, 2023 12:41:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1689344134.829][WARNING]: This version of ChromeDriver has not been tested with Chrome version 114.
+Jul 14, 2023 7:45:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AdminLoginWithValidDetails" classname="TestCaseClasses.LoginTest" time="1.122"/>
-  <testcase name="addArtistTest" classname="TestCaseClasses.ArtistTest" time="1.929">
+  <testcase name="AdminLoginWithValidDetails" classname="TestCaseClasses.LoginTest" time="2.402"/>
+  <testcase name="artistDetails" classname="TestCaseClasses.DashboardDetailsTest" time="2.663">
+    <system-out><![CDATA[
+
+|| ADMIN DASHBOARD ||
+
+Artist Details!
+S.NO  Name           Email            Mobile Number  Registration Date    
+----------------------------------------------------------------
+1     Maddy          maddy@gmail.com  9687987988     2022-12-21 13:31:25  
+2     Abir Rajwansh  abir@gmail.com   5687987987     2022-12-21 13:31:25  
+3     Ryan           ryan@gmail.com   7414895623     2023-06-25 11:51:28  
+4     Roman          roman@gmail.com  1232475869     2023-06-25 11:52:21  
+5     Harry          harry@gmail.com  2585794613     2023-06-25 11:54:46  
+6     Rock           rock@gmail.com   1234567890     2023-07-12 16:55:00  
+]]></system-out>
+  </testcase>
+  <testcase name="artTypeDetails" classname="TestCaseClasses.DashboardDetailsTest" time="1.852">
+    <system-out><![CDATA[
+ArtType Details!
+S.NO  Type of Art     Creation Date        
+-------------------------------------
+1     Serigraphs      2022-12-21 14:24:46  
+2     Prints          2022-12-21 14:25:00  
+3     Painting        2022-12-21 14:25:31  
+4     Street Art      2022-12-21 14:26:06  
+5     Visual art      2022-12-21 14:26:29  
+6     Conceptual art  2022-12-21 14:26:45  
+7     painting        2023-05-10 04:41:26  
+8     illustration    2023-06-16 13:46:00  
+]]></system-out>
+  </testcase>
+  <testcase name="artMediumDetails" classname="TestCaseClasses.DashboardDetailsTest" time="2.335">
+    <system-out><![CDATA[
+Art Medium Details!
+S.NO  Medium of Art                      Creation Date        
+--------------------------------------------------------
+1     Acrylic on canvas                  2022-12-22 04:57:34  
+2     Resin                              2022-12-22 04:58:00  
+3     Mixed Media                        2022-12-22 06:09:12  
+4     Bronze                             2022-12-22 06:09:35  
+5     Fibre                              2022-12-22 06:09:53  
+6     Steel                              2022-12-22 06:10:16  
+7     Metal                              2022-12-22 06:10:35  
+8     Oil on Canvas                      2022-12-22 06:11:31  
+9     Oil on Linen                       2022-12-22 06:12:12  
+10    Acrylics on paper                  2022-12-22 06:13:11  
+11    Hand-painted on particle wood/MDF  2022-12-22 06:14:03  
+]]></system-out>
+  </testcase>
+  <testcase name="artProductDetails" classname="TestCaseClasses.DashboardDetailsTest" time="2.313">
+    <system-out><![CDATA[
+Art Product Details!
+S.NO  Reference Number  Title                Image  Creation Date        
+---------------------------------------------------------------
+1     255288886         radhakrishna                2023-06-18 07:58:55  
+2     652700923         art                         2023-06-18 07:59:55  
+3     365300848         night                       2023-06-18 08:01:35  
+4     804256536         Nature Illustration         2023-06-25 12:42:05  
+5     512478075         Patterns                    2023-06-25 13:50:20  
+6     725932940         Joker                       2023-06-25 13:53:10  
+]]></system-out>
+  </testcase>
+  <testcase name="AnsweredEnquiryDetails" classname="TestCaseClasses.DashboardDetailsTest" time="17.67">
+    <system-out><![CDATA[
+Answered Enquiry Details!
+S.NO  Enquiry Number  Full Name   Mobile Number  Enquiry Date         
+------------------------------------------------------------
+1     230873611       Anuj kumar  1234567890     2023-01-02 18:16:47  
+2     227883179       Amit Kumar  1234434321     2023-01-02 18:42:42  
+3     998313640       jon         1234567890     2023-04-26 10:10:24  
+4     171166472       Aditya      8888855555     2023-05-24 09:19:36  
+5     543169723       Testing     1234567890     2023-05-25 12:18:54  
+6     665045238       testing     789456123      2023-05-25 12:20:35  
+7     306867496       Testing     1234567890     2023-05-25 12:21:56  
+8     533589647       Testing     1234567890     2023-05-25 12:22:00  
+9     448409961       Testing     1234567890     2023-05-25 12:22:09  
+10    876180677       Testing     1234567890     2023-05-25 12:27:05  
+11    523867902       Testing     1234567890     2023-05-25 12:27:08  
+12    519521856       Testing     1234567890     2023-05-25 12:27:14  
+13    667584876       Testing     1234567890     2023-05-25 12:55:05  
+14    748255038       Testing     1234567890     2023-05-25 12:55:09  
+15    799454617       Testing     1234567890     2023-05-25 12:55:17  
+16    828303732       Testing     1234567890     2023-05-25 13:01:44  
+17    705473635       Testing     1234567890     2023-05-25 13:01:49  
+18    333060539       Testing     1234567890     2023-05-25 13:02:00  
+19    540038133       Testing     1234567890     2023-05-25 13:48:37  
+20    945507133       Testing     1234567890     2023-05-26 11:49:53  
+21    572235393       Testing     1234567890     2023-05-26 11:49:59  
+22    684224274       testing     45             2023-05-26 17:15:07  
+23    278875282       test        1234567899     2023-05-27 05:50:49  
+24    998417108       abc         123456789      2023-05-27 11:17:23  
+25    208128608       vinni       987654321      2023-05-27 16:10:05  
+26    222642806       vinni       987654321      2023-05-27 16:58:59  
+27    370218747       vinni       987654321      2023-05-27 17:01:16  
+28    331090732       vinni       987654321      2023-05-27 17:34:12  
+29    355750501       vinni       987654321      2023-05-27 17:39:16  
+30    981155165       vinni       987654321      2023-05-27 17:42:58  
+31    268452148       vinni       987654321      2023-05-27 17:44:22  
+32    886012479       vinni       987654321      2023-05-27 17:48:01  
+33    693761903       vinni       987654321      2023-05-27 18:06:12  
+34    245631524       vinni       987654321      2023-05-27 18:07:14  
+35    178642066       vinni       987654321      2023-05-27 18:10:40  
+36    366247800       vinni       987654321      2023-05-27 18:13:05  
+37    687545794       vinni       987654321      2023-05-27 18:21:27  
+38    231834027       vinni       987654321      2023-05-27 18:23:34  
+39    368739310       vinni       987654321      2023-05-27 18:25:39  
+40    233625376       vinni       987654321      2023-05-28 05:44:51  
+41    316789649       vinni       987654321      2023-05-28 05:47:31  
+42    445206498       vinni       987654321      2023-05-28 05:50:54  
+43    122869192       abc1        1234567890     2023-05-30 12:52:40  
+44    566419047       Chandu      987654321      2023-05-30 13:48:38  
+45    147478676       pavan       6543217890     2023-06-20 09:51:07  
+46    979979866       vikki       6543217890     2023-06-20 09:53:08  
+47    943520245       Nik         8784346229     2023-06-20 14:37:48  
+48    669197836       adbcd       99338233       2023-06-21 05:13:34  
+49    303769876       Phani       6789453210     2023-06-22 06:06:15  
+50    357858383       Raj         9785634120     2023-06-22 09:18:18  
+51    428262405       tom         789456123      2023-06-22 13:29:21  
+52    564005849       Roman       4741175541     2023-06-24 13:35:54  
+53    627560597       Brock       6546146745     2023-06-24 13:40:59  
+54    574904254       Brock       6546146745     2023-06-24 13:47:48  
+55    657894725       Richard     6511144564     2023-06-24 13:58:15  
+56    902959642       Richard     6511144564     2023-06-24 14:16:23  
+57    728414420       Harry       8754219636     2023-06-24 14:20:50  
+58    703783046       Harry       8754219636     2023-06-24 14:47:15  
+59    500760670       Zayn        1474895623     2023-06-24 14:52:32  
+60    472966694       Mark        1232475869     2023-06-24 14:55:58  
+61    330034877       Mark        1232475869     2023-06-24 14:59:43  
+62    339093102       Robin       2585134679     2023-06-24 15:06:28  
+63    105638118       Robin       2585134679     2023-06-25 05:29:08  
+64    631171919       Ryan        4516481455     2023-06-25 05:48:05  
+65    842007213       Ryan        4516481455     2023-06-25 07:05:48  
+66    453083645       Jack        6514175478     2023-06-25 11:37:09  
+67    320133172       Jack        6514175478     2023-06-25 12:25:43  
+68    405350688       Jack        6514175478     2023-06-25 12:41:50  
+69    348796561       Jack        6514175478     2023-06-25 12:47:06  
+70    231186963       Jack        6514175478     2023-06-25 12:52:52  
+71    227447297       Jack        6514175478     2023-06-25 13:07:40  
+72    451989150       Jack        6514175478     2023-06-25 13:29:06  
+73    804289684       Jack        6514175478     2023-06-25 13:38:41  
+74    518037261       Jack        6514175478     2023-06-25 13:41:47  
+75    358622191       Jack        6514175478     2023-06-28 06:15:51  
+76    569142573       Jack        6514175478     2023-06-28 06:23:37  
+77    213171259       Jack        6514175478     2023-06-28 06:32:01  
+78    529629701       Jack        6514175478     2023-06-30 04:32:29  
+79    734537471       Jack        6514175478     2023-07-03 04:05:54  
+80    171626652       Jack        6514175478     2023-07-03 08:10:02  
+81    173815728       Drake       5464514753     2023-07-04 12:37:18  
+82    757727975       Jack        6514175478     2023-07-05 04:32:27  
+83    781124887       Jack        6514175478     2023-07-05 04:49:36  
+84    855834344       Drake       5464514753     2023-07-06 10:24:10  
+85    311037687       Drake       5464514753     2023-07-06 10:43:17  
+86    705344344       Drake       5464514753     2023-07-06 10:56:44  
+87    836002895       Jack        6514175478     2023-07-06 11:16:00  
+88    289666752       Jack        6514175478     2023-07-06 11:23:31  
+89    536129002       Drake       5464514753     2023-07-06 12:18:46  
+90    643074820       Drake       5464514753     2023-07-10 07:14:10  
+91    635382407       Jack        6514175478     2023-07-11 12:51:36  
+92    422559759       Jack        6514175478     2023-07-11 13:14:52  
+93    881960578       Jack        6514175478     2023-07-12 18:48:33  
+94    130939268       Jack        6514175478     2023-07-12 18:55:45  
+95    514966805       Jack        6514175478     2023-07-12 19:02:38  
+96    120279722       Jack        6514175478     2023-07-12 19:06:39  
+97    578540989       Jack        6514175478     2023-07-12 19:13:41  
+98    197720385       Jack        6514175478     2023-07-13 12:41:19  
+99    238788679       Jack        6514175478     2023-07-14 14:03:33  
+]]></system-out>
+  </testcase>
+  <testcase name="UnansweredEnquiryDetails" classname="TestCaseClasses.DashboardDetailsTest" time="5.633">
+    <system-out><![CDATA[
+Unanswered Enquiry Details!
+S.NO  Enquiry Number  Full Name  Mobile Number  Enquiry Date         
+-----------------------------------------------------------
+1     709871969       vinni      987654321      2023-05-28 06:20:00  
+2     771966462       vinni      987654321      2023-05-28 06:21:11  
+3     310953928       vinni      987654321      2023-05-28 06:23:45  
+4     865787408       Test       9876543221     2023-06-09 10:18:37  
+5     241976910       Art        9543876530     2023-06-09 10:20:09  
+6     597619714       john       8765432910     2023-06-09 10:22:37  
+7     177104854       nike       7654321890     2023-06-09 10:25:43  
+8     905993477       nikki      8765432190     2023-06-16 04:19:50  
+9     611856021       don        9786543220     2023-06-16 04:21:06  
+10    652733155       Testing    1234567890     2023-06-16 09:31:33  
+11    603562177       Testing    1234567890     2023-06-16 09:31:42  
+12    886797367       Testing    1234567890     2023-06-16 09:31:57  
+13    389336119       Testing    1234567890     2023-06-16 17:23:23  
+14    109180400       Testing    1234567890     2023-06-16 17:23:28  
+15    669414861       Vikki      7654321890     2023-06-18 06:31:36  
+16    100708724       Sai        8976543201     2023-06-18 06:32:17  
+17    826880039       Kiran      6574321980     2023-06-18 06:33:10  
+18    409363634       somnath    7685532800     2023-06-20 16:08:17  
+19    204353981       teja       8754327895     2023-06-20 16:08:57  
+20    216387987       ram        852963741      2023-06-22 11:11:33  
+21    371860633       tom        789456123      2023-06-22 11:29:40  
+22    694653073       tom        789456123      2023-06-22 11:31:08  
+23    208926495       tom        789456123      2023-06-22 11:32:08  
+24    653625290       tom        789456123      2023-06-22 11:35:20  
+25    491608963       tom        789456123      2023-06-22 13:27:40  
+26    787864043       nota       8765491230     2023-06-28 05:43:44  
+27    807222680       Jack       6514175478     2023-06-28 06:01:28  
+28    794662688       Jack       6514175478     2023-06-28 06:02:32  
+29    702007802       Jack       6514175478     2023-07-04 12:08:35  
+]]></system-out>
+  </testcase>
+  <testcase name="addArtistTest" classname="TestCaseClasses.ArtistTest" time="6.239">
     <system-out><![CDATA[
 
 || ARTIST ||
 
 Artist Added SuccessFully!
-1 Maddy maddy@gmail.com 9687987988 2022-12-21 13:31:25 
-2 Abir Rajwansh abir@gmail.com 5687987987 2022-12-21 13:31:25 
-3 Ryan ryan@gmail.com 7414895623 2023-06-25 11:51:28 
-4 Roman roman@gmail.com 1232475869 2023-06-25 11:52:21 
-5 Harry harry@gmail.com 2585794613 2023-06-25 11:54:46 
-6 Rock rock@gmail.com 1234567890 2023-07-12 16:55:00 
-7 Rock rock@gmail.com 1234567890 2023-07-12 19:11:33 
+S.NO  Name           Email            Mobile Number  Registration Date    
+----------------------------------------------------------------
+1     Maddy          maddy@gmail.com  9687987988     2022-12-21 13:31:25  
+2     Abir Rajwansh  abir@gmail.com   5687987987     2022-12-21 13:31:25  
+3     Ryan           ryan@gmail.com   7414895623     2023-06-25 11:51:28  
+4     Roman          roman@gmail.com  1232475869     2023-06-25 11:52:21  
+5     Harry          harry@gmail.com  2585794613     2023-06-25 11:54:46  
+6     Rock           rock@gmail.com   1234567890     2023-07-12 16:55:00  
+7     Rock           rock@gmail.com   1234567890     2023-07-14 14:16:41  
 ]]></system-out>
   </testcase>
-  <testcase name="updateArtistTest" classname="TestCaseClasses.ArtistTest" time="6.177">
+  <testcase name="updateArtistTest" classname="TestCaseClasses.ArtistTest" time="12.216">
     <system-out><![CDATA[
 Artist Updated SuccessFully!
-1 Maddy maddy@gmail.com 9687987988 2022-12-21 13:31:25 
-2 Abir Rajwansh abir@gmail.com 5687987987 2022-12-21 13:31:25 
-3 Ryan ryan@gmail.com 7414895623 2023-06-25 11:51:28 
-4 Roman roman@gmail.com 1232475869 2023-06-25 11:52:21 
-5 Harry harry@gmail.com 2585794613 2023-06-25 11:54:46 
-6 Rock rock@gmail.com 1234567890 2023-07-12 16:55:00 
-7 john john@gmail.com 1234567890 2023-07-12 19:11:33 
+S.NO  Name           Email            Mobile Number  Registration Date    
+----------------------------------------------------------------
+1     Maddy          maddy@gmail.com  9687987988     2022-12-21 13:31:25  
+2     Abir Rajwansh  abir@gmail.com   5687987987     2022-12-21 13:31:25  
+3     Ryan           ryan@gmail.com   7414895623     2023-06-25 11:51:28  
+4     Roman          roman@gmail.com  1232475869     2023-06-25 11:52:21  
+5     Harry          harry@gmail.com  2585794613     2023-06-25 11:54:46  
+6     Rock           rock@gmail.com   1234567890     2023-07-12 16:55:00  
+7     john           john@gmail.com   1234567890     2023-07-14 14:16:41  
 ]]></system-out>
   </testcase>
-  <testcase name="deleteArtistTest" classname="TestCaseClasses.ArtistTest" time="0.941">
+  <testcase name="deleteArtistTest" classname="TestCaseClasses.ArtistTest" time="4.767">
     <system-out><![CDATA[
 Artist Deleted SuccessFully!
-1 Maddy maddy@gmail.com 9687987988 2022-12-21 13:31:25 
-2 Abir Rajwansh abir@gmail.com 5687987987 2022-12-21 13:31:25 
-3 Ryan ryan@gmail.com 7414895623 2023-06-25 11:51:28 
-4 Roman roman@gmail.com 1232475869 2023-06-25 11:52:21 
-5 Harry harry@gmail.com 2585794613 2023-06-25 11:54:46 
-6 Rock rock@gmail.com 1234567890 2023-07-12 16:55:00 
+S.NO  Name           Email            Mobile Number  Registration Date    
+----------------------------------------------------------------
+1     Maddy          maddy@gmail.com  9687987988     2022-12-21 13:31:25  
+2     Abir Rajwansh  abir@gmail.com   5687987987     2022-12-21 13:31:25  
+3     Ryan           ryan@gmail.com   7414895623     2023-06-25 11:51:28  
+4     Roman          roman@gmail.com  1232475869     2023-06-25 11:52:21  
+5     Harry          harry@gmail.com  2585794613     2023-06-25 11:54:46  
+6     Rock           rock@gmail.com   1234567890     2023-07-12 16:55:00  
 ]]></system-out>
   </testcase>
-  <testcase name="addArtMediumTest" classname="TestCaseClasses.ArtMediumTest" time="1.295">
+  <testcase name="addArtTypeTest" classname="TestCaseClasses.ArtTypeTest" time="2.743">
+    <system-out><![CDATA[
+
+|| ARTTYPE ||
+
+ArtType Added SuccessFully!
+S.NO  Type of Art     Creation Date        
+-------------------------------------
+1     Serigraphs      2022-12-21 14:24:46  
+2     Prints          2022-12-21 14:25:00  
+3     Painting        2022-12-21 14:25:31  
+4     Street Art      2022-12-21 14:26:06  
+5     Visual art      2022-12-21 14:26:29  
+6     Conceptual art  2022-12-21 14:26:45  
+7     painting        2023-05-10 04:41:26  
+8     illustration    2023-06-16 13:46:00  
+9     pottery         2023-07-14 14:17:01  
+]]></system-out>
+  </testcase>
+  <testcase name="updateArtTypeTest" classname="TestCaseClasses.ArtTypeTest" time="8.705">
+    <system-out><![CDATA[
+ArtType Updated Successfully!
+S.NO  Type of Art     Creation Date        
+-------------------------------------
+1     Serigraphs      2022-12-21 14:24:46  
+2     Prints          2022-12-21 14:25:00  
+3     Painting        2022-12-21 14:25:31  
+4     Street Art      2022-12-21 14:26:06  
+5     Visual art      2022-12-21 14:26:29  
+6     Conceptual art  2022-12-21 14:26:45  
+7     painting        2023-05-10 04:41:26  
+8     illustration    2023-06-16 13:46:00  
+9     Sculpture       2023-07-14 14:17:01  
+]]></system-out>
+  </testcase>
+  <testcase name="deleteArtTypeTest" classname="TestCaseClasses.ArtTypeTest" time="5.158">
+    <system-out><![CDATA[
+ArtType Deleted Successfully!
+S.NO  Type of Art     Creation Date        
+-------------------------------------
+1     Serigraphs      2022-12-21 14:24:46  
+2     Prints          2022-12-21 14:25:00  
+3     Painting        2022-12-21 14:25:31  
+4     Street Art      2022-12-21 14:26:06  
+5     Visual art      2022-12-21 14:26:29  
+6     Conceptual art  2022-12-21 14:26:45  
+7     painting        2023-05-10 04:41:26  
+8     illustration    2023-06-16 13:46:00  
+]]></system-out>
+  </testcase>
+  <testcase name="addArtMediumTest" classname="TestCaseClasses.ArtMediumTest" time="3.149">
     <system-out><![CDATA[
 
 || ART MEDIUM ||
 
 Art Medium Added SuccessFully!
-1 Acrylic on canvas 2022-12-22 04:57:34 
-2 Resin 2022-12-22 04:58:00 
-3 Mixed Media 2022-12-22 06:09:12 
-4 Bronze 2022-12-22 06:09:35 
-5 Fibre 2022-12-22 06:09:53 
-6 Steel 2022-12-22 06:10:16 
-7 Metal 2022-12-22 06:10:35 
-8 Oil on Canvas 2022-12-22 06:11:31 
-9 Oil on Linen 2022-12-22 06:12:12 
-10 Acrylics on paper 2022-12-22 06:13:11 
-11 Hand-painted on particle wood/MDF 2022-12-22 06:14:03 
-12 Gold 2023-07-12 19:11:41 
+S.NO  Medium of Art                      Creation Date        
+--------------------------------------------------------
+1     Acrylic on canvas                  2022-12-22 04:57:34  
+2     Resin                              2022-12-22 04:58:00  
+3     Mixed Media                        2022-12-22 06:09:12  
+4     Bronze                             2022-12-22 06:09:35  
+5     Fibre                              2022-12-22 06:09:53  
+6     Steel                              2022-12-22 06:10:16  
+7     Metal                              2022-12-22 06:10:35  
+8     Oil on Canvas                      2022-12-22 06:11:31  
+9     Oil on Linen                       2022-12-22 06:12:12  
+10    Acrylics on paper                  2022-12-22 06:13:11  
+11    Hand-painted on particle wood/MDF  2022-12-22 06:14:03  
+12    Gold                               2023-07-14 14:17:18  
 ]]></system-out>
   </testcase>
-  <testcase name="updateArtMediumTest" classname="TestCaseClasses.ArtMediumTest" time="4.054">
+  <testcase name="updateArtMediumTest" classname="TestCaseClasses.ArtMediumTest" time="8.927">
     <system-out><![CDATA[
 Art Medium Updated SuccessFully!
-1 Acrylic on canvas 2022-12-22 04:57:34 
-2 Resin 2022-12-22 04:58:00 
-3 Mixed Media 2022-12-22 06:09:12 
-4 Bronze 2022-12-22 06:09:35 
-5 Fibre 2022-12-22 06:09:53 
-6 Steel 2022-12-22 06:10:16 
-7 Metal 2022-12-22 06:10:35 
-8 Oil on Canvas 2022-12-22 06:11:31 
-9 Oil on Linen 2022-12-22 06:12:12 
-10 Acrylics on paper 2022-12-22 06:13:11 
-11 Hand-painted on particle wood/MDF 2022-12-22 06:14:03 
-12 Wood and Bronze 2023-07-12 19:11:41 
+S.NO  Medium of Art                      Creation Date        
+--------------------------------------------------------
+1     Acrylic on canvas                  2022-12-22 04:57:34  
+2     Resin                              2022-12-22 04:58:00  
+3     Mixed Media                        2022-12-22 06:09:12  
+4     Bronze                             2022-12-22 06:09:35  
+5     Fibre                              2022-12-22 06:09:53  
+6     Steel                              2022-12-22 06:10:16  
+7     Metal                              2022-12-22 06:10:35  
+8     Oil on Canvas                      2022-12-22 06:11:31  
+9     Oil on Linen                       2022-12-22 06:12:12  
+10    Acrylics on paper                  2022-12-22 06:13:11  
+11    Hand-painted on particle wood/MDF  2022-12-22 06:14:03  
+12    Wood and Bronze                    2023-07-14 14:17:18  
 ]]></system-out>
   </testcase>
-  <testcase name="deleteArtMediumTest" classname="TestCaseClasses.ArtMediumTest" time="0.916">
+  <testcase name="deleteArtMediumTest" classname="TestCaseClasses.ArtMediumTest" time="5.668">
     <system-out><![CDATA[
 Art Medium Deleted SuccessFully!
-1 Acrylic on canvas 2022-12-22 04:57:34 
-2 Resin 2022-12-22 04:58:00 
-3 Mixed Media 2022-12-22 06:09:12 
-4 Bronze 2022-12-22 06:09:35 
-5 Fibre 2022-12-22 06:09:53 
-6 Steel 2022-12-22 06:10:16 
-7 Metal 2022-12-22 06:10:35 
-8 Oil on Canvas 2022-12-22 06:11:31 
-9 Oil on Linen 2022-12-22 06:12:12 
-10 Acrylics on paper 2022-12-22 06:13:11 
-11 Hand-painted on particle wood/MDF 2022-12-22 06:14:03 
+S.NO  Medium of Art                      Creation Date        
+--------------------------------------------------------
+1     Acrylic on canvas                  2022-12-22 04:57:34  
+2     Resin                              2022-12-22 04:58:00  
+3     Mixed Media                        2022-12-22 06:09:12  
+4     Bronze                             2022-12-22 06:09:35  
+5     Fibre                              2022-12-22 06:09:53  
+6     Steel                              2022-12-22 06:10:16  
+7     Metal                              2022-12-22 06:10:35  
+8     Oil on Canvas                      2022-12-22 06:11:31  
+9     Oil on Linen                       2022-12-22 06:12:12  
+10    Acrylics on paper                  2022-12-22 06:13:11  
+11    Hand-painted on particle wood/MDF  2022-12-22 06:14:03  
+]]></system-out>
+  </testcase>
+  <testcase name="addArtProductTest" classname="TestCaseClasses.ArtProductTest" time="8.799">
+    <system-out><![CDATA[
+
+|| ART PRODUCT ||
+
+Art Product Added SuccessFully!
+S.NO  Reference Number  Title                Image  Creation Date        
+---------------------------------------------------------------
+1     255288886         radhakrishna                2023-06-18 07:58:55  
+2     652700923         art                         2023-06-18 07:59:55  
+3     365300848         night                       2023-06-18 08:01:35  
+4     804256536         Nature Illustration         2023-06-25 12:42:05  
+5     512478075         Patterns                    2023-06-25 13:50:20  
+6     725932940         Joker                       2023-06-25 13:53:10  
+7     666570201         Marvel                      2023-07-14 14:17:38  
+]]></system-out>
+  </testcase>
+  <testcase name="updateArtProductTest" classname="TestCaseClasses.ArtProductTest" time="32.35">
+    <system-out><![CDATA[
+Art Product Updated SuccessFully!
+S.NO  Reference Number  Title                Image  Creation Date        
+---------------------------------------------------------------
+1     255288886         radhakrishna                2023-06-18 07:58:55  
+2     652700923         art                         2023-06-18 07:59:55  
+3     365300848         night                       2023-06-18 08:01:35  
+4     804256536         Nature Illustration         2023-06-25 12:42:05  
+5     512478075         Patterns                    2023-06-25 13:50:20  
+6     725932940         Joker                       2023-06-25 13:53:10  
+7     666570201         Illustration                2023-07-14 14:17:38  
+]]></system-out>
+  </testcase>
+  <testcase name="deleteArtProductTest" classname="TestCaseClasses.ArtProductTest" time="5.744">
+    <system-out><![CDATA[
+Art Product Deleted SuccessFully!
+S.NO  Reference Number  Title                Image  Creation Date        
+---------------------------------------------------------------
+1     255288886         radhakrishna                2023-06-18 07:58:55  
+2     652700923         art                         2023-06-18 07:59:55  
+3     365300848         night                       2023-06-18 08:01:35  
+4     804256536         Nature Illustration         2023-06-25 12:42:05  
+5     512478075         Patterns                    2023-06-25 13:50:20  
+6     725932940         Joker                       2023-06-25 13:53:10  
+]]></system-out>
+  </testcase>
+  <testcase name="addEnquiryTest" classname="TestCaseClasses.EnquiryTest" time="10.696">
+    <system-out><![CDATA[
+
+|| ENQUIRY ||
+
+]]></system-out>
+  </testcase>
+  <testcase name="unansweredEnquiryTest" classname="TestCaseClasses.EnquiryTest" time="6.307">
+    <system-out><![CDATA[
+Unanswered Enquiry Details 
+
+Enquiry Number : 613868150
+Full Name : Jack
+Art Name : night
+View Details
+Art Reference Number : 365300848
+Email : jack@gmail.com
+MobileNumber : 6514175478
+Enquiry Date : 2023-07-14 14:18:31
+Message : Awesome Art!
+Status : Unanswer Enquiry
+Remark : : 
+]]></system-out>
+  </testcase>
+  <testcase name="answeredEnquiryTest" classname="TestCaseClasses.EnquiryTest" time="6.659">
+    <system-out><![CDATA[
+Answered Enquiry Details 
+
+Enquiry Number : 613868150
+Full Name : Jack
+Art Name : night
+View Details
+Art Reference Number : 365300848
+Email : jack@gmail.com
+MobileNumber : 6514175478
+Enquiry Date : 2023-07-14 14:18:31
+Message : Awesome Art!
+Status : Answer Enquiry
+Remark : Successfully Answered!
+Remark date : 2023-07-14 14:18:38
+]]></system-out>
+  </testcase>
+  <testcase name="enquirySearchByNameTest" classname="TestCaseClasses.EnquirySearchTest" time="6.859">
+    <system-out><![CDATA[
+
+|| ENQUIRY SEARCH ||
+
+
+Enquiry Search By Name : Jack
+S.NO  Enquiry Number  Full Name  Mobile Number  Enquiry Date         
+-----------------------------------------------------------
+1     453083645       Jack       6514175478     2023-06-25 11:37:09  
+2     320133172       Jack       6514175478     2023-06-25 12:25:43  
+3     405350688       Jack       6514175478     2023-06-25 12:41:50  
+4     348796561       Jack       6514175478     2023-06-25 12:47:06  
+5     231186963       Jack       6514175478     2023-06-25 12:52:52  
+6     227447297       Jack       6514175478     2023-06-25 13:07:40  
+7     451989150       Jack       6514175478     2023-06-25 13:29:06  
+8     804289684       Jack       6514175478     2023-06-25 13:38:41  
+9     518037261       Jack       6514175478     2023-06-25 13:41:47  
+10    807222680       Jack       6514175478     2023-06-28 06:01:28  
+11    794662688       Jack       6514175478     2023-06-28 06:02:32  
+12    358622191       Jack       6514175478     2023-06-28 06:15:51  
+13    569142573       Jack       6514175478     2023-06-28 06:23:37  
+14    213171259       Jack       6514175478     2023-06-28 06:32:01  
+15    529629701       Jack       6514175478     2023-06-30 04:32:29  
+16    734537471       Jack       6514175478     2023-07-03 04:05:54  
+17    171626652       Jack       6514175478     2023-07-03 08:10:02  
+18    702007802       Jack       6514175478     2023-07-04 12:08:35  
+19    757727975       Jack       6514175478     2023-07-05 04:32:27  
+20    781124887       Jack       6514175478     2023-07-05 04:49:36  
+21    836002895       Jack       6514175478     2023-07-06 11:16:00  
+22    289666752       Jack       6514175478     2023-07-06 11:23:31  
+23    635382407       Jack       6514175478     2023-07-11 12:51:36  
+24    422559759       Jack       6514175478     2023-07-11 13:14:52  
+25    881960578       Jack       6514175478     2023-07-12 18:48:33  
+26    130939268       Jack       6514175478     2023-07-12 18:55:45  
+27    514966805       Jack       6514175478     2023-07-12 19:02:38  
+28    120279722       Jack       6514175478     2023-07-12 19:06:39  
+29    578540989       Jack       6514175478     2023-07-12 19:13:41  
+30    197720385       Jack       6514175478     2023-07-13 12:41:19  
+31    238788679       Jack       6514175478     2023-07-14 14:03:33  
+32    613868150       Jack       6514175478     2023-07-14 14:18:31  
+]]></system-out>
+  </testcase>
+  <testcase name="enquirySearchByEnquiryNumberTest" classname="TestCaseClasses.EnquirySearchTest" time="1.774">
+    <system-out><![CDATA[
+Enquiry Search By Number : 613868150
+S.NO  Enquiry Number  Full Name  Mobile Number  Enquiry Date         
+-----------------------------------------------------------
+1     613868150       Jack       6514175478     2023-07-14 14:18:31  
+]]></system-out>
+  </testcase>
+  <testcase name="enquirySearchByMobileNumberTest" classname="TestCaseClasses.EnquirySearchTest" time="6.787">
+    <system-out><![CDATA[
+Enquiry Search By Mobile Number : 6514175478
+S.NO  Enquiry Number  Full Name  Mobile Number  Enquiry Date         
+-----------------------------------------------------------
+1     453083645       Jack       6514175478     2023-06-25 11:37:09  
+2     320133172       Jack       6514175478     2023-06-25 12:25:43  
+3     405350688       Jack       6514175478     2023-06-25 12:41:50  
+4     348796561       Jack       6514175478     2023-06-25 12:47:06  
+5     231186963       Jack       6514175478     2023-06-25 12:52:52  
+6     227447297       Jack       6514175478     2023-06-25 13:07:40  
+7     451989150       Jack       6514175478     2023-06-25 13:29:06  
+8     804289684       Jack       6514175478     2023-06-25 13:38:41  
+9     518037261       Jack       6514175478     2023-06-25 13:41:47  
+10    807222680       Jack       6514175478     2023-06-28 06:01:28  
+11    794662688       Jack       6514175478     2023-06-28 06:02:32  
+12    358622191       Jack       6514175478     2023-06-28 06:15:51  
+13    569142573       Jack       6514175478     2023-06-28 06:23:37  
+14    213171259       Jack       6514175478     2023-06-28 06:32:01  
+15    529629701       Jack       6514175478     2023-06-30 04:32:29  
+16    734537471       Jack       6514175478     2023-07-03 04:05:54  
+17    171626652       Jack       6514175478     2023-07-03 08:10:02  
+18    702007802       Jack       6514175478     2023-07-04 12:08:35  
+19    757727975       Jack       6514175478     2023-07-05 04:32:27  
+20    781124887       Jack       6514175478     2023-07-05 04:49:36  
+21    836002895       Jack       6514175478     2023-07-06 11:16:00  
+22    289666752       Jack       6514175478     2023-07-06 11:23:31  
+23    635382407       Jack       6514175478     2023-07-11 12:51:36  
+24    422559759       Jack       6514175478     2023-07-11 13:14:52  
+25    881960578       Jack       6514175478     2023-07-12 18:48:33  
+26    130939268       Jack       6514175478     2023-07-12 18:55:45  
+27    514966805       Jack       6514175478     2023-07-12 19:02:38  
+28    120279722       Jack       6514175478     2023-07-12 19:06:39  
+29    578540989       Jack       6514175478     2023-07-12 19:13:41  
+30    197720385       Jack       6514175478     2023-07-13 12:41:19  
+31    238788679       Jack       6514175478     2023-07-14 14:03:33  
+32    613868150       Jack       6514175478     2023-07-14 14:18:31  
+]]></system-out>
+  </testcase>
+  <testcase name="pagesMenuTestaboutus" classname="TestCaseClasses.PagesTest" time="0.221">
+    <system-out><![CDATA[
+
+|| ADMIN PAGES ||
+About Us
+]]></system-out>
+  </testcase>
+  <testcase name="updateAboutUsPageTestaboutus" classname="TestCaseClasses.PagesTest" time="1.551">
+    <failure message="element click intercepted: Element &lt;a class=&quot;&quot; href=&quot;aboutus.php&quot;&gt;...&lt;/a&gt; is not clickable at point (90, 477). Other element would receive the click: &lt;div id=&quot;sidebar&quot; class=&quot;nav-collapse &quot; tabindex=&quot;5000&quot; style=&quot;overflow: hidden; outline: none;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=114.0.5735.199)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Anuj&apos;, ip: &apos;192.168.43.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 63ff2a8e795c6579b3100122f20b159f" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a class="" href="aboutus.php">...</a> is not clickable at point (90, 477). Other element would receive the click: <div id="sidebar" class="nav-collapse " tabindex="5000" style="overflow: hidden; outline: none;">...</div>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anuj', ip: '192.168.43.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63ff2a8e795c6579b3100122f20b159f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at ObjectClasses.AboutUs.navigateToAboutUsPage(AboutUs.java:37)
+	at ObjectClasses.AboutUs.updateAboutUsPage(AboutUs.java:93)
+	at TestCaseClasses.PagesTest.updateAboutUsPageTestaboutus(PagesTest.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="pagesMenuTestcontactus" classname="TestCaseClasses.PagesTest" time="0.222">
+    <system-out><![CDATA[
+]]></system-out>
+  </testcase>
+  <testcase name="updateContactUsPageTestContactUs" classname="TestCaseClasses.PagesTest" time="2.424">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;main-content&quot;]/section/div[3]/div/section/div/div/form/div[5]/div/div[2]/div&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Anuj&apos;, ip: &apos;192.168.43.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 63ff2a8e795c6579b3100122f20b159f&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;main-content&quot;]/section/div[3]/div/section/div/div/form/div[5]/div/div[2]/div}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main-content"]/section/div[3]/div/section/div/div/form/div[5]/div/div[2]/div"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anuj', ip: '192.168.43.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Mypc\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63ff2a8e795c6579b3100122f20b159f
+*** Element info: {Using=xpath, value=//*[@id="main-content"]/section/div[3]/div/section/div/div/form/div[5]/div/div[2]/div}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at ObjectClasses.ContactUs.fillPageDescription(ContactUs.java:58)
+	at ObjectClasses.ContactUs.updateContactUsPage(ContactUs.java:115)
+	at TestCaseClasses.PagesTest.updateContactUsPageTestContactUs(PagesTest.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Updated title for contact us: Contact Us
+Updated email for contact us: artgallery@gmail.com
+Updated phone number for contact us: 9988548822
+Updated timings for contact us: 9:00 am to 6:00 pm
 ]]></system-out>
   </testcase>
 </testsuite>
