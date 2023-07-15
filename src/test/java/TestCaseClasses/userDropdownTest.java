@@ -1,8 +1,8 @@
 package TestCaseClasses;
 
-import static org.junit.Assert.assertEquals;
 import ObjectClasses.SetupDriver;
 import org.testng.annotations.Test;
+import org.testng.Assert;
 import ObjectClasses.userDropdown;
 
 public class userDropdownTest extends SetupDriver {
@@ -13,6 +13,6 @@ public class userDropdownTest extends SetupDriver {
         userDropdown uDropdown = new userDropdown(driver);
         int expecteddropdownsize = uDropdown.dropdownsize();
         int actualdropdownsize =  uDropdown.dropdown();
-        assertEquals(expecteddropdownsize , actualdropdownsize);
+        Assert.assertEquals(expecteddropdownsize , actualdropdownsize);
     }
 }

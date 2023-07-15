@@ -1,8 +1,8 @@
 package TestCaseClasses;
 
-import static org.junit.Assert.assertEquals;
 
 import org.openqa.selenium.Alert;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -27,7 +27,7 @@ public class ArtMediumTest extends SetupDriver {
         String alertMsg = alert.getText();
         alert.accept();   
         
-        assertEquals("Art medium has been added.", alertMsg); 
+        Assert.assertEquals("Art medium has been added.", alertMsg); 
         System.out.println("\nArt Medium Added SuccessFully!");
         artMedium.printTable();
     }
@@ -43,7 +43,7 @@ public class ArtMediumTest extends SetupDriver {
         String alertMsg = alert.getText();
         alert.accept();   
         
-        assertEquals("Art medium has been updated.", alertMsg); 
+        Assert.assertEquals("Art medium has been updated.", alertMsg); 
         System.out.println("\nArt Medium Updated SuccessFully!");
         artMedium.navigateToManagetoArtMediumPage();
         artMedium.printTable();
@@ -60,7 +60,7 @@ public class ArtMediumTest extends SetupDriver {
         String alertMsg = alert.getText();
         alert.accept();   
         
-        assertEquals("Data deleted", alertMsg); 
+        Assert.assertEquals("Data deleted", alertMsg); 
         System.out.println("\nArt Medium Deleted SuccessFully!");
         artMedium.printTable();
     }

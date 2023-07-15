@@ -19,7 +19,6 @@ C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\ArtProduct.jav
 C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\Enquiry.java
 C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\userDropdown.java
 C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\userLinksTest.java
-C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\utils\ExtentReport.java
 C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\userSearchTest.java
 C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\ArtMedium.java
 C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\userViewDetails.java
@@ -28,6 +27,7 @@ C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\userViewDeta
 C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\userNavbar.java
 C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\ContactUs.java
 C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\ObjectClasses\AboutUs.java
+C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\utils\ExtentManager.java
 C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\LoginTest.java
 C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\ArtMediumTest.java
 C:\Users\Mypc\Desktop\Maven\springapp\src\test\java\TestCaseClasses\userDropdownTest.java

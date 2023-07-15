@@ -1,8 +1,8 @@
 package TestCaseClasses;
 
-import static org.junit.Assert.assertEquals;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
 
 import ObjectClasses.SetupDriver;
 import ObjectClasses.userEnquiry;
@@ -16,6 +16,6 @@ public class userEnquiryTest extends SetupDriver {
         int expectedenquirybuttons= uEnquiry.enquirybuttoncount();
         int actualenquirybuttons = uEnquiry.enquirybutton();
 
-        assertEquals(expectedenquirybuttons, actualenquirybuttons);
+        Assert.assertEquals(expectedenquirybuttons, actualenquirybuttons);
     }
 }

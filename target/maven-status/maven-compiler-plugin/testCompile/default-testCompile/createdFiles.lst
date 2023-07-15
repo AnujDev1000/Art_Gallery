@@ -1,5 +1,4 @@
 ObjectClasses\Enquiry.class
-utils\ExtentReport.class
 TestCaseClasses\ArtMediumTest.class
 ObjectClasses\ArtType.class
 TestCaseClasses\ArtProductTest.class
@@ -31,3 +30,4 @@ TestCaseClasses\ArtTypeTest.class
 ObjectClasses\Login.class
 TestCaseClasses\userDropdownTest.class
 TestCaseClasses\userLinksTest.class
+utils\ExtentManager.class

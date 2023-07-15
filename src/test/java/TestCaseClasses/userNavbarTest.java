@@ -1,11 +1,11 @@
 package TestCaseClasses;
-import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
@@ -22,7 +22,7 @@ public class userNavbarTest extends SetupDriver {
         userNavbar uNavbar = new userNavbar(driver);
         uNavbar.home();
         String title=driver.getTitle();
-        assertEquals("Art Gallery Management System | Home Page",title);
+        Assert.assertEquals("Art Gallery Management System | Home Page",title);
     }
 
     @Test(priority = 30, groups = {"user", "regression"})
@@ -31,7 +31,7 @@ public class userNavbarTest extends SetupDriver {
         userNavbar uNavbar = new userNavbar(driver);
         uNavbar.about();
         String title=driver.getTitle();
-        assertEquals("Art Gallery Management System | About Us Page",title);
+        Assert.assertEquals("Art Gallery Management System | About Us Page",title);
     }
 
     @Test(priority = 31, groups = {"user", "regression"})
@@ -47,7 +47,7 @@ public class userNavbarTest extends SetupDriver {
             System.out.println("option name:" + text);
             count++;
         }
-        assertEquals(size,count);
+        Assert.assertEquals(size,count);
     }
 
     @Test(priority = 32, groups = {"user", "regression"})
@@ -56,7 +56,7 @@ public class userNavbarTest extends SetupDriver {
         userNavbar uNavbar = new userNavbar(driver);
         uNavbar.contactus();
         String title=driver.getTitle();
-        assertEquals("Art Gallery Management System | Contact Us Page",title);
+        Assert.assertEquals("Art Gallery Management System | Contact Us Page",title);
     }
 
     @Test(priority = 33, groups = {"user", "regression"})
@@ -65,7 +65,7 @@ public class userNavbarTest extends SetupDriver {
         userNavbar uNavbar = new userNavbar(driver);
         uNavbar.admin();
         String title=driver.getTitle();
-        assertEquals("Login| Art Gallery Management System",title);
+        Assert.assertEquals("Login| Art Gallery Management System",title);
         uNavbar.homepage();
     }
     

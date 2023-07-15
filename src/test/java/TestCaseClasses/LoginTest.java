@@ -1,8 +1,7 @@
 package TestCaseClasses;
 
-import static org.junit.Assert.assertEquals;
-
 import org.openqa.selenium.Alert;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import ObjectClasses.Login;
@@ -16,7 +15,7 @@ public class LoginTest extends SetupDriver{
         login.adminLogin();
         String title = driver.getTitle();
         
-        assertEquals("Art Gallery Management System - Admin Dashboard", title);
+        Assert.assertEquals("Art Gallery Management System - Admin Dashboard", title);
     }
     
     @Test( groups = {"login"})
@@ -29,7 +28,7 @@ public class LoginTest extends SetupDriver{
         alert.accept();
 
         // login.navigateBackToHomePage();
-        assertEquals("Invalid Details", alertMsg);
+        Assert.assertEquals("Invalid Details", alertMsg);
     }
 
 }
