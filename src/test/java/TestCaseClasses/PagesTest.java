@@ -12,7 +12,7 @@ import ObjectClasses.SetupDriver;
 
 public class PagesTest extends SetupDriver{
     @BeforeClass(alwaysRun = true)
-    public void artType() {
+    public void pages() {
         System.out.println("\n\n|| ADMIN PAGES ||");
     }
 

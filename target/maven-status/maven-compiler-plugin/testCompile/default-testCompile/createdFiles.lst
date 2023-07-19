@@ -16,6 +16,7 @@ ObjectClasses\userEnquiry.class
 ObjectClasses\ArtMedium.class
 TestCaseClasses\userSearchTest.class
 TestCaseClasses\ArtistTest.class
+utils\MyTestListener.class
 TestCaseClasses\userViewDetatilsTest.class
 TestCaseClasses\EnquiryTest.class
 ObjectClasses\userLinks.class

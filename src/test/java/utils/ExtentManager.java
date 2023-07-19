@@ -22,7 +22,7 @@ public class ExtentManager {
         ExtentSparkReporter htmlReporter = new ExtentSparkReporter(reportPath);
         htmlReporter.config().setReportName("Art Gallery Extent Report");
         htmlReporter.config().setDocumentTitle("Automation Test Results");
-        htmlReporter.config().setTheme(Theme.DARK);
+        // htmlReporter.config().setTheme(Theme.DARK);
 
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);

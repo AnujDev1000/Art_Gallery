@@ -12,7 +12,7 @@ import ObjectClasses.SetupDriver;
 public class ArtMediumTest extends SetupDriver {
     
     @BeforeClass(alwaysRun=true)
-    public void artType() {
+    public void artMedium() {
         System.out.println("\n\n|| ART MEDIUM ||");
     }
 

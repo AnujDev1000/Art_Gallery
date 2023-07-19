@@ -6,16 +6,12 @@
       <run>
         <include name="login"/>
         <include name="admin"/>
-        <include name="logout"/>
-        <include name="user"/>
       </run>
     </groups>
     <classes>
       <class name="TestCaseClasses.LoginTest">
         <methods>
-          <include name="beforeMethod"/>
           <include name="AdminLoginWithInValidDetails"/>
-          <include name="afterMethod"/>
           <include name="tearDown"/>
           <include name="AdminLoginWithValidDetails"/>
           <include name="setupTest"/>
@@ -23,9 +19,8 @@
       </class> <!-- TestCaseClasses.LoginTest -->
       <class name="TestCaseClasses.PagesTest">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="artType"/>
-          <include name="afterMethod"/>
+          <include name="updateAboutUsPageTestaboutus"/>
+          <include name="pages"/>
           <include name="tearDown"/>
           <include name="updateContactUsPageTestContactUs"/>
           <include name="setupTest"/>

@@ -15,7 +15,7 @@ public class ArtistTest extends SetupDriver{
     String imgpath = System.getProperty("user.dir") + "/resources/placeholder.jpg";
 
     @BeforeClass(alwaysRun=true)
-    public void artType() {
+    public void artist() {
         System.out.println("\n\n|| ARTIST ||");
     }
     

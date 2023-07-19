@@ -20,7 +20,7 @@ public class DashboardDetailsTest extends SetupDriver{
 
     
     @BeforeClass(alwaysRun=true)
-    public void artType() {
+    public void dashboard() {
         System.out.println("\n\n|| ADMIN DASHBOARD ||");
     }
     
