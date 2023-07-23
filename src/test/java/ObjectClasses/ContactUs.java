@@ -15,6 +15,11 @@ public class ContactUs {
         this.driver=driver;
     }
 
+    public void scrollBy() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+    }
+
     public void navigateToPages() {
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[8]/a")).click();
     }
@@ -32,7 +37,9 @@ public class ContactUs {
     }
     
     public void navigateToContactUsPage() {
-        driver.findElement(By.xpath("//*[@id=\"sidebar\"]/ul/li[8]/ul/li[2]/a")).click();
+        WebElement elm = driver.findElement(By.xpath("//*[@id=\"sidebar\"]/ul/li[8]/ul/li[2]/a"));
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("arguments[0].click();", elm);
     }
     
     public void fillPagedetails(String title, String email, String phonenumber, String timings) {
@@ -77,6 +84,7 @@ public class ContactUs {
 
             WebElement navContactus=driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul/li[4]/a"));
             navContactus.click();
+            scrollBy();
 
             String usercontactuspagetitle = driver.findElement(By.xpath("/html/body/section/div/div/div/h4")).getText();
             System.out.println("User side Title: " + usercontactuspagetitle);
@@ -112,6 +120,7 @@ public class ContactUs {
         navigateToPages();
         navigateToContactUsPage();
         fillPagedetails(title, email, phonenumber, timings);
+        scrollBy();
         fillPageDescription(description);
         clickUpdateButton();
     }

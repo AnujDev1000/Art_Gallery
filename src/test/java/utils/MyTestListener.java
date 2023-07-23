@@ -25,5 +25,4 @@ public class MyTestListener implements ITestListener {
         SetupDriver.test.log(Status.FAIL, "Test Failed: " + result.getThrowable());
     }
 
-    // Implement other methods as per your requirements
 }

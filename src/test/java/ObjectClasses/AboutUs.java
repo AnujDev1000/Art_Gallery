@@ -17,6 +17,11 @@ public class AboutUs {
         this.driver=driver;
     }
 
+    public void scrollBy() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+    }
+
     public void navigateToPages() {
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[8]/a")).click();
     }
@@ -34,7 +39,9 @@ public class AboutUs {
     }
     
     public void navigateToAboutUsPage() {
-        driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[8]/ul/li[1]/a")).click();
+        WebElement elm =  driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[8]/ul/li[1]/a"));
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("arguments[0].click();", elm);
     }
     
     public void fillPageTitle(String title) {
@@ -66,6 +73,7 @@ public class AboutUs {
 
             WebElement navAbout=driver.findElement(By.xpath("//*[@id='navbarSupportedContent']/ul/li[2]/a"));
             navAbout.click();
+            scrollBy();
 
             String useraboutuspagetitle = driver.findElement(By.xpath("/html/body/section/div/h3")).getText();
             System.out.println("User side Title: " + useraboutuspagetitle);
