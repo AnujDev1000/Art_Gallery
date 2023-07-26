@@ -196,6 +196,11 @@ public class Enquiry {
         clickSend();
     }
 
+    public WebElement getRowElement(String value) {
+        WebElement elm = driver.findElement(By.xpath("//tr[td[contains(text(),'" + value + "')]]"));
+        return elm;
+    }
+
 
 
 
@@ -206,10 +211,17 @@ public class Enquiry {
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[6]/ul/li[1]/a")).click();
     }
 
-    public void clickViewDetailsButton() {
-        int dataSize = getTableData().size();
-        String path = "//*[@id=\"main-content\"]/section/div[2]/div/section/table/tbody/tr[" + dataSize + "]/td[6]/a";
-        driver.findElement(By.xpath(path)).click();
+    public void clickViewDetailsButton(String enquiryNumber) {
+        WebElement row = getRowElement(enquiryNumber);
+        scrollToWebElement(row);
+        WebElement elm = row.findElement(By.tagName("a"));
+        driver.get(elm.getAttribute("href"));
+        
+        
+        // scrollBy();
+        // int dataSize = getTableData().size();
+        // String path = "//*[@id=\"main-content\"]/section/div[2]/div/section/table/tbody/tr[" + dataSize + "]/td[6]/a";
+        // driver.findElement(By.xpath(path)).click();
     }
 
     public void fillRemarks(String remark) {
@@ -238,10 +250,9 @@ public class Enquiry {
         }
     }
 
-    public void unansweredEnquiry() {
+    public void unansweredEnquiry(String enquiryNumber) {
         navigateToManageUnansweredEnquiryPage();
-        scrollBy();
-        clickViewDetailsButton();
+        clickViewDetailsButton(enquiryNumber);
         System.out.println("\nUnanswered Enquiry Details \n");
         printEnquiryDetails();
         fillRemarks("Successfully Answered!");
@@ -262,10 +273,9 @@ public class Enquiry {
         driver.findElement(By.xpath("//*[@id='sidebar']/ul/li[6]/ul/li[2]/a")).click();
     }
 
-    public void answeredEnquiry() {
+    public void answeredEnquiry(String enquiryNumber) {
         navigateToManageAnsweredEnquiryPage();
-        scrollBy();
-        clickViewDetailsButton();
+        clickViewDetailsButton(enquiryNumber);
     }
 
 

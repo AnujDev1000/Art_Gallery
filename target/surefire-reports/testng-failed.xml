@@ -5,7 +5,7 @@
     <groups>
       <run>
         <include name="login"/>
-        <include name="pages"/>
+        <include name="enquiry"/>
       </run>
     </groups>
     <classes>
@@ -17,14 +17,15 @@
           <include name="setupTest"/>
         </methods>
       </class> <!-- TestCaseClasses.LoginTest -->
-      <class name="TestCaseClasses.PagesTest">
+      <class name="TestCaseClasses.EnquiryTest">
         <methods>
-          <include name="pages"/>
+          <include name="answeredEnquiryTest"/>
+          <include name="addEnquiryTest"/>
           <include name="tearDown"/>
-          <include name="updateContactUsPageTestContactUs"/>
           <include name="setupTest"/>
+          <include name="unansweredEnquiryTest"/>
         </methods>
-      </class> <!-- TestCaseClasses.PagesTest -->
+      </class> <!-- TestCaseClasses.EnquiryTest -->
     </classes>
   </test> <!-- Admin(failed) -->
 </suite> <!-- Failed suite [Art Gallery Testing] -->

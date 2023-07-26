@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import org.testng.Assert;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.WebElement;
 
 import ObjectClasses.Enquiry;
 import ObjectClasses.SetupDriver;
@@ -12,7 +13,7 @@ public class EnquiryTest extends SetupDriver{
 
     String enquiryNumber;
 
-    @Test(priority = 18, groups = {"admin", "enquiry"})
+    @Test(priority = 18, groups = {"admin",})
     public void addEnquiryTest() {
         System.out.println("\n\n|| ENQUIRY ||\n");
 
@@ -27,12 +28,13 @@ public class EnquiryTest extends SetupDriver{
         enquiry.closeNewTab();
         enquiryNumber = alertMsg.split("is")[1].strip();
         Assert.assertEquals("Your enquiry successfully send. Your Enquiry number", alertMsg.split("is")[0].strip());
+
     }
     
-    @Test(priority = 19, groups = {"admin", "enquiry"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
+    @Test(priority = 19, groups = {"admin", "enquiry"}, dependsOnMethods = {"AdminLoginWithValidDetails", "addEnquiryTest"})
     public void unansweredEnquiryTest() {
         Enquiry enquiry = new Enquiry(driver);
-        enquiry.unansweredEnquiry();
+        enquiry.unansweredEnquiry(enquiryNumber);
 
         Alert alert = driver.switchTo().alert();
         alert.accept(); 
@@ -40,10 +42,10 @@ public class EnquiryTest extends SetupDriver{
         Assert.assertTrue(!enquiry.getRemarkDate().isBlank());
     }
     
-    @Test(priority = 20, groups = {"admin", "enquiry"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
+    @Test(priority = 20, groups = {"admin", "enquiry"}, dependsOnMethods = {"AdminLoginWithValidDetails", "addEnquiryTest"})
     public void answeredEnquiryTest() {
         Enquiry enquiry = new Enquiry(driver);
-        enquiry.answeredEnquiry();
+        enquiry.answeredEnquiry(enquiryNumber);
 
         System.out.println("\nAnswered Enquiry Details \n");
         enquiry.printEnquiryDetails();
