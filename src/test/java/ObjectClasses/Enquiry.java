@@ -284,12 +284,19 @@ public class Enquiry {
 
 
     // Search Enquiry
-    public String fetchSearchData() {
+    public String fetchSearchData(String enquiryNumber) {
         navigateToManageAnsweredEnquiryPage();
-        int dataSize = getTableData().size();
-        scrollBy();
-        String searchData = driver.findElement(By.xpath("//*[@id='main-content']/section/div[2]/div/section/table/tbody/tr[" + dataSize + " ]")).getText();
-        return searchData;
+
+        if(enquiryNumber.length()>0){
+            WebElement row = getRowElement(enquiryNumber);
+            scrollToWebElement(row);
+            return row.getText();
+        }
+        else{
+            int dataSize = getTableData().size();
+            scrollBy();
+            return driver.findElement(By.xpath("//*[@id='main-content']/section/div[2]/div/section/table/tbody/tr[" + dataSize + " ]")).getText();
+        }
     }
 
     public void navigateEnquirySearchPage() {

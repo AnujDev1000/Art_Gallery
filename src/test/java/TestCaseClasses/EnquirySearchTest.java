@@ -21,7 +21,8 @@ public class EnquirySearchTest extends SetupDriver{
     public void fetchData() {
         System.out.println("\n\n|| ENQUIRY SEARCH ||\n");
         Enquiry enquiry = new Enquiry(driver);
-        String[] searchData = enquiry.fetchSearchData().split(" ");
+
+        String[] searchData = enquiry.fetchSearchData(EnquiryTest.enquiryNumber).split(" ");
         sEnquiryNumber = searchData[1];
         sName = searchData[2];
         sMobileNumber = searchData[3];
@@ -33,7 +34,7 @@ public class EnquirySearchTest extends SetupDriver{
         Enquiry enquiry = new Enquiry(driver);
         List<List<WebElement>> data = enquiry.enquirySearch(sName);
         
-        Assert.assertEquals(sName, data.get(0).get(2).getText());
+        Assert.assertEquals(sName, data.get(0).get(2).getText().toLowerCase());
         System.out.println("\nEnquiry Search By Name : " + sName);
         enquiry.printTable();
     }

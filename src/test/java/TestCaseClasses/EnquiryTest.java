@@ -11,15 +11,15 @@ import ObjectClasses.SetupDriver;
 
 public class EnquiryTest extends SetupDriver{
 
-    String enquiryNumber;
+    public static String enquiryNumber = "";
 
-    @Test(priority = 18, groups = {"admin",})
+    @Test(priority = 18, groups = {"admin", "enquiry"})
     public void addEnquiryTest() {
         System.out.println("\n\n|| ENQUIRY ||\n");
 
         Enquiry enquiry = new Enquiry(driver);
         enquiry.openNewTab();
-        enquiry.addEnquiry("john", "john@gmail.com", "1594826370", "Awesome Art!");
+        enquiry.addEnquiry("brian", "brian@gmail.com", "4765654641", "Awesome Art!");
         
         Alert alert = driver.switchTo().alert();
         String alertMsg = alert.getText();
