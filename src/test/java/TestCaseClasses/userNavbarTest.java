@@ -19,6 +19,7 @@ public class userNavbarTest extends SetupDriver {
     @Test(priority = 29, groups = {"user", "regression"})
     public void home()
     {
+        test.assignCategory("User");
         userNavbar uNavbar = new userNavbar(driver);
         uNavbar.home();
         String title=driver.getTitle();
@@ -28,6 +29,7 @@ public class userNavbarTest extends SetupDriver {
     @Test(priority = 30, groups = {"user", "regression"})
     public void about()
     {
+        test.assignCategory("User");
         userNavbar uNavbar = new userNavbar(driver);
         uNavbar.about();
         String title=driver.getTitle();
@@ -37,6 +39,7 @@ public class userNavbarTest extends SetupDriver {
     @Test(priority = 31, groups = {"user", "regression"})
     public void arttype()
     {
+        test.assignCategory("User");
         userNavbar uNavbar = new userNavbar(driver);
         uNavbar.arttype();
         List<WebElement> options = driver.findElements(By.xpath("/html/body/div[1]/nav/div/ul/li[3]/div/a"));
@@ -53,6 +56,7 @@ public class userNavbarTest extends SetupDriver {
     @Test(priority = 32, groups = {"user", "regression"})
     public void contactus()
     {
+        test.assignCategory("User");
         userNavbar uNavbar = new userNavbar(driver);
         uNavbar.contactus();
         String title=driver.getTitle();
@@ -62,6 +66,7 @@ public class userNavbarTest extends SetupDriver {
     @Test(priority = 33, groups = {"user", "regression"})
     public void admin()
     {
+        test.assignCategory("User");
         userNavbar uNavbar = new userNavbar(driver);
         uNavbar.admin();
         String title=driver.getTitle();

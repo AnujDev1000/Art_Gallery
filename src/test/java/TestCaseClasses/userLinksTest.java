@@ -12,6 +12,7 @@ public class userLinksTest extends SetupDriver{
     @Test(priority = 36, groups = {"user"})
     public void linkcheck()
     {
+        test.assignCategory("User");
         userLinks uLinks = new userLinks(driver);
 
         String artgallerytitle = uLinks.linkArtgallery();

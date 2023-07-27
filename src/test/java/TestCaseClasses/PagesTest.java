@@ -18,12 +18,14 @@ public class PagesTest extends SetupDriver{
 
     @Test(priority = 24, groups = {"admin", "pages"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void pagesMenuTestaboutus() {
+        test.assignCategory("Pages");
         AboutUs aboutus = new AboutUs(driver);
         aboutus.pageSubmenu();
     }
 
     @Test(priority = 25, groups = {"admin", "pages"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void updateAboutUsPageTestaboutus() {
+        test.assignCategory("Pages");
         AboutUs aboutus = new AboutUs(driver);
         String title = "About Us";
         String description = "This is Art Gallery Management system where you can buy art products categorised into different art type with the mission to uplift the gig working artist force.";
@@ -38,12 +40,14 @@ public class PagesTest extends SetupDriver{
 
     @Test(priority = 26, groups = {"admin", "pages"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void pagesMenuTestcontactus() {
+        test.assignCategory("Pages");
         ContactUs contactus = new ContactUs(driver);
         contactus.pageSubmenu();
     }
 
     @Test(priority = 27, groups = {"admin", "pages"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void updateContactUsPageTestContactUs() {
+        test.assignCategory("Pages");
         ContactUs contactus = new ContactUs(driver);
         String title = "Contact Us";
         String email = "artgallery@gmail.com";

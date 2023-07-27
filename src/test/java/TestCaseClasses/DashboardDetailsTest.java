@@ -26,7 +26,7 @@ public class DashboardDetailsTest extends SetupDriver{
     
     @Test(priority = 0, groups = {"admin", "dashboard"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void artistDetails() {
-        // login.adminLogin();
+        test.assignCategory("Dashboard");
         Artist artist = new Artist(driver);
 
         List<List<WebElement>> data = artist.dashboardDetails();
@@ -41,7 +41,7 @@ public class DashboardDetailsTest extends SetupDriver{
 
     @Test(priority = 1 , groups = {"admin", "dashboard"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void artTypeDetails() {
-        // login.adminLogin();
+        test.assignCategory("Dashboard");
         ArtType artType = new ArtType(driver);
 
         List<List<WebElement>> data = artType.dashboardDetails();
@@ -56,7 +56,7 @@ public class DashboardDetailsTest extends SetupDriver{
 
     @Test(priority = 2 , groups = {"admin", "dashboard"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void artMediumDetails() {
-        // login.adminLogin();
+        test.assignCategory("Dashboard");
         ArtMedium artMedium = new ArtMedium(driver);
 
         List<List<WebElement>> data = artMedium.dashboardDetails();
@@ -71,7 +71,7 @@ public class DashboardDetailsTest extends SetupDriver{
 
     @Test(priority = 3 , groups = {"admin", "dashboard"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void artProductDetails() {
-        // login.adminLogin();
+        test.assignCategory("Dashboard");
         ArtProduct artProduct = new ArtProduct(driver);
         List<List<WebElement>> data = artProduct.dashboardDetails();
 
@@ -85,7 +85,7 @@ public class DashboardDetailsTest extends SetupDriver{
 
     @Test(priority = 4 , groups = {"admin", "dashboard"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void AnsweredEnquiryDetails() {
-        // login.adminLogin();
+        test.assignCategory("Dashboard");
         Enquiry enquiry = new Enquiry(driver);
         List<List<WebElement>> data = enquiry.AnsweredEnquiryDetails();
 
@@ -99,7 +99,7 @@ public class DashboardDetailsTest extends SetupDriver{
 
     @Test(priority = 5,groups = {"admin", "dashboard"}, dependsOnMethods = {"AdminLoginWithValidDetails"})
     public void UnansweredEnquiryDetails() {
-        // login.adminLogin();
+        test.assignCategory("Dashboard");
         Enquiry enquiry = new Enquiry(driver);
         List<List<WebElement>> data = enquiry.UnansweredEnquiryDetails();
 

@@ -11,6 +11,7 @@ public class userSearchTest extends SetupDriver {
     @Test(priority = 38, groups = {"user"})
     public void search()
     {
+        test.assignCategory("User");
         userSearch uSearch = new userSearch(driver);
         uSearch.search("A");
     }

@@ -15,6 +15,7 @@ public class EnquiryTest extends SetupDriver{
 
     @Test(priority = 18, groups = {"admin", "enquiry"})
     public void addEnquiryTest() {
+        test.assignCategory("Enquiry");
         System.out.println("\n\n|| ENQUIRY ||\n");
 
         Enquiry enquiry = new Enquiry(driver);
@@ -33,6 +34,7 @@ public class EnquiryTest extends SetupDriver{
     
     @Test(priority = 19, groups = {"admin", "enquiry"}, dependsOnMethods = {"AdminLoginWithValidDetails", "addEnquiryTest"})
     public void unansweredEnquiryTest() {
+        test.assignCategory("Enquiry");
         Enquiry enquiry = new Enquiry(driver);
         enquiry.unansweredEnquiry(enquiryNumber);
 
@@ -44,6 +46,7 @@ public class EnquiryTest extends SetupDriver{
     
     @Test(priority = 20, groups = {"admin", "enquiry"}, dependsOnMethods = {"AdminLoginWithValidDetails", "addEnquiryTest"})
     public void answeredEnquiryTest() {
+        test.assignCategory("Enquiry");
         Enquiry enquiry = new Enquiry(driver);
         enquiry.answeredEnquiry(enquiryNumber);
 

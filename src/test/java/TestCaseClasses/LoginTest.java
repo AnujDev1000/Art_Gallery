@@ -11,6 +11,7 @@ public class LoginTest extends SetupDriver{
     
     @Test(groups = {"login"}, dependsOnMethods = {"AdminLoginWithInValidDetails"})
     public void AdminLoginWithValidDetails() {
+        test.assignCategory("Login");
         Login login = new Login(driver);
         login.adminLogin();
         String title = driver.getTitle();
@@ -20,6 +21,7 @@ public class LoginTest extends SetupDriver{
     
     @Test( groups = {"login"})
     public void AdminLoginWithInValidDetails() {
+        test.assignCategory("Login");
         Login login = new Login(driver);
         login.navigateToAdminLoginPage();
         login.adminLogin("abc", "xyz"); 
