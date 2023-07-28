@@ -18,7 +18,8 @@ public class userLinks {
     {
         driver.findElement(By.linkText("Art Gallery")).click();
         String pageTitle = driver.getTitle();
-
+        System.out.println("Art Gallery Logo Link");
+        System.out.println("\t Page Title: "+pageTitle +"\n");
         return pageTitle;
     }
 
@@ -28,7 +29,8 @@ public class userLinks {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[3]/div[1]/ul/li[2]/div/div/div/div[2]/a"))).click();
 
         String pageTitle = driver.getTitle();
-        
+        System.out.println("Read more Link");
+        System.out.println("\t Page Title: "+pageTitle +"\n");
         return pageTitle;
     }
 
@@ -41,7 +43,8 @@ public class userLinks {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/a"))).click();
 
         String pageTitle = driver.getTitle();
-        
+        System.out.println("Scroll to top Link");
+        System.out.println("\t Page Title: "+pageTitle +"\n");
         return pageTitle;
     }
     

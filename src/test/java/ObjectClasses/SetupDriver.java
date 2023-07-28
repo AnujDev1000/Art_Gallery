@@ -25,6 +25,7 @@ public class SetupDriver {
 		driver.manage().window().maximize();
         driver.get("https://artgallery.neohire.io/");
         extent = ExtentManager.getInstance();
+        System.out.println("\n\n || TESTSUITE STARTED ||");
         
     }
 
@@ -48,6 +49,7 @@ public class SetupDriver {
 
     @AfterSuite(alwaysRun = true)
     public void tearDown() {
+        System.out.println("\n\n || TESTSUITE TERMINATED || \n\n");
         extent.flush();
         driver.quit();
     }

@@ -1,295 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="41" total="49" passed="4" failed="4" skipped="0">
+<testng-results ignored="58" total="71" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-27T20:09:05 IST" name="Art Gallery Testing" finished-at="2023-07-27T20:09:51 IST" duration-ms="46067">
+  <suite started-at="2023-07-28T15:38:58 IST" name="Art Gallery Testing" finished-at="2023-07-28T15:49:26 IST" duration-ms="627829">
     <groups>
-      <group name="admin">
-        <method signature="DashboardDetailsTest.artistDetails()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" name="artistDetails" class="TestCaseClasses.DashboardDetailsTest"/>
-        <method signature="DashboardDetailsTest.artTypeDetails()[pri:1, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" name="artTypeDetails" class="TestCaseClasses.DashboardDetailsTest"/>
-        <method signature="DashboardDetailsTest.artMediumDetails()[pri:2, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" name="artMediumDetails" class="TestCaseClasses.DashboardDetailsTest"/>
-        <method signature="DashboardDetailsTest.artProductDetails()[pri:3, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" name="artProductDetails" class="TestCaseClasses.DashboardDetailsTest"/>
-        <method signature="DashboardDetailsTest.AnsweredEnquiryDetails()[pri:4, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" name="AnsweredEnquiryDetails" class="TestCaseClasses.DashboardDetailsTest"/>
-        <method signature="DashboardDetailsTest.UnansweredEnquiryDetails()[pri:5, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" name="UnansweredEnquiryDetails" class="TestCaseClasses.DashboardDetailsTest"/>
-      </group> <!-- admin -->
+      <group name="logout">
+        <method signature="LogoutTest.AdminLogout()[pri:28, instance:TestCaseClasses.LogoutTest@c33b74f]" name="AdminLogout" class="TestCaseClasses.LogoutTest"/>
+      </group> <!-- logout -->
+      <group name="regression">
+        <method signature="userNavbarTest.home()[pri:29, instance:TestCaseClasses.userNavbarTest@130161f7]" name="home" class="TestCaseClasses.userNavbarTest"/>
+        <method signature="userNavbarTest.about()[pri:30, instance:TestCaseClasses.userNavbarTest@130161f7]" name="about" class="TestCaseClasses.userNavbarTest"/>
+        <method signature="userNavbarTest.arttype()[pri:31, instance:TestCaseClasses.userNavbarTest@130161f7]" name="arttype" class="TestCaseClasses.userNavbarTest"/>
+        <method signature="userNavbarTest.contactus()[pri:32, instance:TestCaseClasses.userNavbarTest@130161f7]" name="contactus" class="TestCaseClasses.userNavbarTest"/>
+        <method signature="userNavbarTest.admin()[pri:33, instance:TestCaseClasses.userNavbarTest@130161f7]" name="admin" class="TestCaseClasses.userNavbarTest"/>
+        <method signature="userDropdownTest.dropdown()[pri:34, instance:TestCaseClasses.userDropdownTest@2c767a52]" name="dropdown" class="TestCaseClasses.userDropdownTest"/>
+        <method signature="userViewDetatilsTest.search()[pri:37, instance:TestCaseClasses.userViewDetatilsTest@68999068]" name="search" class="TestCaseClasses.userViewDetatilsTest"/>
+      </group> <!-- regression -->
       <group name="login">
-        <method signature="LoginTest.AdminLoginWithInValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@5e82df6a]" name="AdminLoginWithInValidDetails" class="TestCaseClasses.LoginTest"/>
-        <method signature="LoginTest.AdminLoginWithValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@5e82df6a]" name="AdminLoginWithValidDetails" class="TestCaseClasses.LoginTest"/>
+        <method signature="LoginTest.AdminLoginWithInValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@15eb5ee5]" name="AdminLoginWithInValidDetails" class="TestCaseClasses.LoginTest"/>
+        <method signature="LoginTest.AdminLoginWithValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@15eb5ee5]" name="AdminLoginWithValidDetails" class="TestCaseClasses.LoginTest"/>
       </group> <!-- login -->
-      <group name="dashboard">
-        <method signature="DashboardDetailsTest.artistDetails()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" name="artistDetails" class="TestCaseClasses.DashboardDetailsTest"/>
-        <method signature="DashboardDetailsTest.artTypeDetails()[pri:1, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" name="artTypeDetails" class="TestCaseClasses.DashboardDetailsTest"/>
-        <method signature="DashboardDetailsTest.artMediumDetails()[pri:2, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" name="artMediumDetails" class="TestCaseClasses.DashboardDetailsTest"/>
-        <method signature="DashboardDetailsTest.artProductDetails()[pri:3, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" name="artProductDetails" class="TestCaseClasses.DashboardDetailsTest"/>
-        <method signature="DashboardDetailsTest.AnsweredEnquiryDetails()[pri:4, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" name="AnsweredEnquiryDetails" class="TestCaseClasses.DashboardDetailsTest"/>
-        <method signature="DashboardDetailsTest.UnansweredEnquiryDetails()[pri:5, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" name="UnansweredEnquiryDetails" class="TestCaseClasses.DashboardDetailsTest"/>
-      </group> <!-- dashboard -->
+      <group name="user">
+        <method signature="userNavbarTest.home()[pri:29, instance:TestCaseClasses.userNavbarTest@130161f7]" name="home" class="TestCaseClasses.userNavbarTest"/>
+        <method signature="userNavbarTest.about()[pri:30, instance:TestCaseClasses.userNavbarTest@130161f7]" name="about" class="TestCaseClasses.userNavbarTest"/>
+        <method signature="userNavbarTest.arttype()[pri:31, instance:TestCaseClasses.userNavbarTest@130161f7]" name="arttype" class="TestCaseClasses.userNavbarTest"/>
+        <method signature="userNavbarTest.contactus()[pri:32, instance:TestCaseClasses.userNavbarTest@130161f7]" name="contactus" class="TestCaseClasses.userNavbarTest"/>
+        <method signature="userNavbarTest.admin()[pri:33, instance:TestCaseClasses.userNavbarTest@130161f7]" name="admin" class="TestCaseClasses.userNavbarTest"/>
+        <method signature="userDropdownTest.dropdown()[pri:34, instance:TestCaseClasses.userDropdownTest@2c767a52]" name="dropdown" class="TestCaseClasses.userDropdownTest"/>
+        <method signature="userEnquiryTest.dropdown()[pri:35, instance:TestCaseClasses.userEnquiryTest@619713e5]" name="dropdown" class="TestCaseClasses.userEnquiryTest"/>
+        <method signature="userLinksTest.linkcheck()[pri:36, instance:TestCaseClasses.userLinksTest@708f5957]" name="linkcheck" class="TestCaseClasses.userLinksTest"/>
+        <method signature="userViewDetatilsTest.search()[pri:37, instance:TestCaseClasses.userViewDetatilsTest@68999068]" name="search" class="TestCaseClasses.userViewDetatilsTest"/>
+        <method signature="userSearchTest.search()[pri:38, instance:TestCaseClasses.userSearchTest@7722c3c3]" name="search" class="TestCaseClasses.userSearchTest"/>
+      </group> <!-- user -->
     </groups>
-    <test started-at="2023-07-27T20:09:05 IST" name="Admin" finished-at="2023-07-27T20:09:51 IST" duration-ms="46067">
+    <test started-at="2023-07-28T15:38:58 IST" name="test" finished-at="2023-07-28T15:49:26 IST" duration-ms="627829">
       <class name="TestCaseClasses.LoginTest">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:TestCaseClasses.LoginTest@5e82df6a]" started-at="2023-07-27T20:08:23 IST" name="setupTest" finished-at="2023-07-27T20:09:05 IST" duration-ms="41742" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:TestCaseClasses.LoginTest@15eb5ee5]" started-at="2023-07-28T15:38:00 IST" name="setupTest" finished-at="2023-07-28T15:38:58 IST" duration-ms="57959" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="AdminLoginWithInValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@5e82df6a]" started-at="2023-07-27T20:09:05 IST" name="AdminLoginWithInValidDetails" finished-at="2023-07-27T20:09:10 IST" duration-ms="5637" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:TestCaseClasses.LoginTest@15eb5ee5]" started-at="2023-07-28T15:38:58 IST" name="login" finished-at="2023-07-28T15:38:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="AdminLoginWithInValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@15eb5ee5]" started-at="2023-07-28T15:38:59 IST" name="AdminLoginWithInValidDetails" finished-at="2023-07-28T15:39:22 IST" duration-ms="23878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AdminLoginWithInValidDetails -->
-        <test-method signature="AdminLoginWithValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@5e82df6a]" started-at="2023-07-27T20:09:11 IST" name="AdminLoginWithValidDetails" finished-at="2023-07-27T20:09:14 IST" depends-on-methods="TestCaseClasses.LoginTest.AdminLoginWithInValidDetails" duration-ms="3944" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Art Gallery Management System - Admin Dashboard] but found [Art Gallery Management System - Admin Dashboar]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Art Gallery Management System - Admin Dashboard] but found [Art Gallery Management System - Admin Dashboar]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at TestCaseClasses.LoginTest.AdminLoginWithValidDetails(LoginTest.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="AdminLoginWithValidDetails()[pri:0, instance:TestCaseClasses.LoginTest@15eb5ee5]" started-at="2023-07-28T15:39:23 IST" name="AdminLoginWithValidDetails" finished-at="2023-07-28T15:39:28 IST" depends-on-methods="TestCaseClasses.LoginTest.AdminLoginWithInValidDetails" duration-ms="5970" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AdminLoginWithValidDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCaseClasses.LoginTest@5e82df6a]" started-at="2023-07-27T20:09:51 IST" name="tearDown" finished-at="2023-07-27T20:10:03 IST" duration-ms="11170" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCaseClasses.LoginTest@15eb5ee5]" started-at="2023-07-28T15:49:27 IST" name="tearDown" finished-at="2023-07-28T15:49:45 IST" duration-ms="18472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCaseClasses.LoginTest -->
-      <class name="TestCaseClasses.DashboardDetailsTest">
-        <test-method is-config="true" signature="dashboard()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" started-at="2023-07-27T20:09:15 IST" name="dashboard" finished-at="2023-07-27T20:09:15 IST" duration-ms="2" status="PASS">
+      <class name="TestCaseClasses.userViewDetatilsTest">
+        <test-method signature="search()[pri:37, instance:TestCaseClasses.userViewDetatilsTest@68999068]" started-at="2023-07-28T15:48:09 IST" name="search" finished-at="2023-07-28T15:49:20 IST" duration-ms="71043" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dashboard -->
-        <test-method signature="artistDetails()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" started-at="2023-07-27T20:09:15 IST" name="artistDetails" finished-at="2023-07-27T20:09:18 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="3295" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Manage Artist | Art Gallery Management System] but found [Manage Artist | Art Gallery Management Syste]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Manage Artist | Art Gallery Management System] but found [Manage Artist | Art Gallery Management Syste]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at TestCaseClasses.DashboardDetailsTest.artistDetails(DashboardDetailsTest.java:36)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- search -->
+      </class> <!-- TestCaseClasses.userViewDetatilsTest -->
+      <class name="TestCaseClasses.userLinksTest">
+        <test-method signature="linkcheck()[pri:36, instance:TestCaseClasses.userLinksTest@708f5957]" started-at="2023-07-28T15:47:40 IST" name="linkcheck" finished-at="2023-07-28T15:48:09 IST" duration-ms="28818" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- artistDetails -->
-        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" started-at="2023-07-27T20:09:18 IST" name="driverNavigateBackward" finished-at="2023-07-27T20:09:19 IST" duration-ms="966" status="PASS">
+        </test-method> <!-- linkcheck -->
+      </class> <!-- TestCaseClasses.userLinksTest -->
+      <class name="TestCaseClasses.userEnquiryTest">
+        <test-method signature="dropdown()[pri:35, instance:TestCaseClasses.userEnquiryTest@619713e5]" started-at="2023-07-28T15:46:28 IST" name="dropdown" finished-at="2023-07-28T15:47:40 IST" duration-ms="72582" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- driverNavigateBackward -->
-        <test-method signature="artTypeDetails()[pri:1, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" started-at="2023-07-27T20:09:19 IST" name="artTypeDetails" finished-at="2023-07-27T20:09:22 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="2490" status="PASS">
+        </test-method> <!-- dropdown -->
+      </class> <!-- TestCaseClasses.userEnquiryTest -->
+      <class name="TestCaseClasses.userSearchTest">
+        <test-method signature="search()[pri:38, instance:TestCaseClasses.userSearchTest@7722c3c3]" started-at="2023-07-28T15:49:20 IST" name="search" finished-at="2023-07-28T15:49:26 IST" duration-ms="6235" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- artTypeDetails -->
-        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" started-at="2023-07-27T20:09:22 IST" name="driverNavigateBackward" finished-at="2023-07-27T20:09:23 IST" duration-ms="1011" status="PASS">
+        </test-method> <!-- search -->
+      </class> <!-- TestCaseClasses.userSearchTest -->
+      <class name="TestCaseClasses.userDropdownTest">
+        <test-method signature="dropdown()[pri:34, instance:TestCaseClasses.userDropdownTest@2c767a52]" started-at="2023-07-28T15:43:16 IST" name="dropdown" finished-at="2023-07-28T15:46:27 IST" duration-ms="191382" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- driverNavigateBackward -->
-        <test-method signature="artMediumDetails()[pri:2, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" started-at="2023-07-27T20:09:23 IST" name="artMediumDetails" finished-at="2023-07-27T20:09:24 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="1051" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Manage Art Medium| Art Gallery Management System] but found [Manage Art Medium| Art Gallery Management Syste]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Manage Art Medium| Art Gallery Management System] but found [Manage Art Medium| Art Gallery Management Syste]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at TestCaseClasses.DashboardDetailsTest.artMediumDetails(DashboardDetailsTest.java:66)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- dropdown -->
+      </class> <!-- TestCaseClasses.userDropdownTest -->
+      <class name="TestCaseClasses.userNavbarTest">
+        <test-method signature="home()[pri:29, instance:TestCaseClasses.userNavbarTest@130161f7]" started-at="2023-07-28T15:39:48 IST" name="home" finished-at="2023-07-28T15:40:09 IST" duration-ms="21732" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- artMediumDetails -->
-        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" started-at="2023-07-27T20:09:24 IST" name="driverNavigateBackward" finished-at="2023-07-27T20:09:24 IST" duration-ms="723" status="PASS">
+        </test-method> <!-- home -->
+        <test-method signature="about()[pri:30, instance:TestCaseClasses.userNavbarTest@130161f7]" started-at="2023-07-28T15:40:09 IST" name="about" finished-at="2023-07-28T15:40:21 IST" duration-ms="11233" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- driverNavigateBackward -->
-        <test-method signature="artProductDetails()[pri:3, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" started-at="2023-07-27T20:09:24 IST" name="artProductDetails" finished-at="2023-07-27T20:09:28 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="3564" status="PASS">
+        </test-method> <!-- about -->
+        <test-method signature="arttype()[pri:31, instance:TestCaseClasses.userNavbarTest@130161f7]" started-at="2023-07-28T15:40:21 IST" name="arttype" finished-at="2023-07-28T15:40:21 IST" duration-ms="671" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- artProductDetails -->
-        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" started-at="2023-07-27T20:09:28 IST" name="driverNavigateBackward" finished-at="2023-07-27T20:09:29 IST" duration-ms="1207" status="PASS">
+        </test-method> <!-- arttype -->
+        <test-method signature="contactus()[pri:32, instance:TestCaseClasses.userNavbarTest@130161f7]" started-at="2023-07-28T15:40:21 IST" name="contactus" finished-at="2023-07-28T15:40:23 IST" duration-ms="1476" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- driverNavigateBackward -->
-        <test-method signature="AnsweredEnquiryDetails()[pri:4, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" started-at="2023-07-27T20:09:29 IST" name="AnsweredEnquiryDetails" finished-at="2023-07-27T20:09:36 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="7066" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Answer Enquiry | Art Gallery Management System] but found [Answer Enquiry | Art Gallery Management Syste]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Answer Enquiry | Art Gallery Management System] but found [Answer Enquiry | Art Gallery Management Syste]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at TestCaseClasses.DashboardDetailsTest.AnsweredEnquiryDetails(DashboardDetailsTest.java:94)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- contactus -->
+        <test-method signature="admin()[pri:33, instance:TestCaseClasses.userNavbarTest@130161f7]" started-at="2023-07-28T15:40:23 IST" name="admin" finished-at="2023-07-28T15:43:16 IST" duration-ms="173447" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AnsweredEnquiryDetails -->
-        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" started-at="2023-07-27T20:09:36 IST" name="driverNavigateBackward" finished-at="2023-07-27T20:09:38 IST" duration-ms="1983" status="PASS">
+        </test-method> <!-- admin -->
+      </class> <!-- TestCaseClasses.userNavbarTest -->
+      <class name="TestCaseClasses.LogoutTest">
+        <test-method signature="AdminLogout()[pri:28, instance:TestCaseClasses.LogoutTest@c33b74f]" started-at="2023-07-28T15:39:29 IST" name="AdminLogout" finished-at="2023-07-28T15:39:48 IST" duration-ms="19043" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- driverNavigateBackward -->
-        <test-method signature="UnansweredEnquiryDetails()[pri:5, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" started-at="2023-07-27T20:09:38 IST" name="UnansweredEnquiryDetails" finished-at="2023-07-27T20:09:49 IST" depends-on-methods="AdminLoginWithValidDetails" duration-ms="11045" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UnansweredEnquiryDetails -->
-        <test-method is-config="true" signature="driverNavigateBackward()[pri:0, instance:TestCaseClasses.DashboardDetailsTest@3911c2a7]" started-at="2023-07-27T20:09:49 IST" name="driverNavigateBackward" finished-at="2023-07-27T20:09:51 IST" duration-ms="1493" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverNavigateBackward -->
-      </class> <!-- TestCaseClasses.DashboardDetailsTest -->
-    </test> <!-- Admin -->
+        </test-method> <!-- AdminLogout -->
+      </class> <!-- TestCaseClasses.LogoutTest -->
+    </test> <!-- test -->
   </suite> <!-- Art Gallery Testing -->
 </testng-results>

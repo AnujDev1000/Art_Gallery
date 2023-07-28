@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="103.098" tests="8" errors="0" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="707.875" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="14"/>
     <property name="webdriver.chrome.driver" value="chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Mypc\Desktop\Maven\springapp\target\test-classes;C:\Users\Mypc\Desktop\Maven\springapp\target\classes;C:\Users\Mypc\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Mypc\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Mypc\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Mypc\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Mypc\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Mypc\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Mypc\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Mypc\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Mypc\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Mypc\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Mypc\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Mypc\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Mypc\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Mypc\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Mypc\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Mypc\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Mypc\.m2\repository\com\aventstack\extentreports\5.0.7\extentreports-5.0.7.jar;C:\Users\Mypc\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Mypc\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Mypc\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Mypc\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Mypc\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;"/>
+    <property name="java.class.path" value="C:\Users\Mypc\Desktop\Maven\springapp\target\test-classes;C:\Users\Mypc\Desktop\Maven\springapp\target\classes;C:\Users\Mypc\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Mypc\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Mypc\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Mypc\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Mypc\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Mypc\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Mypc\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Mypc\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Mypc\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Mypc\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Mypc\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Mypc\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Mypc\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Mypc\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Mypc\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Mypc\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Mypc\.m2\repository\com\aventstack\extentreports\5.0.7\extentreports-5.0.7.jar;C:\Users\Mypc\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Mypc\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Mypc\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Mypc\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\Mypc\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14\bin"/>
-    <property name="sun.java.command" value="C:\Users\Mypc\AppData\Local\Temp\surefire44296962945093767\surefirebooter-20230727200812951_3.jar C:\Users\Mypc\AppData\Local\Temp\surefire44296962945093767 2023-07-27T20-08-12_064-jvmRun1 surefire-20230727200812951_1tmp surefire_0-20230727200812951_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Mypc\AppData\Local\Temp\surefire16382026118813598422\surefirebooter-20230728153756761_3.jar C:\Users\Mypc\AppData\Local\Temp\surefire16382026118813598422 2023-07-28T15-37-55_665-jvmRun1 surefire-20230728153756761_1tmp surefire_0-20230728153756761_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Mypc\Desktop\Maven\springapp\target\test-classes;C:\Users\Mypc\Desktop\Maven\springapp\target\classes;C:\Users\Mypc\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Mypc\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Mypc\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Mypc\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Mypc\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Mypc\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Mypc\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Mypc\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Mypc\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Mypc\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Mypc\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Mypc\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Mypc\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Mypc\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Mypc\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Mypc\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Mypc\.m2\repository\com\aventstack\extentreports\5.0.7\extentreports-5.0.7.jar;C:\Users\Mypc\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Mypc\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Mypc\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Mypc\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Mypc\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\Mypc\Desktop\Maven\springapp\target\test-classes;C:\Users\Mypc\Desktop\Maven\springapp\target\classes;C:\Users\Mypc\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Mypc\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Mypc\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Mypc\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Mypc\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Mypc\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Mypc\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Mypc\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Mypc\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Mypc\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Mypc\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Mypc\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Mypc\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Mypc\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Mypc\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Mypc\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Mypc\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Mypc\.m2\repository\com\aventstack\extentreports\5.0.7\extentreports-5.0.7.jar;C:\Users\Mypc\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Mypc\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Mypc\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Mypc\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\Mypc\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Mypc"/>
     <property name="user.language" value="en"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Mypc\AppData\Local\Temp\surefire44296962945093767\surefirebooter-20230727200812951_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Mypc\AppData\Local\Temp\surefire16382026118813598422\surefirebooter-20230728153756761_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="14+36-1461"/>
@@ -56,273 +56,272 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="58.0"/>
   </properties>
-  <testcase name="AdminLoginWithInValidDetails" classname="TestCaseClasses.LoginTest" time="5.616">
+  <testcase name="AdminLoginWithInValidDetails" classname="TestCaseClasses.LoginTest" time="23.866">
+    <system-out><![CDATA[
+
+ || TESTSUITE STARTED ||
+
+
+|| LOGIN ||
+
+ Invalid Login Details Check
+]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 46334
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 41290
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1690468720.131][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
-Jul 27, 2023 8:08:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1690538892.390][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+Jul 28, 2023 3:38:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AdminLoginWithValidDetails" classname="TestCaseClasses.LoginTest" time="4.251">
-    <failure message="expected [Art Gallery Management System - Admin Dashboard] but found [Art Gallery Management System - Admin Dashboar]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Art Gallery Management System - Admin Dashboard] but found [Art Gallery Management System - Admin Dashboar]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at TestCaseClasses.LoginTest.AdminLoginWithValidDetails(LoginTest.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-  </testcase>
-  <testcase name="artistDetails" classname="TestCaseClasses.DashboardDetailsTest" time="3.29">
-    <failure message="expected [Manage Artist | Art Gallery Management System] but found [Manage Artist | Art Gallery Management Syste]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Manage Artist | Art Gallery Management System] but found [Manage Artist | Art Gallery Management Syste]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at TestCaseClasses.DashboardDetailsTest.artistDetails(DashboardDetailsTest.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
+  <testcase name="AdminLoginWithValidDetails" classname="TestCaseClasses.LoginTest" time="5.932">
     <system-out><![CDATA[
+ Valid Login Details Check
+]]></system-out>
+  </testcase>
+  <testcase name="AdminLogout" classname="TestCaseClasses.LogoutTest" time="19.038"/>
+  <testcase name="home" classname="TestCaseClasses.userNavbarTest" time="21.732">
+    <system-out><![CDATA[Home 
 
-|| ADMIN DASHBOARD ||
 ]]></system-out>
   </testcase>
-  <testcase name="artTypeDetails" classname="TestCaseClasses.DashboardDetailsTest" time="2.718">
-    <system-out><![CDATA[
-ArtType Details!
-S.NO  Type of Art     Creation Date        
--------------------------------------
-1     Serigraphs      2022-12-21 14:24:46  
-2     Prints          2022-12-21 14:25:00  
-3     Painting        2022-12-21 14:25:31  
-4     Street Art      2022-12-21 14:26:06  
-5     Visual art      2022-12-21 14:26:29  
-6     Conceptual art  2022-12-21 14:26:45  
-7     painting        2023-05-10 04:41:26  
-8     illustration    2023-06-16 13:46:00  
+  <testcase name="about" classname="TestCaseClasses.userNavbarTest" time="11.239">
+    <system-out><![CDATA[About Us 
+
 ]]></system-out>
   </testcase>
-  <testcase name="artMediumDetails" classname="TestCaseClasses.DashboardDetailsTest" time="1.052">
-    <failure message="expected [Manage Art Medium| Art Gallery Management System] but found [Manage Art Medium| Art Gallery Management Syste]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Manage Art Medium| Art Gallery Management System] but found [Manage Art Medium| Art Gallery Management Syste]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at TestCaseClasses.DashboardDetailsTest.artMediumDetails(DashboardDetailsTest.java:66)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-  </testcase>
-  <testcase name="artProductDetails" classname="TestCaseClasses.DashboardDetailsTest" time="3.665">
-    <system-out><![CDATA[
-Art Product Details!
-S.NO  Reference Number  Title                Image  Creation Date        
----------------------------------------------------------------
-1     255288886         radhakrishna                2023-06-18 07:58:55  
-2     652700923         art                         2023-06-18 07:59:55  
-3     365300848         night                       2023-06-18 08:01:35  
-4     804256536         Nature Illustration         2023-06-25 12:42:05  
-5     512478075         Patterns                    2023-06-25 13:50:20  
-6     725932940         Joker                       2023-06-25 13:53:10  
+  <testcase name="arttype" classname="TestCaseClasses.userNavbarTest" time="0.676">
+    <system-out><![CDATA[Art Type:- 
+option name:Serigraphs
+option name:Prints
+option name:Painting
+option name:Street Art
+option name:Visual art 
+option name:Conceptual art
+option name:painting
+option name:illustration
 ]]></system-out>
   </testcase>
-  <testcase name="AnsweredEnquiryDetails" classname="TestCaseClasses.DashboardDetailsTest" time="7.062">
-    <failure message="expected [Answer Enquiry | Art Gallery Management System] but found [Answer Enquiry | Art Gallery Management Syste]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Answer Enquiry | Art Gallery Management System] but found [Answer Enquiry | Art Gallery Management Syste]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at TestCaseClasses.DashboardDetailsTest.AnsweredEnquiryDetails(DashboardDetailsTest.java:94)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-  </testcase>
-  <testcase name="UnansweredEnquiryDetails" classname="TestCaseClasses.DashboardDetailsTest" time="11.331">
+  <testcase name="contactus" classname="TestCaseClasses.userNavbarTest" time="1.469">
     <system-out><![CDATA[
-Unanswered Enquiry Details!
-S.NO  Enquiry Number  Full Name  Mobile Number  Enquiry Date         
------------------------------------------------------------
-1     709871969       vinni      987654321      2023-05-28 06:20:00  
-2     771966462       vinni      987654321      2023-05-28 06:21:11  
-3     310953928       vinni      987654321      2023-05-28 06:23:45  
-4     865787408       Test       9876543221     2023-06-09 10:18:37  
-5     241976910       Art        9543876530     2023-06-09 10:20:09  
-6     597619714       john       8765432910     2023-06-09 10:22:37  
-7     177104854       nike       7654321890     2023-06-09 10:25:43  
-8     905993477       nikki      8765432190     2023-06-16 04:19:50  
-9     611856021       don        9786543220     2023-06-16 04:21:06  
-10    652733155       Testing    1234567890     2023-06-16 09:31:33  
-11    603562177       Testing    1234567890     2023-06-16 09:31:42  
-12    886797367       Testing    1234567890     2023-06-16 09:31:57  
-13    389336119       Testing    1234567890     2023-06-16 17:23:23  
-14    109180400       Testing    1234567890     2023-06-16 17:23:28  
-15    669414861       Vikki      7654321890     2023-06-18 06:31:36  
-16    100708724       Sai        8976543201     2023-06-18 06:32:17  
-17    826880039       Kiran      6574321980     2023-06-18 06:33:10  
-18    409363634       somnath    7685532800     2023-06-20 16:08:17  
-19    204353981       teja       8754327895     2023-06-20 16:08:57  
-20    216387987       ram        852963741      2023-06-22 11:11:33  
-21    371860633       tom        789456123      2023-06-22 11:29:40  
-22    694653073       tom        789456123      2023-06-22 11:31:08  
-23    208926495       tom        789456123      2023-06-22 11:32:08  
-24    653625290       tom        789456123      2023-06-22 11:35:20  
-25    491608963       tom        789456123      2023-06-22 13:27:40  
-26    787864043       nota       8765491230     2023-06-28 05:43:44  
-27    807222680       Jack       6514175478     2023-06-28 06:01:28  
-28    794662688       Jack       6514175478     2023-06-28 06:02:32  
-29    702007802       Jack       6514175478     2023-07-04 12:08:35  
-30    907074981       john       1594826370     2023-07-22 06:10:40  
-31    228425226       Jack       6514175478     2023-07-22 06:24:56  
-32    821934423       john       1594826370     2023-07-23 04:40:51  
-33    596201132       john       1594826370     2023-07-23 11:32:32  
-34    252132672       john       1594826370     2023-07-24 03:48:50  
-35    658346902       john       1594826370     2023-07-24 14:50:04  
-36    105652808       john       1594826370     2023-07-24 15:02:33  
-37    203769660       john       9678498075     2023-07-25 04:08:36  
-38    956328401       john       1594826370     2023-07-25 08:15:05  
-39    150045743       john       1594826370     2023-07-25 08:22:48  
-40    160818504       john       1594826370     2023-07-25 08:31:12  
-41    515941136       john       1594826370     2023-07-25 12:02:25  
-42    690179869       john       1594826370     2023-07-25 12:07:46  
-43    118008827       john       1594826370     2023-07-25 12:13:54  
-44    565290932       john       1594826370     2023-07-25 12:18:24  
-45    696981996       john       1594826370     2023-07-25 12:24:28  
+Contact Us
+
+]]></system-out>
+  </testcase>
+  <testcase name="admin" classname="TestCaseClasses.userNavbarTest" time="173.443">
+    <system-out><![CDATA[Admin 
+
+]]></system-out>
+  </testcase>
+  <testcase name="dropdown" classname="TestCaseClasses.userDropdownTest" time="191.445">
+    <system-out><![CDATA[Option name: Serigraphs
+Page title: Serigraphs
+
+
+Option name: Prints
+Page title: Prints
+
+
+Option name: Painting
+Page title: Painting
+
+
+Option name: Street Art
+Page title: Street Art
+
+
+Option name: Visual art 
+Page title: Visual art
+
+
+Option name: Conceptual art
+Page title: Conceptual art
+
+
+Option name: painting
+Page title: painting
+
+
+Option name: illustration
+Page title: illustration
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="dropdown" classname="TestCaseClasses.userEnquiryTest" time="72.532">
+    <system-out><![CDATA[Option Name: Serigraphs
+	Serigraphs Product Page
+	 No Products Available!
+
+
+Option Name: Prints
+	Prints Product Page
+	 No Products Available!
+
+
+Option Name: Painting
+	Painting Product Page
+	 No Products Available!
+
+
+Option Name: Street Art
+	Street Art Product Page
+	 Art Enquiry button enabled for NIGHT
+	 Art Enquiry button enabled for NATURE ILLUSTRATION
+
+
+Option Name: Visual art 
+	Visual art  Product Page
+	 Art Enquiry button enabled for ART
+
+
+Option Name: Conceptual art
+	Conceptual art Product Page
+	 Art Enquiry button enabled for PATTERNS
+
+
+Option Name: painting
+	painting Product Page
+	 Art Enquiry button enabled for RADHAKRISHNA
+	 Art Enquiry button enabled for JOKER
+
+
+Option Name: illustration
+	illustration Product Page
+	 No Products Available!
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="linkcheck" classname="TestCaseClasses.userLinksTest" time="28.813">
+    <system-out><![CDATA[Art Gallery Logo Link
+	 Page Title: Art Gallery Management System | Home Page
+
+Read more Link
+	 Page Title: Art Gallery Management System | About Us Page
+
+Scroll to top Link
+	 Page Title: Art Gallery Management System | Home Page
+
+]]></system-out>
+  </testcase>
+  <testcase name="search" classname="TestCaseClasses.userViewDetatilsTest" time="71.045">
+    <system-out><![CDATA[Option Name: Serigraphs
+Serigraphs: Product Page
+	No Product Available
+
+
+Option Name: Prints
+Prints: Product Page
+	No Product Available
+
+
+Option Name: Painting
+Painting: Product Page
+	No Product Available
+
+
+Option Name: Street Art
+Street Art: Product Page
+Availaible Products- 
+
+
+NIGHT
+Size : Small
+Dimension : 500*500
+Orientation : Potrait
+Art Types : Street Art
+Art Medium : Oil on Canvas
+Art Reference Number : 365300848
+
+
+
+NATURE ILLUSTRATION
+Size : Medium
+Dimension : 1000
+Orientation : Landscape
+Art Types : Street Art
+Art Medium : Acrylic on canvas
+Art Reference Number : 804256536
+
+
+
+Option Name: Visual art 
+Visual art : Product Page
+Availaible Products- 
+
+
+ART
+Size : Medium
+Dimension : 736*736
+Orientation : Potrait
+Art Types : Visual art
+Art Medium : Fibre
+Art Reference Number : 652700923
+
+
+
+Option Name: Conceptual art
+Conceptual art: Product Page
+Availaible Products- 
+
+
+PATTERNS
+Size : Large
+Dimension : 800
+Orientation : Landscape
+Art Types : Conceptual art
+Art Medium : Resin
+Art Reference Number : 512478075
+
+
+
+Option Name: painting
+painting: Product Page
+Availaible Products- 
+
+
+RADHAKRISHNA
+Size : Medium
+Dimension : 1920*2607
+Orientation : Potrait
+Art Types : painting
+Art Medium : Oil on Canvas
+Art Reference Number : 255288886
+
+
+
+JOKER
+Size : Medium
+Dimension : 500
+Orientation : Potrait
+Art Types : painting
+Art Medium : Hand-painted on particle wood/MDF
+Art Reference Number : 725932940
+
+
+
+Option Name: illustration
+illustration: Product Page
+	No Product Available
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="search" classname="TestCaseClasses.userSearchTest" time="6.244">
+    <system-out><![CDATA[Search Result Againt keyword "A"
+
+
+Search input: A
+	Availaible products: 
+	 RADHAKRISHNA
+	 ART
+	 NATURE ILLUSTRATION
+	 PATTERNS
 ]]></system-out>
   </testcase>
 </testsuite>

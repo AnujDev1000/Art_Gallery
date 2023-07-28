@@ -2,6 +2,7 @@ package TestCaseClasses;
 
 import org.openqa.selenium.Alert;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import ObjectClasses.Login;
@@ -9,6 +10,11 @@ import ObjectClasses.SetupDriver;
 
 public class LoginTest extends SetupDriver{
     
+    @BeforeClass(alwaysRun=true)
+    public void login() {
+        System.out.println("\n\n|| LOGIN ||");
+    }
+
     @Test(groups = {"login"}, dependsOnMethods = {"AdminLoginWithInValidDetails"})
     public void AdminLoginWithValidDetails() {
         test.assignCategory("Login");
@@ -17,6 +23,7 @@ public class LoginTest extends SetupDriver{
         String title = driver.getTitle();
         
         Assert.assertEquals("Art Gallery Management System - Admin Dashboard", title);
+        System.out.println("\n Valid Login Details Check");
     }
     
     @Test( groups = {"login"})
@@ -31,6 +38,7 @@ public class LoginTest extends SetupDriver{
 
         // login.navigateBackToHomePage();
         Assert.assertEquals("Invalid Details", alertMsg);
+        System.out.println("\n Invalid Login Details Check");
     }
 
 }
